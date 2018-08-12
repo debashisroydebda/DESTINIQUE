@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Properties | DESTINIQUE</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicons -->
+        <link href="img/favicon.jpg" rel="icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap CSS File -->
+
+        <link href="css/themify-icons.css" rel="stylesheet">
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+        <!-- Extra plugin css -->
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <!-- Libraries CSS Files -->
+
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
+        <!-- Main Stylesheet File -->
+        <link href="css/slider.css" rel="stylesheet">
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            #header.header-fixed {
+                box-shadow: 0 10px 50px -2px rgba(0, 0, 0, 0.14);
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <!--==========================
+        Header
+        ============================-->
+        <header id="header">
+            <div class="container-fluid">
+
+                <div id="logo" class="pull-left">
+                    <a href="index.html"><img src="img/logo.png" alt="" title="" /></img></a>
+                    <!-- Uncomment below if you prefer to use a text logo -->
+                    <!--<h1><a href="#hero">Regna</a></h1>-->
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="menu-has-children menu-active"><a href="properties.html">Properties</a>
+                            <ul>
+                                <li><a href="properties.html">Properties</a></li>
+                                <li><a href="vacation_rentals_three_colmn.html">All Destinations </a></li>
+                                <li><a href="vacation_display_mode.html">Featured Properties</a></li>
+                                <li><a href="vacation_rentals.html">Vacation Rentals</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="travel_blog.html">Travel Blog</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#" id="navPhoneNumber"> <i class=" fa fa-phone"></i> 888-235-5603</a></li>
+
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </header><!-- #header -->
+
+
+        <!--==========================
+          Hero Section
+        ============================-->
+        <section id="propertiesPart" class="container">
+            <div class="hero-container row propertiesPart">
+                <div class="col-md-3 col-sm-5 col-xs-12">
+                    <div id="track-widget">			
+                        <div class="textwidget">
+                            <h2 class="rounded">Vacation Rentals</h2>
+                            <hr>
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">View All Properties</a></td>
+                                        <td><a href="#">Condo Rentals</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Vacation Homes</a></td>
+                                        <td><a href="#">Specials</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Area Events</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="track-widget">
+                        <div id="search-widget">
+                            <h2 class="rounded">Property Availability Search</h2>
+
+                            <form role="search" method="get" id="searchform" action="#">
+
+                                <span><strong>Arrival Date</strong></span>
+                                <input  class="input-sm form-control" type="text" id="arrivalDatePicker">
+
+
+                                <span><strong>Departure Date</strong></span>
+                                <input class="input-sm form-control" type="text" id="departureDatePicker">
+
+                                <span class="search-locations-header"><strong>Locations/Complexes</strong></span>
+
+                                <select name="locations" id="locations-select" class="wp-listings-taxonomy">
+                                    <option value="">All</option>
+                                    <optgroup label="Area">
+                                        <option value="30a">30A</option>
+                                        <option value="destin">Destin</option>
+                                        <option value="fort-morgan">Fort Morgan</option>
+                                        <option value="fort-walton-beach">Fort Walton Beach</option>
+                                        <option value="gulf-breeze">Gulf Breeze</option>
+                                        <option value="gulf-shores">Gulf Shores</option>
+                                        <option value="navarre-beach">Navarre Beach</option>
+                                        <option value="orange-beach">Orange Beach</option>
+                                        <option value="panama-city-beach">Panama City Beach</option>
+                                        <option value="pensacola-beach">Pensacola Beach</option>
+                                        <option value="perdido-key">Perdido Key</option>
+                                    </optgroup>
+                                    <optgroup label="Beach Community">
+                                        <option value="blue-mountain-beach">Blue Mountain Beach</option>
+                                        <option value="crystal-beach">Crystal Beach</option>
+                                        <option value="downtown-destin">Downtown Destin</option>
+                                        <option value="dune-allen-beach">Dune Allen Beach</option>
+                                        <option value="frangista-beach">Frangista Beach</option>
+                                        <option value="holiday-isle">Holiday Isle</option>
+                                        <option value="miramar-beach">Miramar Beach</option>
+                                        <option value="rosemary-beach">Rosemary Beach</option>
+                                        <option value="santa-rosa-beach">Santa Rosa Beach</option>
+                                        <option value="seacrest-beach">Seacrest Beach</option>
+                                        <option value="seagrove-beach">Seagrove Beach</option>
+                                        <option value="seaside">Seaside</option>
+                                        <option value="watersound">WaterSound</option>
+                                    </optgroup>
+                                    <optgroup label="Complex/Neighborhood">
+                                        <option value="abacos">Abacos</option>
+                                        <option value="adagio">Adagio</option>
+                                        <option value="aegean">Aegean</option>
+                                        <option value="alerio">Alerio</option>
+                                        <option value="amalfi-coast-resort">Amalfi Coast Resort</option>
+                                        <option value="aqua">Aqua</option>
+                                        <option value="aqua-villa">Aqua Villa</option>
+                                        <option value="ariel-dunes">Ariel Dunes</option>
+                                        <option value="ariel-dunes-ii">Ariel Dunes II</option>
+                                        <option value="azure">Azure</option>
+                                        <option value="back-bay">Back Bay</option>
+                                        <option value="banana-bay-townhomes">Banana Bay Townhomes</option>
+                                        <option value="baywatch">Baywatch</option>
+                                        <option value="beach-club">Beach Club</option>
+                                        <option value="beach-colony-resort">Beach Colony Resort</option>
+                                        <option value="beach-colony-resort-navarre-beach">Beach Colony Resort (Navarre Beach)</option>
+                                        <option value="beach-pointe">Beach Pointe</option>
+                                        <option value="beach-resort">Beach Resort</option>
+                                        <option value="beach-retreat">Beach Retreat</option>
+                                        <option value="beach-villas-at-destiny">Beach Villas at Destiny</option>
+                                        <option value="beachfront-ii">Beachfront II</option>
+                                        <option value="beachside-townhomes">Beachside Townhomes</option>
+                                        <option value="beachside-villas">Beachside Villas</option>
+                                        <option value="beachwalk-condominiums">Beachwalk Condominiums</option>
+                                        <option value="beachwood-villas">Beachwood Villas</option>
+                                        <option value="bel-sole">Bel Sole</option>
+                                        <option value="bella-luna">Bella Luna</option>
+                                        <option value="bella-riva">Bella Riva</option>
+                                        <option value="belle-mer">Belle Mer</option>
+                                        <option value="blue-dolphin">Blue Dolphin</option>
+                                        <option value="blue-mountain-villas">Blue Mountain Villas</option>
+                                    </optgroup>
+                                </select>
+                                <br>
+
+                                <span class="sleeps-header"><strong>Sleeps</strong></span>
+                                <br>
+                                <select name="sleeps" class="sleeps-input">
+                                    <option value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                </select>
+                                <br>
+
+                                <span class="lodging-header"><strong>Lodging Types</strong></span>
+                                <br>
+
+                                <select name="lodging" id="lodging" class="listing-lodging">
+                                    <option value="">No Preference</option>
+                                    <option value="1">Home</option>';
+                                    <option value="2">Condo</option>';
+                                </select><br>
+                                <div id="bedRoomsPart">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <label for="bedRooms">Bed Rooms:</label>        
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input class="bedRoomsCount" type="text" id="bedRooms" readonly>
+                                        </div>
+                                    </div>
+                                    <div id="bedRooms-slider-range"></div>
+                                </div>
+
+                                <br>
+                                <div id="priceRangePart">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <label for="amount">Price range:</label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input class="priceRangeCount" type="text" id="amount" readonly>
+                                        </div>
+                                    </div>
+                                    <div id="slider-range"></div>
+                                </div><br>
+
+                                <span class="search-amenities-header"><strong>Amenities</strong></span>
+                                <div class="listing-amenities" style="max-height:200px;overflow: hidden;overflow-y: scroll">
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox31" type="checkbox">
+                                        <label class="checkboxLabel" for="checkbox31">
+                                            Boat Slip Available
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox32" type="checkbox">
+                                        <label class="checkboxLabel" for="checkbox32">
+                                            Gulf Front
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox33" type="checkbox">
+                                        <label class="checkboxLabel" for="checkbox33">
+                                            Pet Friendly For a Fee
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox34" type="checkbox">
+                                        <label class="checkboxLabel" for="checkbox34">
+                                            Pool - Community
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox35" type="checkbox">
+                                        <label class="checkboxLabel" for="checkbox35">
+                                            Pool - Private
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox36" type="checkbox">
+                                        <label class="checkboxLabel" for="checkbox36">
+                                            Pool - Private Heated for a Fee
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox37" type="checkbox">
+                                        <label class="checkboxLabel" for="checkbox37">
+                                            Snowbird Rentals Accepted
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox38" type="checkbox">
+                                        <label class="checkboxLabel" for="checkbox38">
+                                            Tennis Courts
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox39" type="checkbox">
+                                        <label class="checkboxLabel" for="checkbox39">
+                                            Wedding/Event Allowed
+                                        </label>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="btn-search" id="propertiesSearchsubmit">
+                                    <button type="submit" class="searchsubmit"><i class="fa fa-search"></i><span class="button-text" style="font-weight: bold;"> S e a r c h L i s t i n g s</span></button>
+                                </div>
+                                <div class="clear"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-7 col-xs-12">
+                    <form class="form-horizontal">
+                        <div class="row" style="background-color: #dedede;margin: 10px 0 0;height: 50px;">
+                            <div class="col-sm-12">
+                                <div class="form-group" style="float: right;margin-top: 4px;font-size: 16px;">
+                                    <label for="sorting" class="control-label" style="margin-right: 15px;">Sort By : </label>
+                                    <select id="sorting" class="listing-lodging" style="margin-right: 15px;">
+                                        <option value="name-asc">Property Name</option>
+                                        <option value="name-desc">Property Name Reversed</option>
+                                        <option value="price-asc">Price: Lowest to Highest</option>
+                                        <option value="price-desc">Price: Highest to Lowest</option>
+                                        <option value="beds-asc">Bedrooms: Lowest to Highest</option>
+                                        <option selected="" value="beds-desc">Bedrooms: Highest to Lowest</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="sortingResult sortingResultFirst">
+                        <div class="sortingResultSinglePart">
+                            <div id="post-13915" class="listing entry listing-box first">
+                                <div class="listing-wrap">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="listing-widget-thumb">
+                                                <a href="#" class="listing-image-link">
+                                                    <img class="img-responsive" src="img/item1.jpeg"> 
+                                                </a>
+                                                <div class="listing-thumb-meta">
+                                                    <span class="listing-property-type">starting at</span>
+                                                    <span class="listing-price">$520/night</span>
+                                                </div><!-- .listing-thumb-meta -->
+                                            </div><!-- .listing-widget-thumb -->
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="listing-widget-details">
+                                                <h3 class="listing-title">
+                                                    <a href="#">Dhaka Palace</a>
+                                                </h3>
+                                                <span class="listing-information added-debug-test">Bedrooms: 2 | Baths: 2 Full, 1 Half | Sleeps: 34 <br><span> Destin, FL</span></span><br><br>
+                                                <span class="listing-overview">Spend your next family vacation in the luxurious Crystal Palace and enjoy breathtaking views of the Gulf of Mexico, a private saltwater pool and more. This grand home is located just across the street from the sterling white sandy beaches of Destin, Florida.</span>
+                                            </div><!-- .listing-widget-details -->
+                                        </div>
+                                    </div>
+                                </div><!-- .listing-wrap -->
+                            </div>
+                        </div>
+
+                        <div class="sortingResultSinglePart">
+                            <div id="post-13915" class="listing entry listing-box first">
+                                <div class="listing-wrap">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="listing-widget-thumb">
+                                                <a href="#" class="listing-image-link">
+                                                    <img class="img-responsive" src="img/item3.jpg"> 
+                                                </a>
+                                                <div class="listing-thumb-meta">
+                                                    <span class="listing-property-type">starting at</span>
+                                                    <span class="listing-price">$520/night</span>
+                                                </div><!-- .listing-thumb-meta -->
+                                            </div><!-- .listing-widget-thumb -->
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="listing-widget-details">
+                                                <h3 class="listing-title">
+                                                    <a href="#">Rangpur Palace</a>
+                                                </h3>
+                                                <span class="listing-information added-debug-test">Bedrooms: 2 | Baths: 2 Full, 1 Half | Sleeps: 34 <br><span> Destin, FL</span></span><br><br>
+                                                <span class="listing-overview">Spend your next family vacation in the luxurious Crystal Palace and enjoy breathtaking views of the Gulf of Mexico, a private saltwater pool and more. This grand home is located just across the street from the sterling white sandy beaches of Destin, Florida.</span>
+                                            </div><!-- .listing-widget-details -->
+                                        </div>
+                                    </div>
+                                </div><!-- .listing-wrap -->
+                            </div>
+                        </div>
+                        <div class="sortingResultSinglePart">
+                            <div id="post-13915" class="listing entry listing-box first">
+                                <div class="listing-wrap">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="listing-widget-thumb">
+                                                <a href="#" class="listing-image-link">
+                                                    <img class="img-responsive" src="img/item4.jpg"> 
+                                                </a>
+                                                <div class="listing-thumb-meta">
+                                                    <span class="listing-property-type">starting at</span>
+                                                    <span class="listing-price">$520/night</span>
+                                                </div><!-- .listing-thumb-meta -->
+                                            </div><!-- .listing-widget-thumb -->
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="listing-widget-details">
+                                                <h3 class="listing-title">
+                                                    <a href="#">Dinajpur Palace</a>
+                                                </h3>
+                                                <span class="listing-information added-debug-test">Bedrooms: 2 | Baths: 2 Full, 1 Half | Sleeps: 34 <br><span> Destin, FL</span></span><br><br>
+                                                <span class="listing-overview">Spend your next family vacation in the luxurious Crystal Palace and enjoy breathtaking views of the Gulf of Mexico, a private saltwater pool and more. This grand home is located just across the street from the sterling white sandy beaches of Destin, Florida.</span>
+                                            </div><!-- .listing-widget-details -->
+                                        </div>
+                                    </div>
+                                </div><!-- .listing-wrap -->
+                            </div>
+                        </div>
+
+                        <div class="sortingResultSinglePart">
+                            <div id="post-13915" class="listing entry listing-box first">
+                                <div class="listing-wrap">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="listing-widget-thumb">
+                                                <a href="#" class="listing-image-link">
+                                                    <img class="img-responsive" src="img/item3.jpg"> 
+                                                </a>
+                                                <div class="listing-thumb-meta">
+                                                    <span class="listing-property-type">starting at</span>
+                                                    <span class="listing-price">$520/night</span>
+                                                </div><!-- .listing-thumb-meta -->
+                                            </div><!-- .listing-widget-thumb -->
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="listing-widget-details">
+                                                <h3 class="listing-title">
+                                                    <a href="#">USA Palace</a>
+                                                </h3>
+                                                <span class="listing-information added-debug-test">Bedrooms: 2 | Baths: 2 Full, 1 Half | Sleeps: 34 <br><span> Destin, FL</span></span><br><br>
+                                                <span class="listing-overview">Spend your next family vacation in the luxurious Crystal Palace and enjoy breathtaking views of the Gulf of Mexico, a private saltwater pool and more. This grand home is located just across the street from the sterling white sandy beaches of Destin, Florida.</span>
+                                            </div><!-- .listing-widget-details -->
+                                        </div>
+                                    </div>
+                                </div><!-- .listing-wrap -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- #hero -->
+
+
+        <section class="contactPage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactFormHeader">
+                            <h3>Destinique</h3>
+                            <h4>Luxury Rental Travel Advisors </h4><br>
+                            <h5>PH: 1-888-235-5603</h5>
+                            <h5>Email: inquiry@destinique.com</h5>
+                            <h5 class="contactNeedHelp"><a href="#">Need Help? Submit Your Information Today →</a></h5><br><br>
+                            <a href="#"><img class="img-responsive" src="img/travelPro.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 contactForm">
+                        <div class="contactFormHeader">
+                            <h3>Contact Us</h3>
+                            <h4>General Inquiries</h4>
+                        </div>
+                        <form class="form-horizontal" action="">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control contactName" required="required" id="name" placeholder="Name" name="name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="email" class="form-control contactEmail" required="required" id="email" placeholder="Email" name="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control contactSubject" required="required" id="message" placeholder="Subject" name="message">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <textarea class="form-control textAreaPart" rows="5" id="comment"  placeholder="Message"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">        
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-default contactSumit">Send Message </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==========================
+          Footer
+        ============================-->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="container">
+                        <div class="col-sm-9">
+                            <span style="text-transform: uppercase;color: #000;font-size: 12px;font-weight: 600;letter-spacing: 3.5px;">DESTINIQUE © 2018</span>
+                        </div>
+                        <div class="col-sm-3">
+                            <span style="text-transform: uppercase;font-size: 12px;font-weight: 600;letter-spacing: 2.5px;"><a href="#">A MOPRO WEBSITE</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- #footer -->
+
+        <!--SOCIAL ICON BAR-->
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a> 
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div><!--END SOCIAL ICON BAR-->
+
+        <div class="dark-scrollup">
+            <span class="fa fa-chevron-up"></span>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+        <script src="js/popper.min.js"></script>
+
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+        <script src="js/wow.js"></script>
+        <script src="js/superfish.min.js"></script>
+        <!-- Template Main Javascript File -->
+        <script src="js/slider.js"></script>
+
+
+        <!--Tweets -->
+        <script src="js/theme.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(function () {
+                $("#slider-range").slider({
+                    range: true,
+                    min: 0,
+                    max: 2500,
+                    values: [0, 2500],
+                    slide: function (event, ui) {
+                        $("#amount").val("$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ]);
+                    }
+                });
+                $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                        " - $" + $("#slider-range").slider("values", 1));
+            });
+            $(function () {
+                $("#bedRooms-slider-range").slider({
+                    range: true,
+                    min: 0,
+                    max: 32,
+                    values: [0, 32],
+                    slide: function (event, ui) {
+                        $("#bedRooms").val(ui.values[ 0 ] + " - " + ui.values[ 1 ]);
+                    }
+                });
+                $("#bedRooms").val($("#bedRooms-slider-range").slider("values", 0) + " - " + $("#bedRooms-slider-range").slider("values", 1));
+            });
+        </script>
+        <script>
+            $(function () {
+                $("#arrivalDatePicker").datepicker({
+                    changeMonth: true,
+                    changeYear: true
+                });
+            });
+            $(function () {
+                $("#departureDatePicker").datepicker({
+                    changeMonth: true,
+                    changeYear: true
+                });
+            });
+        </script>
+
+    </body>
+</html>
