@@ -10,7 +10,12 @@ body {
     font-family: "Brandon Grotesque";
     font-size: 16px;
 }
-
+#kenburns_slideshow {
+    position: fixed;
+}
+.tintWrap {
+    background: rgba(17, 17, 17, 0.41) none repeat scroll 0 0;
+}
 #myVideo {
     position: fixed;
     right: 0;
@@ -187,6 +192,8 @@ h1, h2, h3, h4, h5, h6 {
     //background: url(../img/hero-bg.jpg) top center;
     background-size: cover;
     position: relative;
+    background: rgba(5, 5, 5, 0.5);
+    margin: 0;
 }
 
 @media (min-width: 1024px) {
@@ -1038,6 +1045,7 @@ input {
     background-color: #f6f6f6;
     padding-top: 60px;
     padding-bottom: 90px;
+    position: relative;
 }
 #servicePart .lricon-bell-piller .fa {
     font-size: 40px;
@@ -1736,9 +1744,21 @@ i.red{
 .testimonialPart {
     background: #f6f6f6;
     padding-bottom: 60px;
+    position: relative;
 }
 /* End Testimonials Area css
 ============================================================================================ */
+
+
+/* Home Image Gallery Part
+==============================================================================================*/
+#homeImageGalleryPart {
+    background-color: #f6f6f6;
+    position: relative;
+}
+/* End Home Image Gallery Part
+==============================================================================================*/
+
 
 /* Search Property Area css
 ============================================================================================ */
@@ -1749,6 +1769,7 @@ i.red{
     line-height: 1.6;
     font-family: "Brandon Grotesque";
     padding: 50px 25px;
+    position: relative;
 }
 #searchPropertyHeader h1 {
     font-size: 36px;
@@ -2142,6 +2163,7 @@ h6.fp-el {
 #professionalService_personalApproach {
     padding-top: 60px;
     background-color: #fff;
+    position: relative;
 }
 #professionalService_personalApproach img {
     width: auto;
@@ -2292,6 +2314,10 @@ h6.fp-el {
 .successStoriesContent {
     min-height: 310px;
 }
+#successStoriesContentPart {
+    background-color: #fff;
+    position: relative;
+}
 .successStoriesText h3 {
     font-size: 45px;
 }
@@ -2300,8 +2326,9 @@ h6.fp-el {
     vertical-align: middle;
     margin-top: 31%;
 }
-.stayConnected {
+#stayConnectedPart {
     background-color: #fff;
+    position: relative;
 }
 /* End Success Stories
 ----------------------------------------------------------*/
@@ -2314,6 +2341,7 @@ h6.fp-el {
 #footer {
     padding: 15px 30px;
     background: rgb(33, 224, 189) none repeat scroll 0 0;
+    position: relative;
 }
 #footer a {
 
@@ -2326,6 +2354,7 @@ h6.fp-el {
     background: rgb(34, 34, 34) none repeat scroll 0 0;
     padding-top: 90px;
     padding-bottom: 90px;
+    position: relative;
 }
 .contactPage .contactFormHeader img {
     display: contents;
@@ -3646,7 +3675,7 @@ input[type="tel"] {
 }
 .travelBlogSliderPartText {
     margin-bottom: 30px;
-    margin-top: 190px;
+    margin-top: 220px;
 }
 .testimonialsTextPart .testimonialsTopicTitle {
     text-align: center;
