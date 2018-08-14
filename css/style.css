@@ -1,7 +1,5 @@
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/*CSS PART
+----------------------------------------------------------*/
 @font-face { font-family: "Brandon Grotesque"; src: url('Brandon_thin.otf');} 
 @font-face { font-family: "Brandon Grotesque"; src: url('Brandon_reg.otf');} 
 body {
@@ -30,18 +28,38 @@ body {
 a {
     color: #21e0bd;
 }
-
+//TEXT ALIGN CENTER
+.tAc {
+    text-align: center;
+}
+//MARGIN ZERO
+.mZero{
+    margin: 0;
+}
+//FONT-WEIGHT BOLD
+.fWb {
+    font-weight: bold;
+}
+//MARGINTOP 30PX
+.mT30 {
+    margin-top: 30px;
+}
+//PADDING ZERO
+.pZero {
+    padding: 0;
+}
+h1.tAc {
+    color: #fff;
+}
 a:hover, a:active, a:focus {
     color: #2dca98;
     outline: none;
     text-decoration: none;
 }
-
 p {
     padding: 0;
     margin: 0 0 30px 0;
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-family: "Brandon Grotesque";
 
@@ -65,8 +83,8 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 .lricon-bell-piller,.lricon-villa-hollow,.lricon-personalized{width:60px;height:50px;margin:0 auto 30px;background-size:100%;font-size:40px;color: #21e0bd;}
-
-/* Prelaoder */
+/* PRELAODER CSS PART
+----------------------------------------------------------*/
 #preloader {
     position: fixed;
     left: 0;
@@ -77,8 +95,12 @@ h1, h2, h3, h4, h5, h6 {
     overflow: visible;
     background: #fff url("../img/preloader.svg") no-repeat center center;
 }
+/* END PRELAODER CSS PART
+----------------------------------------------------------*/
 
-/* Back to top button */
+
+/* BACK TO TOP BUTTON CSS PART
+----------------------------------------------------------*/
 .back-to-top {
     position: fixed;
     display: none;
@@ -91,27 +113,24 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 15px;
     transition: background 0.5s;
 }
-
+/* END BACK TO TOP BUTTON CSS PART
+----------------------------------------------------------*/
 @media (max-width: 768px) {
     .back-to-top {
         bottom: 15px;
     }
 }
-
 .back-to-top:focus {
     background: rgba(0, 0, 0, 0.2);
     color: #fff;
     outline: none;
 }
-
 .back-to-top:hover {
     background: #21e0bd;
     color: #fff;
 }
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/* HEADER CSS PART
+----------------------------------------------------------*/
 #header {
     padding: 20px 0;
     height: 70px;
@@ -123,12 +142,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 997;
     background-color: #000; //background: rgba(0, 0, 0, 0) linear-gradient(hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0.738) 19%, hsla(0, 0%, 0%, 0.541) 34%, hsla(0, 0%, 0%, 0.382) 47%, hsla(0, 0%, 0%, 0.278) 56.5%, hsla(0, 0%, 0%, 0.194) 65%, hsla(0, 0%, 0%, 0.126) 73%, hsla(0, 0%, 0%, 0.075) 80.2%, hsla(0, 0%, 0%, 0.042) 86.1%, hsla(0, 0%, 0%, 0.021) 91%, hsla(0, 0%, 0%, 0.008) 95.2%, hsla(0, 0%, 0%, 0.002) 98.2%, hsla(0, 0%, 0%, 0) 100%) repeat scroll 0 0;
 }
-
 #header #logo {
     float: left;
     margin-top: -20px;
 }
-
 #header #logo h1 {
     font-size: 36px;
     margin: 0;
@@ -139,11 +156,9 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-
 #header #logo h1 a, #header #logo h1 a:hover {
     color: #fff;
 }
-
 #header #logo img {
     padding: 0;
     margin: 0;
@@ -161,7 +176,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #000;
     color: #21e0bd;
 }
-
 @media (max-width: 768px) {
     #header #logo h1 {
         font-size: 26px;
@@ -172,20 +186,20 @@ h1, h2, h3, h4, h5, h6 {
     #header {
         background-color: #000;
     }
-
 }
-
 #header.header-fixed {
     background: #000;
     padding: 20px 0;
     height: 70px;
     transition: all 0.5s;
+    box-shadow: 0 10px 50px -2px rgba(0, 0, 0, 0.14);
 }
+/* END HEADER CSS PART
+----------------------------------------------------------*/
 
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/* HERO CSS PART
+----------------------------------------------------------*/
 #hero {
     width: 100%;
     height: 110vh;
@@ -195,13 +209,11 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(5, 5, 5, 0.5);
     margin: 0;
 }
-
 @media (min-width: 1024px) {
     #hero {
         background-attachment: fixed;
     }
 }
-
 #hero:before {
     content: "";
     //background: rgba(0, 0, 0, 0.6);
@@ -211,7 +223,35 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
 }
-
+#hero .hero-container .sliderHeaderDestinique{
+    color: rgb(255, 255, 255); 
+    line-height: 65px; 
+    letter-spacing: 0px;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 100;
+    word-wrap:break-word;
+    white-space:initial;
+}
+.plusMinus {
+    padding-top: 6px;
+}
+.informationSearchButton {
+    height: 100%;padding-left: 0px;
+}
+.hero-container .btn-centered-cls.buttonColor {
+    margin: 30px auto;
+}
+.textSearchWrapper {
+    height: 100%;
+    padding-right: 0px;
+}
+.dreamPickStay {
+    font-size: 33px;
+    color: rgb(232, 216, 216);
+    font-weight: bold; 
+    margin: 10px 0 0;
+}
 #hero .hero-container {
     position: absolute;
     bottom: 0;
@@ -238,7 +278,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0px;
     box-shadow: 0 2px 6px 1px rgba(20, 20, 20, 0.48);
     transition: all 0.4s ease-in-out;
-
 }
 .btn-centered-cls:hover, .btn-centered-cls:focus {
     background: #000;
@@ -254,20 +293,17 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     color: #fff;
 }
-
 @media (max-width: 768px) {
     #hero h1 {
         font-size: 28px;
         line-height: 36px;
     }
 }
-
 #hero h2 {
     color: #eee;
     margin-bottom: 50px;
     font-size: 24px;
 }
-
 @media (max-width: 768px) {
     #hero h2 {
         font-size: 18px;
@@ -275,7 +311,6 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 30px;
     }
 }
-
 #hero .btn-get-started {
     font-family: "Brandon Grotesque";
     text-transform: uppercase;
@@ -290,22 +325,22 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid #fff;
     color: #fff;
 }
-
 #hero .btn-get-started:hover {
     background: #21e0bd;
     border: 2px solid #21e0bd;
 }
+/* END HERO CSS PART
+----------------------------------------------------------*/
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+
+/* NAVIGATION MENU CSS PART
+----------------------------------------------------------*/
 /* Nav Menu Essentials */
 .nav-menu, .nav-menu * {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 .nav-menu ul {
     position: absolute;
     display: none;
@@ -313,35 +348,28 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     z-index: 99;
 }
-
 .nav-menu li {
     position: relative;
     //white-space: nowrap;
 }
-
 .nav-menu > li {
     float: left;
 }
-
 .nav-menu li:hover > ul,
 .nav-menu li.sfHover > ul {
     display: block;
 }
-
 .nav-menu ul ul {
     top: 0;
     left: 100%;
 }
-
 .nav-menu ul li {
     min-width: 200px;
 }
-
 /* Nav Menu Arrows */
 .sf-arrows .sf-with-ul {
     padding-right: 30px;
 }
-
 .sf-arrows .sf-with-ul:after {
     content: "\f107";
     position: absolute;
@@ -350,11 +378,9 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
     font-weight: normal;
 }
-
 .sf-arrows ul .sf-with-ul:after {
     content: "\f105";
 }
-
 /* Nav Meu Container */
 #nav-menu-container {
     float: right;
@@ -362,13 +388,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
     margin-right: 30px;
 }
-
 @media (max-width: 768px) {
     #nav-menu-container {
         display: none;
     }
 }
-
 /* Nav Meu Styling */
 .nav-menu a {
     color: #fff;
@@ -382,11 +406,9 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     text-transform: uppercase;
 }
-
 .nav-menu > li {
     padding-left: 15px;
 }
-
 .nav-menu > li > a:before {
     background-color: #21e0bd;
     bottom: -21px;
@@ -407,20 +429,16 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-
 .nav-menu ul {
     margin: 18px 0 0 0;
     border: 0px solid #000;
 }
-
 .nav-menu ul li {
     background: #000;
 }
-
 .nav-menu ul li:first-child {
     border-top: 0;
 }
-
 .nav-menu ul li a {
     padding: 10px;
     color: #21e0bd;
@@ -430,17 +448,14 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: none;
     transition: all 0s ease-in-out 0s;
 }
-
 .nav-menu ul li a:hover {
     background: #21e0bd;
     color: #000;
     transition: all 0s ease-in-out 0s;
 }
-
 .nav-menu ul ul {
     margin: 0;
 }
-
 /* Mobile Nav Toggle */
 #mobile-nav-toggle {
     position: fixed;
@@ -455,17 +470,14 @@ h1, h2, h3, h4, h5, h6 {
     outline: none;
     cursor: pointer;
 }
-
 #mobile-nav-toggle i {
     color: #fff;
 }
-
 @media (max-width: 769px) {
     #mobile-nav-toggle {
         display: inline;
     }
 }
-
 /* Mobile Nav Styling */
 #mobile-nav {
     position: fixed;
@@ -479,13 +491,11 @@ h1, h2, h3, h4, h5, h6 {
     overflow-y: auto;
     transition: 0.4s;
 }
-
 #mobile-nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
 #mobile-nav ul li {
     position: relative;
 }
@@ -505,32 +515,29 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     outline: none;
 }
-
 #mobile-nav ul li a:hover {
     color: #fff;
 }
-
 #mobile-nav ul li li {
     padding-left: 30px;
 }
-
 #mobile-nav ul .menu-has-children i {
-    position: absolute;
-    right: 0;
-    z-index: 99;
-    padding: 15px;
-    cursor: pointer;
     color: #fff;
+    cursor: pointer;
+    float: left;
+    margin-left: 30px;
+    padding: 18px 15px 15px;
+    position: absolute;
+    text-align: left;
+    width: 50%;
+    z-index: 99;
 }
-
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
     color: #21e0bd;
 }
-
 #mobile-nav ul .menu-item-active {
     color: #21e0bd;
 }
-
 #mobile-body-overly {
     width: 100%;
     height: 100%;
@@ -541,26 +548,22 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(0, 0, 0, 0.0);
     display: none;
 }
-
 /* Mobile Nav body classes */
 body.mobile-nav-active {
     overflow: hidden;
 }
-
 body.mobile-nav-active #mobile-nav {
     right: 0;
 }
-
 body.mobile-nav-active #mobile-nav-toggle {
     color: #fff;
 }
+/* END NAVIGATION MENU CSS PART
+----------------------------------------------------------*/
 
 
-
-
-
-/* Slider Search Button
---------------------------------------------------------------*/
+/* SLIDER SEARCH BUTTON CSS PART
+----------------------------------------------------------*/
 .homeSearchBorder {
     background: rgba(0, 0, 0, 0.667) none repeat scroll 0 0;
     border-radius: 10px;
@@ -602,7 +605,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     z-index: 1;
     padding-top: 12px;
 }
-
 [class^="lricon-"], [class*=" faIcon"] {
     color: #21e0bd;
     //font-family: "brandon-grotesque";
@@ -700,7 +702,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     top: 0;
     width: 1px;
 }
-
 input[type="email"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
     -moz-appearance: none;
 }
@@ -912,19 +913,12 @@ input {
     text-transform: uppercase;
     white-space: nowrap;
 }
+/* END SLIDER SEARCH BUTTON CSS PART
+----------------------------------------------------------*/
 
 
-
-/* End Slider Search Button
---------------------------------------------------------------*/
-
-
-
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
-/* Sections Header
---------------------------------*/
+/* SECTIONS HEADER CSS PART
+----------------------------------------------------------*/
 .section-header .section-title {
     font-size: 32px;
     color: #111;
@@ -933,56 +927,50 @@ input {
     font-weight: 700;
     margin-bottom: 5px;
 }
-
 .section-header .section-description {
     text-align: center;
     padding-bottom: 40px;
     color: #999;
 }
+/* END SECTIONS HEADER CSS PART
+----------------------------------------------------------*/
 
-/* About Us Section
---------------------------------*/
+
+/* ABOUT US SECTION CSS PART
+----------------------------------------------------------*/
 #about {
     background: #fff;
     padding: 80px 0;
 }
-
 #about .about-container .background {
     min-height: 300px;
     background: url(../img/about-img.jpg) center top no-repeat;
     margin-bottom: 10px;
 }
-
 #about .about-container .content {
     background: #fff;
 }
-
 #about .about-container .title {
     color: #333;
     font-weight: 700;
     font-size: 32px;
 }
-
 @media (max-width: 768px) {
     #about .about-container .title {
         padding-top: 15px;
     }
 }
-
 #about .about-container p {
     line-height: 26px;
 }
-
 #about .about-container p:last-child {
     margin-bottom: 0;
 }
-
 #about .about-container .icon-box {
     background: #fff;
     background-size: cover;
     padding: 0 0 30px 0;
 }
-
 #about .about-container .icon-box .icon {
     float: left;
     background: #fff;
@@ -996,12 +984,10 @@ input {
     border-radius: 50%;
     border: 2px solid #21e0bd;
 }
-
 #about .about-container .icon-box .icon i {
     color: #21e0bd;
     font-size: 24px;
 }
-
 #about .about-container .icon-box .title {
     margin-left: 80px;
     font-weight: 500;
@@ -1009,38 +995,41 @@ input {
     font-size: 18px;
     text-transform: uppercase;
 }
-
 #about .about-container .icon-box .title a {
     color: #111;
 }
-
 #about .about-container .icon-box .description {
     margin-left: 80px;
     line-height: 24px;
     font-size: 14px;
 }
+/* END ABOUT US SECTION CSS PART
+----------------------------------------------------------*/
 
-/* Facts Section
---------------------------------*/
+
+/* FACTS SECTION CSS PART
+----------------------------------------------------------*/
 #facts {
     background: #f7f7f7;
     padding: 80px 0 60px 0;
 }
-
 #facts .counters span {
     font-size: 48px;
     display: block;
     color: #21e0bd;
 }
-
 #facts .counters p {
     padding: 0;
     margin: 0 0 20px 0;
     font-family: "Brandon Grotesque";
     font-size: 14px;
 }
-/* Services Section contentItem
---------------------------------*/
+/* END FACTS SECTION CSS PART
+----------------------------------------------------------*/
+
+
+/* SERVICES SECTION CONTENT ITEM CSS PART
+----------------------------------------------------------*/
 .servicePart {
     background-color: #f6f6f6;
     padding-top: 60px;
@@ -1050,14 +1039,19 @@ input {
 #servicePart .lricon-bell-piller .fa {
     font-size: 40px;
 }
-/* Content Item section
---------------------------------*/
+/* END SERVICES SECTION CONTENT ITEM CSS PART
+----------------------------------------------------------*/
 
+
+/* CONTENT ITEM SECTION CSS PART
+----------------------------------------------------------*/
 #qbootstrap-intro {
     position: relative;
     clear: both;
 }
-
+.contentItemHover {
+    width: 100%;
+}
 .intro {
     display: -webkit-box;
     display: -moz-box;
@@ -1070,7 +1064,6 @@ input {
     width: 100%;
     //float: left;
 }
-
 .intro-grid {
     border-bottom: 2px solid #fff;
     border-top:  2px solid #fff;
@@ -1123,9 +1116,6 @@ input {
 .red
 .yellow
 */
-
-
-
 figure.snip1100 {
     font-family: "Brandon Grotesque";
     color: #fff;
@@ -1140,20 +1130,17 @@ figure.snip1100 {
     background: #000000;
     text-align: left;
 }
-
 figure.snip1100 * {
     -webkit-box-sizing: padding-box;
     box-sizing: padding-box;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
-
 figure.snip1100 img {
     height: 400px;
     opacity: 0.65;
     width: 100%;
 }
-
 figure.snip1100 figcaption {
     top: 30px;
     left: 30px;
@@ -1162,13 +1149,11 @@ figure.snip1100 figcaption {
     position: absolute;
     padding: 20px;
 }
-
 figure.snip1100 figcaption h4,
 figure.snip1100 figcaption p {
     margin: 0 0 8px;
     opacity: 1;
 }
-
 figure.snip1100 figcaption h4 {
     position: relative;
     font-weight: 400;
@@ -1176,16 +1161,13 @@ figure.snip1100 figcaption h4 {
     //-webkit-transform: translateY(50%);
     //transform: translateY(50%);
 }
-
 figure.snip1100 figcaption h4 span {
     font-weight: 800;
 }
-
 figure.snip1100 figcaption p {
     font-size: 0.9em;
     font-weight: 500;
 }
-
 figure.snip1100 figcaption:before,
 figure.snip1100 figcaption:after,
 figure.snip1100 figcaption div:before,
@@ -1197,31 +1179,26 @@ figure.snip1100 figcaption div:after {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-
 figure.snip1100 figcaption:before,
 figure.snip1100 figcaption:after {
     width: 0;
     height: 2px;
 }
-
 figure.snip1100 figcaption div:before,
 figure.snip1100 figcaption div:after {
     width: 2px;
     height: 0;
 }
-
 figure.snip1100 figcaption:before,
 figure.snip1100 figcaption div:before {
     left: 0;
     top: 0;
 }
-
 figure.snip1100 figcaption:after,
 figure.snip1100 figcaption div:after {
     bottom: 0;
     right: 0;
 }
-
 figure.snip1100 a {
     left: 0;
     right: 0;
@@ -1230,19 +1207,15 @@ figure.snip1100 a {
     //position: absolute;
     z-index: 1;
 }
-
 figure.snip1100.blue {
     background: #0a212f;
 }
-
 figure.snip1100.red {
     background: #000;
 }
-
 figure.snip1100.yellow {
     background: #583804;
 }
-
 figure.snip1100:hover img,
 figure.snip1100.hover img {
     opacity: 1;
@@ -1251,7 +1224,6 @@ figure.snip1100.hover img {
     //-webkit-transform: scale(1.1);
     //transform: scale(1.1);
 }
-
 figure.snip1100:hover figcaption h4,
 figure.snip1100.hover figcaption h4,
 figure.snip1100:hover figcaption p,
@@ -1262,20 +1234,17 @@ figure.snip1100.hover figcaption p {
     //-webkit-transform: translateY(0);
     //transform: translateY(0);
 }
-
 figure.snip1100:hover figcaption p,
 figure.snip1100.hover figcaption p {
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
 }
-
 figure.snip1100:hover figcaption:before,
 figure.snip1100.hover figcaption:before,
 figure.snip1100:hover figcaption:after,
 figure.snip1100.hover figcaption:after {
     width: 100%;
 }
-
 figure.snip1100:hover figcaption div:before,
 figure.snip1100.hover figcaption div:before,
 figure.snip1100:hover figcaption div:after,
@@ -1332,12 +1301,12 @@ figure.snip1100 a:hover figcaption .icons i {
 .contentItemIcon{
 
 }
-/* End Content Item section
---------------------------------*/
-/* Gallery
----------------------------------*/
+/* END CONTENT ITEM SECTION CSS PART
+----------------------------------------------------------*/
 
 
+/* GALLERY CSS PART
+----------------------------------------------------------*/
 .gal-container{
     padding: 12px;
 }
@@ -1364,10 +1333,10 @@ figure.snip1100 a:hover figcaption .icons i {
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.75);
     position: absolute;
-    right: 3px;
-    left: 3px;
-    top: 3px;
-    bottom: 3px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
     text-align: center;
     line-height: 350px;
     font-size: 30px;
@@ -1440,7 +1409,6 @@ figure.snip1100 a:hover figcaption .icons i {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-
 .gal-container .modal.fade.in .modal-dialog {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -1469,11 +1437,12 @@ i.red{
     padding-top :30px;
     padding-bottom:75px;
 }
+/* END GALLERY CSS PART
+----------------------------------------------------------*/
 
-/*End gallrey
-----------------------------------*/
-/* Content Slider Area Css
-============================================================================================*/
+
+/* TESTIMONIALS AREA CSS PART
+----------------------------------------------------------*/
 #testimonial4 .fa{ 
     color: #888;
     font-size: 70px;
@@ -1542,7 +1511,6 @@ i.red{
     -webkit-border-radius: 0;
     border-radius: 0;
 }
-
 .testimonial4_control_button .carousel-control{
     top: 175px;
     opacity: 1;
@@ -1570,8 +1538,6 @@ i.red{
     right: 7%;
     left: auto;
 }
-
-
 .testimonial4_header{
     top: 0;
     left: 0;
@@ -1590,7 +1556,6 @@ i.red{
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-
 .testimonial4_slide{
     top: 0;
     left: 0;
@@ -1614,20 +1579,16 @@ i.red{
     text-align: center;
     position: relative;
 }
-
 .testimonial4_slide p {
     color: #ffffff;
     font-size: 16px;
     margin: 40px 0 20px 0;
 }
-
 .testimonial4_slide h4 {
     color: #ffffff;
     font-size: 24px;
     font-weight: bold;
 }
-
-
 @media only screen and (max-width: 480px){
     .testimonial4_control_button .carousel-control{
         display: none;
@@ -1643,7 +1604,6 @@ i.red{
         padding: 5px;
     }
 }
-
 @media (min-width: 481px) and (max-width: 767px){
     .testimonial4_control_button .carousel-control.left{
         left: 2%;
@@ -1659,7 +1619,6 @@ i.red{
         padding: 5px;
     }
 }
-
 @media (min-width: 768px) and (max-width: 991px){
     .testimonial4_control_button .carousel-control.left{
         left: 5%;
@@ -1668,7 +1627,6 @@ i.red{
         right: 5%;
     }
 }
-
 @-webkit-keyframes psBoxShadowEffect_2{
     0% {
         opacity: 0.3;
@@ -1746,39 +1704,80 @@ i.red{
     padding-bottom: 60px;
     position: relative;
 }
-/* End Testimonials Area css
-============================================================================================ */
+/* END TESTIMONIALS AREA CSS PART
+----------------------------------------------------------*/
 
 
-/* Home Image Gallery Part
-==============================================================================================*/
+/* HOME IMAGE GALLERY CSS PART
+----------------------------------------------------------*/
 #homeImageGalleryPart {
     background-color: #f6f6f6;
     position: relative;
 }
-/* End Home Image Gallery Part
-==============================================================================================*/
+#homeImageGalleryPart .row {
+    margin: 0;
+}
+.homeImageGalleryHeaderPart {
+    color: #999;
+    text-align: center;
+}
+/* END HOME IMAGE GALLERY CSS PART
+----------------------------------------------------------*/
 
 
-/* Search Property Area css
-============================================================================================ */
+/* SEARCH PROPERTY AREA CSS PART
+----------------------------------------------------------*/
+.propertySortingRow {
+    background-color: #dedede;
+    margin: 10px 0 0;
+    height: 50px;
+}
+.propertySortingFormGroup {
+    float: right;
+    margin-top: 4px;
+    font-size: 16px;
+}
+.propertySortingText {
+    margin-right: 15px;
+}
+.listingLodging {
+    margin-right: 15px;
+}
 #searchProperty {
     background: #fff;//#edf0f2;
     color: #545454;
     font-weight: 400;
     line-height: 1.6;
     font-family: "Brandon Grotesque";
-    padding: 50px 25px;
+    padding: 0px 25px 50px 25px;
     position: relative;
 }
 #searchPropertyHeader h1 {
     font-size: 36px;
 }
-
+.alternateRegionImg {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+#searchPropertyHeader h1.searchPropertyHeaderText {
+    font-size: 28px;
+    padding-top: 30px;
+}
+#searchPropertyHeader .row {
+    margin: 0;
+}
+#searchPropertyHeader {
+    margin-bottom: 30px;
+}
 #searchProperty h1, #searchProperty h2, #searchProperty h3, #searchProperty h4, #searchProperty h5, #searchProperty h6 {
     color: #545454;
     font-family: "Brandon Grotesque";
 
+}
+.searchPropertyHeader {
+    margin-top: 60px;
 }
 .searchDropdownnSelect {
     float: left;
@@ -1800,14 +1799,32 @@ i.red{
 .searchDropdownnSelectPart {
     font-size: 16px;
 }
+.searchDropdownnSelectPart .row .col-xs-7, .searchDropdownnSelectPart .row .col-xs-5 {
+    padding: 0;
+}
 .houseFavourite:hover {
     transform: scale(1.1739, 1.1739);
     transition: all 0.2s ease-in-out 0s;
+}
+.favouriteGreyIcon {
+    width: 50px; 
+    height: 50px; 
+    float: left; 
+    margin-right: 15px;
 }
 .searchDropdownnSelect .btn-primary {
     background-color: #fff;
     border-color: #e1e1e1;
     color: #545454;
+}
+.searchDropdownnSelect .btn-group .dropdown-menu li a {
+    padding: 8px 20px;
+}
+.promoIconNewAddition {
+    width: 25px;
+    height: 25px;
+    float: left; 
+    margin-right: 15px;
 }
 .searchDropdownnSelect .btn {
     border-radius: 0;
@@ -1838,10 +1855,8 @@ i.red{
     position: relative;
 }
 .propertyDemo .propertyImageContainer img {
-    height: 100%;
     opacity: 1;
     transition: opacity 0.5s ease 0s;
-    width: 100%;
     display: block;
     vertical-align: middle;
 }
@@ -1859,8 +1874,6 @@ i.red{
     cursor: pointer;
     text-decoration: none;
 }
-
-
 .propertyImageContainerLink .housePromo::after {
 
 }
@@ -1883,8 +1896,6 @@ i.red{
     top: 36px;
     white-space: nowrap;
 }
-
-
 .propertyImageContainerLink .propertyName {
     bottom: 36px;
     color: #fff;
@@ -1938,8 +1949,6 @@ i.red{
     background-size: 100% 100%;
     cursor: pointer;
 }
-
-
 .propertyImageContainer .houseFavourite { 
 
     backface-visibility: hidden;
@@ -1948,9 +1957,6 @@ i.red{
     background-repeat: no-repeat no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
-
-
-
     background: #000 none repeat scroll 0 0;
     border-left: 15px solid #000;
     border-radius: 5px;
@@ -1995,7 +2001,6 @@ i.red{
 .propertyDetailContainer .bedroomIcon, #galleryPart .bathroomIcon {
     padding-right: 15px;
 }
-
 .propertyDetailContainer .bathroomReviewContainer {
     display: flex;
     flex-flow: row wrap;
@@ -2006,7 +2011,6 @@ i.red{
 .bathroomReviewContainer .bathroomIcon {
     padding-right: 15px;
 }
-
 .bathroomReviewContainer .bathroomIcon {
     color: #9b9b9b;
     display: inline-block;
@@ -2034,10 +2038,12 @@ i.red{
     line-height: 34px;
     vertical-align: top;
 }
+/* END SEARCH PROPERTY AREA CSS PART
+----------------------------------------------------------*/
 
-/* A Little About Us
------------------------------------*/
 
+/* A LITTLE ABOUT US CSS PART
+----------------------------------------------------------*/
 .flexContainer.aLittleAboutUsC {
     background: rgb(255, 255, 255) none repeat scroll 0 0;
     padding: 50px 0 100px;
@@ -2092,7 +2098,6 @@ h1.fp-el {
     margin-bottom: 30px;
     width: 100%;
 }
-
 .mod-photo .img-pin {
     position: relative;
 }
@@ -2127,7 +2132,9 @@ h1.fp-el {
 .mod_hero, .mod-divider, .mod-header {
     margin-bottom: 0;
 }
-
+.aLittleAboutImg {
+    opacity: 1;
+}
 #aLittleAboutUsID .mainContainer .mod-header h3 {
     font-size: 45px;
 }
@@ -2143,13 +2150,12 @@ h1.fp-el {
     font-weight: bold;
     color: #000;
 }
-/* End A Little About Us
------------------------------------*/
+/* END A LITTLE ABOUT US CSS PART
+----------------------------------------------------------*/
 
 
-
-/* Professional Service & Personal Approach
------------------------------------------------------*/
+/* PROFESSIONAL SERVICE & PERSONAL APPROACH CSS PART
+----------------------------------------------------------*/
 .align-center {
     text-align: center;
 }
@@ -2165,6 +2171,12 @@ h6.fp-el {
     background-color: #fff;
     position: relative;
 }
+.professionalServicePersonalApproach {
+    width: 80%;
+}
+.psAPImg {
+    opacity: 1;
+}
 #professionalService_personalApproach img {
     width: auto;
 }
@@ -2174,13 +2186,12 @@ h6.fp-el {
 #professionalService_personalApproach .fpEl {
     font-size: 17px;
 }
+/* END PROFESSIONAL SERVICE & PERSONAL APPROACH CSS PART
+----------------------------------------------------------*/
 
-/* End Professional Service & Personal Approach
------------------------------------------------------*/
 
-
-/*Success Stories
---------------------------------------- -------------------*/
+/* SUCCESS STORIES CSS PART
+----------------------------------------------------------*/
 /* carousel */
 #quote-carousel 
 {
@@ -2252,9 +2263,7 @@ h6.fp-el {
 .item blockquote img {
     margin-bottom: 10px;
 }
-/**
-  MEDIA QUERIES
-*/
+/**MEDIA QUERIES*/
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -2263,14 +2272,10 @@ h6.fp-el {
         margin-bottom: 0;
         padding: 0 40px 30px 40px;
     }
-
 }
-
 /* Small devices (tablets, up to 768px) */
 @media (max-width: 768px) { 
-
     /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
-
     #quote-carousel .carousel-indicators {
         bottom: -20px !important;  
     }
@@ -2318,6 +2323,9 @@ h6.fp-el {
     background-color: #fff;
     position: relative;
 }
+#successStoriesContentPart .row {
+    margin: 0;
+}
 .successStoriesText h3 {
     font-size: 45px;
 }
@@ -2330,11 +2338,31 @@ h6.fp-el {
     background-color: #fff;
     position: relative;
 }
-/* End Success Stories
+#stayConnectedPart .row {
+    margin: 0;
+}
+#stayConnectedPart .successStoriesText {
+    margin-top: 100px;
+}
+/* END SUCCESS STORIES CSS PART
 ----------------------------------------------------------*/
 
-/* Contact page
------------------------------------*/
+
+/* CONTACT PAGE CSS PART
+----------------------------------------------------------*/
+.mainContactFormHeader h3 {
+    color: #333;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.mainContactFormHeader p {
+    text-align: center;
+    font-size: 23px;
+}
+#mainContactForm {
+    background-color: #fff;
+}
 .contactPageVDM {
     display: none;
 }
@@ -2343,8 +2371,20 @@ h6.fp-el {
     background: rgb(33, 224, 189) none repeat scroll 0 0;
     position: relative;
 }
+#footer .footerText {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+#footer .footerDestiniqueText {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+}
 #footer a {
-
     color: #fff;
 }
 #footer a:hover {
@@ -2448,10 +2488,6 @@ textarea.form-control {
 .contactNeedHelp {
     color: #21e0bd;
 }
-/* End Contact page
------------------------------------*/
-/* Start main contact page
------------------------------------*/
 #contactSliderPart {
     background-image: url('../img/6.png');        
     background-repeat: no-repeat;        
@@ -2463,14 +2499,12 @@ textarea.form-control {
     background-position: center center;
     background-size: cover;   
 }
+/* END CONTACT PAGE CSS PART
+----------------------------------------------------------*/
 
 
-
-/*---------------------------------------------*\
-|
-|                  Main Contact Page                                  
-|
-\*---------------------------------------------*/
+/* MAIN CONTACT PAGE CSS PART
+----------------------------------------------------------*/
 textarea {
     border: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 16px;
@@ -2505,14 +2539,12 @@ textarea:focus {
 .checkbox {
     padding-left: 20px;
 }
-
 .checkbox label {
     display: inline-block;
     vertical-align: middle;
     position: relative;
     padding-left: 5px;
 }
-
 .checkbox label::before {
     background-color: #fff;
     border: 1px solid #cccccc;
@@ -2526,7 +2558,6 @@ textarea:focus {
     transition: border 0.15s ease-in-out 0s, color 0.15s ease-in-out 0s;
     width: 22px;
 }
-
 .checkbox label::after {
     color: #555555;
     display: inline-block;
@@ -2550,7 +2581,6 @@ textarea:focus {
     opacity: 0;
     z-index: 1;
 }
-
 .checkbox input[type="checkbox"]:focus + label::before {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -2570,51 +2600,40 @@ textarea:focus {
     background-color: #eeeeee;
     cursor: not-allowed;
 }
-
 .checkbox.checkbox-circle label::before {
     border-radius: 50%;
 }
-
 .checkbox.checkbox-inline {
     margin-top: 0;
 }
-
 .checkbox-primary input[type="checkbox"]:checked + label::before {
     background-color: #428bca;
     border-color: #428bca;
 }
-
 .checkbox-primary input[type="checkbox"]:checked + label::after {
     color: #fff;
 }
-
 .checkbox-danger input[type="checkbox"]:checked + label::before {
     background-color: #d9534f;
     border-color: #d9534f;
 }
-
 .checkbox-danger input[type="checkbox"]:checked + label::after {
     color: #fff;
 }
-
 .checkbox-info input[type="checkbox"]:checked + label::before {
     background-color: #5bc0de;
     border-color: #5bc0de;
 }
-
 .checkbox-info input[type="checkbox"]:checked + label::after {
     color: #fff;
 }
-
 .checkbox-warning input[type="checkbox"]:checked + label::before {
     background-color: #f0ad4e;
     border-color: #f0ad4e;
 }
-
 .checkbox-warning input[type="checkbox"]:checked + label::after {
     color: #fff;
 }
-
 .checkbox-success input[type="checkbox"]:checked + label::before {
     background-color: #fff;
     border-color: #fff;
@@ -2654,7 +2673,6 @@ textarea:focus {
     line-height: 1;
     margin: 0;
 }
-
 .box-body {
     border-radius: 0 0 3px 3px;
     padding: 10px;
@@ -2743,7 +2761,6 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     margin-left: 0px;
     margin-right: 0px;
 }
-
 .glyphicon-plus::before {
     content: "+";
 }
@@ -2762,12 +2779,12 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     border: 1px solid #bdbdbd;
     padding: 10px;
 } 
-/* End main contact page
------------------------------------*/
+/* END MAIN CONTACT PAGE CSS PART
+----------------------------------------------------------*/
 
 
-/* Properties Part
-------------------------------------*/
+/* PROPERTIES CSS PART
+----------------------------------------------------------*/
 .propertiesPart {
     margin-top: 100px;
 }
@@ -2926,7 +2943,6 @@ table {
     text-align: center;
     width: 25%;
 }
-
 .ui-tabs {
     padding: 0;
 }
@@ -2951,10 +2967,12 @@ table {
 #searchform > div.listing-amenities {
     border: 1px solid #aaaaaa;
     border-radius: 4px;
-    max-height: 300px;
-    overflow-x: hidden;
-    overflow-y: scroll;
     padding: 10px;
+}
+.listing-amenities {
+    max-height:200px;
+    overflow: hidden;
+    overflow-y: scroll
 }
 .search input, .searchform input {
     display: inline;
@@ -3116,7 +3134,6 @@ table {
     padding: 15px 0;
     text-decoration: none;
 }
-
 .sortingResultSinglePart {
     background: #fff none repeat scroll 0 0;
     border: 1px solid #e2e2e2;
@@ -3126,12 +3143,12 @@ table {
     padding: 1px;
     display: block;
 }
-/* End Properties Part
-------------------------------------*/
+/* END PROPERTIES CSS PART
+----------------------------------------------------------*/
 
 
-/* Vacation Rentals Slider Part
--------------------------------------*/
+/* VACATION RENTALS CSS PART
+----------------------------------------------------------*/
 .vacationRentalsFeatured {
     margin-top: 60px;
 }
@@ -3217,6 +3234,12 @@ table {
 .float-left {
     float: left;
 }
+#searchSubMenu.js-searchWrapper.searchSubMenu {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #f3f3f3;
+    box-shadow: 0 -7px 20px 0 black;
+}
 .searchSubMenu .item {
     background: rgba(255, 255, 255, 0.95) none repeat scroll 0 0;
     border: 1px solid transparent;
@@ -3230,7 +3253,6 @@ table {
     text-align: center;
     transition: all 0.2s ease-in-out 0s;
 }
-
 .searchSubMenu .item, .searchSubMenu .item {
     border: 1px solid #ccc;
 }
@@ -3290,22 +3312,23 @@ table {
     font-size: 1.8rem;
     line-height: 3rem;
 }
-/* End Vacation Rentals Slider Part
--------------------------------------*/
+/* END VACATION RENTALS CSS PART
+----------------------------------------------------------*/
 
-/*  Vacation Rentals Display Mode
---------------------------------------*/
+
+/* VACATION RENTALS DISPLAY MODE CSS PART
+----------------------------------------------------------*/
 #vacationRentalsDisplayMode {
     margin-top: 150px;
+    margin-left: 0;
+    margin-right: 0;
 }
+/* END VACATION RENTALS DISPLAY MODE CSS PART
+----------------------------------------------------------*/
 
 
-/*  End Vacation Rentals Display Mode
---------------------------------------*/
-
-/* Vacation Rentals Slider Part
--------------------------------------*/
-
+/* VACATION RENTALS SLIDER CSS PART
+----------------------------------------------------------*/
 #vacationRentalsThreeColmnSliderPart {
     background-image: url('../img/3.png');        
     background-repeat: no-repeat;        
@@ -3317,15 +3340,12 @@ table {
     background-position: center center;
     background-size: cover;   
 }
-
-/* Vacation Rentals Slider Part
--------------------------------------*/
-/* End Search Property Area css
+/* END VACATION RENTALS SLIDER CSS PART
+----------------------------------------------------------*/
 
 
-
-/* Map
-------------------------------------------*/
+/* MAP CSS PART
+----------------------------------------------------------*/
 #mapSliderPart {
     background-image: url("../img/map_Cover.jpeg");
     background-position: center center;
@@ -3361,7 +3381,6 @@ table {
     vertical-align: middle;
     width: 21px;
 }
-
 .icon-multi-point::before {
     background: rgba(0, 0, 0, 0) url("../img/map1.png");
     content: " ";
@@ -3372,12 +3391,16 @@ table {
     width: 21px;
     background-repeat: no-repeat;        
 }
-
 .icon-multi-point::before {
     background-size: 100% auto;
     width: 24px;
 }
-
+#mainLocationLocatorMap {
+    background-color: #fff;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .mod-location-locator-map h6.fp-el {
     font-size: 20px;
     font-weight: 500;
@@ -3450,7 +3473,7 @@ input[type="tel"] {
 }
 #mapLocation {
     color: #000;
-    margin-top: -76px;
+    margin-top: -36px;
 }
 #mapLocation .carousel-control {
     width: 70px;
@@ -3499,11 +3522,12 @@ input[type="tel"] {
     position: relative;
     width: 80%;
 }
+/* END MAP CSS PART
+----------------------------------------------------------*/
 
-/* End Map
-------------------------------------------*/
-/* Gallery Part
-------------------------------------------*/
+
+/* GALLERY CSS PART
+----------------------------------------------------------*/
 #galleryPart {
     margin: 0;
     box-shadow: none;
@@ -3537,13 +3561,12 @@ input[type="tel"] {
     border-color: #21e0bd;
     color: #fff;
 }
+/* END GALLERY CSS PART
+----------------------------------------------------------*/
 
 
-
-
-/* SOCIAL ICON BAR
----------------------------------------------------*/
-
+/* SOCIAL ICON BAR CSS PART
+----------------------------------------------------------*/
 .icon-bar {
     right: 0;
     position: fixed;
@@ -3553,7 +3576,6 @@ input[type="tel"] {
     transform: translateY(-50%);
     z-index: 2;
 }
-
 .icon-bar a {
     display: block;
     text-align: center;
@@ -3562,37 +3584,31 @@ input[type="tel"] {
     color: white;
     font-size: 20px;
 }
-
 .icon-bar a:hover {
     background-color: #000;
 }
-
 .facebook {
     background: #3B5998;
     color: white;
 }
-
 .twitter {
     background: #55ACEE;
     color: white;
 }
-
 .pinterest {
     background: #d22735;
     color: white;
 }
-
 .instagram {
     background: #125688;
     color: white;
 }
+/* END SOCIAL ICON BAR CSS PART
+----------------------------------------------------------*/
 
 
-/* SOCIAL ICON BAR
----------------------------------------------------*/
-
-
-
+/* SOCIAL ICON BAR CSS PART
+----------------------------------------------------------*/
 .dark-scrollup {
     background-color: #21e0bd;
     color: #fff;
@@ -3611,7 +3627,6 @@ input[type="tel"] {
     transition: all 0.4s ease-out;
     //opacity: .6;
 }
-
 .dark-scrollup:hover {
     box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     -webkit-transition: all 0.4s ease-out;
@@ -3620,14 +3635,12 @@ input[type="tel"] {
     color: #21e0bd;
 
 }
-
-/* End Gallery Part
-------------------------------------------*/
-
+/* END SOCIAL ICON BAR CSS PART
+----------------------------------------------------------*/
 
 
-/* Travel Blog Part
--------------------------------------------*/
+/* TRAVEL BLOG CSS PART
+----------------------------------------------------------*/
 .travelBlogSliderPart {
     overflow: hidden;
     padding: 40px 0 20px;
@@ -3706,12 +3719,12 @@ input[type="tel"] {
 .travelBlogRightImgPart {
     //float: right;
 }
-/* END Travel Blog Part
--------------------------------------------*/
+/* END TRAVEL BLOG CSS PART
+----------------------------------------------------------*/
 
 
-/* Testimonials Part
--------------------------------------------*/
+/* TESTIMONIALS CSS PART
+----------------------------------------------------------*/
 .testimonialsContent {
     background-color: rgb(250, 250, 250);
 }
@@ -3761,7 +3774,6 @@ input[type="tel"] {
 #bedRooms-slider-range, #slider-range {
     margin: auto 10px;
 }
-
 .background_video{
     width: 100%;
     height: 963px;
@@ -3773,21 +3785,17 @@ input[type="tel"] {
     background: #ccc;
     position: fixed;
 }
-
 video.bgVideo, source{
     min-width: 100%;
     width: 100%;
     min-height: 100%;
     overflow: hidden;
 }
+/* END TESTIMONIALS CSS PART
+----------------------------------------------------------*/
 
-
-/* End Testimonials Part
--------------------------------------------*/
-
-
-/*============================================================================================ */
-/*-----------------------------Device sizes css-----------------------------*/
+/* DEVICES CSS PART
+----------------------------------------------------------*/
 @media (max-width: 1024px) {
 
 }
@@ -3834,10 +3842,6 @@ video.bgVideo, source{
     .searchWrapper .guests {
         width: 25%;
     }
-
-
-
-
     /*MAP*/
     #mapSliderPart .mapSliderPart {
         margin-top: 40%;
@@ -3866,9 +3870,11 @@ video.bgVideo, source{
     .contactPageVDM {
         display: block;
     }
-
 }
 @media (max-width: 720px) {
+    .mMT30 {
+        margin-top: 30px;
+    }
     .travelBlogRightImg {
         width: 100%;
         margin-left: 0;
@@ -3948,7 +3954,7 @@ video.bgVideo, source{
         width: auto;
     }
     #mapLocation {
-        margin-top: -70px;
+        //margin-top: -70px;
     }
     #mapLocation .carousel-control {
         width: 30px;
@@ -3959,10 +3965,20 @@ video.bgVideo, source{
     .wvr_slider_main_wrapper .overlay_slider_wrapper .left-arrow, .wvr_slider_main_wrapper .overlay_slider_wrapper .right-arrow {
         top: calc(63% - 15px);
     }
-
+    .contactSliderPartTextContent span {
+        font-size: 52px;
+    }
+    .contactSliderPartTextContent {
+        margin-top: 38%;
+    }
 }
 @media (max-width: 480px) {
-
+    .contactSliderPartTextContent span {
+        font-size: 36px;
+    }
+    .contactSliderPartTextContent {
+        margin-top: 60%;
+    }
 }
 @media (max-width: 414px) {
 
@@ -3976,3 +3992,5 @@ video.bgVideo, source{
 @media (max-width: 321px) {
 
 }
+/* END DEVICES CSS PART
+----------------------------------------------------------*/

@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
-    // Header fixed and Back to top button
+    /* HEADER FIXED AND BACK TO TOP BUTTON JS PART
+    ----------------------------------------------------------*/
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
@@ -22,14 +23,17 @@ jQuery(document).ready(function ($) {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-    // Initiate the wowjs
+    /* INITIATE THE WOWJS PART
+    ----------------------------------------------------------*/
     new WOW().init();
-    // Initiate superfish on nav menu
+    /* INITIATE SUPERFISH ON NAV MENU PART
+    ----------------------------------------------------------*/
     $('.nav-menu').superfish({
         animation: {opacity: 'show'},
         speed: 400
     });
-    // Mobile Navigation
+    /* MOBILE NAVIGATION JS PART
+    ----------------------------------------------------------*/
     if ($('#nav-menu-container').length) {
         var $mobile_nav = $('#nav-menu-container').clone().prop({id: 'mobile-nav'});
         $mobile_nav.find('> ul').attr({'class': '', 'id': ''});
@@ -60,35 +64,37 @@ jQuery(document).ready(function ($) {
     } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
         $("#mobile-nav, #mobile-nav-toggle").hide();
     }
-    // Smoth scroll on page hash links
+    /* SMOTH SCROLL ON PAGE HASH LINKS JS PART
+    ----------------------------------------------------------*/
     /*$('a[href*="#"]:not([href="#"])').on('click', function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            if (target.length) {
-                var top_space = 0;
-                if ($('#header').length) {
-                    top_space = $('#header').outerHeight();
-                    if (!$('#header').hasClass('header-fixed')) {
-                        top_space = top_space - 20;
-                    }
-                }
-                $('html, body').animate({
-                    scrollTop: target.offset().top - top_space
-                }, 1500, 'easeInOutExpo');
-                if ($(this).parents('.nav-menu').length) {
-                    $('.nav-menu .menu-active').removeClass('menu-active');
-                    $(this).closest('li').addClass('menu-active');
-                }
-                if ($('body').hasClass('mobile-nav-active')) {
-                    $('body').removeClass('mobile-nav-active');
-                    $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-                    $('#mobile-body-overly').fadeOut();
-                }
-                return false;
-            }
-        }
-    });*/
-    // Porfolio filter
+     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+     var target = $(this.hash);
+     if (target.length) {
+     var top_space = 0;
+     if ($('#header').length) {
+     top_space = $('#header').outerHeight();
+     if (!$('#header').hasClass('header-fixed')) {
+     top_space = top_space - 20;
+     }
+     }
+     $('html, body').animate({
+     scrollTop: target.offset().top - top_space
+     }, 1500, 'easeInOutExpo');
+     if ($(this).parents('.nav-menu').length) {
+     $('.nav-menu .menu-active').removeClass('menu-active');
+     $(this).closest('li').addClass('menu-active');
+     }
+     if ($('body').hasClass('mobile-nav-active')) {
+     $('body').removeClass('mobile-nav-active');
+     $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+     $('#mobile-body-overly').fadeOut();
+     }
+     return false;
+     }
+     }
+     });*/
+    /* PORFOLIO FILTER JS PART
+    ----------------------------------------------------------*/
     $("#portfolio-flters li").click(function () {
         $("#portfolio-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
@@ -100,15 +106,15 @@ jQuery(document).ready(function ($) {
             $("#portfolio-wrapper").fadeTo(300, 1);
         }, 300);
     });
-    // jQuery counterUp
-    //$('[data-toggle="counter-up"]').counterUp({
-    //    delay: 10,
-     //   time: 1000
-   // });
-    //Google Map
+    /*jQuery counterUp
+     $('[data-toggle="counter-up"]').counterUp({
+     delay: 10,
+     time: 1000
+     });*/
+    /* GOOGLE MAP JS PART
+    ----------------------------------------------------------*/
     var get_latitude = $('#google-map').data('latitude');
     var get_longitude = $('#google-map').data('longitude');
-
     function initialize_google_map() {
         var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
         var mapOptions = {
@@ -122,10 +128,9 @@ jQuery(document).ready(function ($) {
             map: map
         });
     }
-    //google.maps.event.addDomListener(window, 'load', initialize_google_map);
-// custom code
+    /*google.maps.event.addDomListener(window, 'load', initialize_google_map);
+     custom code*/
 });
-//fdhkghfdhgklhfd jhhlg sdfghsldkjghdlk
 $(".dropdown-menu li a").click(function () {
     var selText = $(this).text();
     $(this).parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
@@ -144,3 +149,64 @@ $('.dark-scrollup').on("click", function () {
     return false;
 });
 
+/* SLIDER-RANGE JS PART
+----------------------------------------------------------*/
+$(function () {
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 2500,
+        values: [0, 2500],
+        slide: function (event, ui) {
+            $("#amount").val("$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ]);
+        }
+    });
+    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+            " - $" + $("#slider-range").slider("values", 1));
+});
+/* BEDROOMS-SLIDER-RANGE JS PART
+----------------------------------------------------------*/
+$(function () {
+    $("#bedRooms-slider-range").slider({
+        range: true,
+        min: 0,
+        max: 32,
+        values: [0, 32],
+        slide: function (event, ui) {
+            $("#bedRooms").val(ui.values[ 0 ] + " - " + ui.values[ 1 ]);
+        }
+    });
+    $("#bedRooms").val($("#bedRooms-slider-range").slider("values", 0) + " - " + $("#bedRooms-slider-range").slider("values", 1));
+});
+/* DATEPICKER JS PART
+----------------------------------------------------------*/
+$(function () {
+    $("#datepicker,#datepicker1").datepicker();
+});
+/* QUOTE-CAROUSEL JS PART
+----------------------------------------------------------*/
+$(document).ready(function () {
+    $('#quote-carousel').carousel({
+        pause: true,
+        interval: 4000
+    });
+});
+/* ARRIVAL DATE PICKER JS PART
+----------------------------------------------------------*/
+$(function () {
+    $("#arrivalDatePicker").datepicker({
+        changeMonth: true,
+        changeYear: true
+    });
+});
+$(function () {
+    $("#departureDatePicker").datepicker({
+        changeMonth: true,
+        changeYear: true
+    });
+});
+/* TABS JS PART
+----------------------------------------------------------*/
+$(function () {
+    $("#tabs").tabs();
+});
