@@ -36,6 +36,9 @@ a {
 .mZero{
     margin: 0;
 }
+.row.mZero {
+    margin: 0;
+}
 //FONT-WEIGHT BOLD
 .fWb {
     font-weight: bold;
@@ -50,6 +53,7 @@ a {
 }
 h1.tAc {
     color: #fff;
+    text-align: center;
 }
 a:hover, a:active, a:focus {
     color: #2dca98;
@@ -1328,8 +1332,8 @@ figure.snip1100 a:hover figcaption .icons i {
     outline: none;
 }
 .gal-item a:after{
-    content:"\e003";
-    font-family: 'Glyphicons Halflings';
+    font-family: FontAwesome;
+    content:"\f002";
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.75);
     position: absolute;
@@ -2316,6 +2320,9 @@ h6.fp-el {
 #successStories blockquote {
     font-size: 20px;
 }
+#successStories blockquote p {
+    text-align: center;
+}
 .successStoriesContent {
     min-height: 310px;
 }
@@ -2397,7 +2404,7 @@ h6.fp-el {
     position: relative;
 }
 .contactPage .contactFormHeader img {
-    display: contents;
+    display: inherit;
 }
 .contactPage .form-control {
     background: rgb(49, 49, 49) none repeat scroll 0 0;
@@ -2493,7 +2500,7 @@ textarea.form-control {
     background-repeat: no-repeat;        
     position: relative;        
     //width: 85%;            
-    height: 430px;       
+    height: 460px;       
     margin-left: auto;      
     margin-right: auto;
     background-position: center center;
@@ -3483,8 +3490,8 @@ input[type="tel"] {
     left: 0px;
 }
 #mapLocation #quote-carousel {
-    margin-left: 15px;
-    margin-right: 27px;
+    margin-left: 30px;
+    margin-right: 42px;
     margin-top: 0;
     padding: 30px 0;
 }
