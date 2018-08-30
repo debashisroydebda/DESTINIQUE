@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Properties | DESTINIQUE</title>
+        <title>Vacation Rentals | DESTINIQUE</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -15,10 +15,11 @@
         <link rel="stylesheet" type="text/css" href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700'>
         <link rel="stylesheet" type="text/css" href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700'>
         <link rel="stylesheet" type="text/css" href='//fonts.googleapis.com/css?family=Open+Sans:200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic,200,300,400,500,600,700,800'>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA02PRWdVRGo8LENLaWxSAkwR9Zwh-A2GU"></script>
         <!--THEME-ICONS CSS FILE-->
         <link rel="stylesheet" type="text/css" href="css/themify-icons.css">
         <!--BOOTSTRAP CSS FILE-->
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!--EXTRA PLUGIN CSS-->
         <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
         <!--ANIMATE CSS FILES-->
@@ -27,13 +28,16 @@
         <link rel="stylesheet" type="text/css" href="css/slider.css">
         <!--JQUERY-UI CSS FILE-->
         <link href="css/jquery-ui.css" rel="stylesheet">
+        <link href="searchFilters/searchFiltersCommon.css" rel="stylesheet">
+        <link href="searchFilters/searchFiltersSearch.css" rel="stylesheet">
+        <link href="searchFilters/searchFiltersBase.css" rel="stylesheet">
         <!--MAIN CSS FILE-->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <!--GALLERY CSS FILE-->
         <link rel="stylesheet" href="css/gallery/wvr_slider.css">
     </head>
     <body>
-
+        <button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
         <!--HEADER PART-->
         <header id="header">
             <div class="container-fluid">
@@ -41,23 +45,32 @@
                 <div id="logo" class="pull-left">
                     <a href="index.html"><img src="img/logo.png" class="img-responsive wow pulse" alt="" title="DESTINIQUE"></a>
                 </div><!--END LOGO PART-->
-                <!--NAV MENU PART-->
+                <!--NAV MENU PART  class="menu-active">-->
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="menu-has-children menu-active"><a href="properties.html">Properties</a>
+                        <li class=""><a href="index.html">Home</a></li>
+                        <li class="menu-has-children menu-active" id="problemIssue"><a href="properties.html">Properties <i class="fa fa-chevron-down"></i></a>
                             <!--NAV SUB MENU PART-->
                             <ul>
                                 <li><a href="properties.html">Properties</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
                                 <li><a href="vacation_rentals_three_colmn.html">All Destinations </a></li>
                                 <li><a href="vacation_display_mode.html">Featured Properties</a></li>
-                                <li><a href="vacation_rentals.html">Vacation Rentals</a></li>
                             </ul><!--END NAV SUB MENU PART-->
                         </li>
                         <li><a href="travel_blog.html">Travel Blog</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
                         <li><a href="map.html">Map</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li class="menu-has-children" id="problemIssue1"><a href="gallery.html">Gallery <i class="fa fa-chevron-down"></i></a>
+                            <!--NAV SUB MENU PART-->
+                            <ul>
+                                <li><a href="galleryInnCrystalBeach.html">Inn Crystal Beach</a></li>
+                                <li><a href="gallerySeabliss.html">Seabliss</a></li>
+                                <li><a href="galleryChesapeakeCottage.html">Chesapeake Cottage</a></li>
+                                <li><a href="galleryHereComesTheSun.html">Here Comes the Sun</a></li>
+                                <li><a href="galleryBeautifulBeachfrontCondo.html">Beautiful Beachfront Condo</a></li>
+                            </ul><!--END NAV SUB MENU PART-->
+                        </li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a class="wow rubberBand" href="callto:+888-235-5603" id="navPhoneNumber"> <i class=" fa fa-phone"></i> 888-235-5603</a></li>
                     </ul>
@@ -65,421 +78,700 @@
             </div>
         </header><!--END HEADER PART-->
 
-
-        <!--PROPERTIES PART-->
-        <section id="propertiesPart" class="container">
-            <div class="hero-container row propertiesPart">
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <!--TRACK-WIDGET PART-->
-                    <div id="track-widget">
-                        <!--TEXT-WIDGET PART-->
-                        <div class="textwidget wow swing">
-                            <h2 class="rounded">Vacation Rentals</h2>
-                            <hr>
-                            <table width="100%">
-                                <tbody>
-                                    <tr>
-                                        <td><a href="#">View All Properties</a></td>
-                                        <td><a href="#">Condo Rentals</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">Vacation Homes</a></td>
-                                        <td><a href="#">Specials</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">Area Events</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div><!--END TEXT-WIDGET PART-->
-                    </div><!--END TRACK-WIDGET PART-->
-
-                    <!--TRACK-WIDGET PART-->
-                    <div id="track-widget">
-                        <!--SEARCH-WIDGET PART-->
-                        <div id="search-widget">
-                            <h2 class="rounded wow zoomIn">Property Availability Search</h2>
-                            <form role="search" method="get" id="searchform" action="#" class="wow slideInUp">
-                                <!--ARRIVAL DATE PART-->
-                                <span><strong>Arrival Date</strong></span>
-                                <input  class="input-sm form-control" type="text" id="arrivalDatePicker"><!--END ARRIVAL DATE PART-->
-
-                                <!--DEPARTURE DATE PART-->
-                                <span><strong>Departure Date</strong></span>
-                                <input class="input-sm form-control" type="text" id="departureDatePicker"><!--END DEPARTURE DATE PART-->
-
-                                <!--DLOCATIONS/COMPLEXES PART-->
-                                <span class="search-locations-header"><strong>Locations/Complexes</strong></span>
-                                <select name="locations" id="locations-select" class="wp-listings-taxonomy">
-                                    <option value="">All</option>
-                                    <optgroup label="Area">
-                                        <option value="30a">30A</option>
-                                        <option value="destin">Destin</option>
-                                        <option value="fort-morgan">Fort Morgan</option>
-                                        <option value="fort-walton-beach">Fort Walton Beach</option>
-                                        <option value="gulf-breeze">Gulf Breeze</option>
-                                        <option value="gulf-shores">Gulf Shores</option>
-                                        <option value="navarre-beach">Navarre Beach</option>
-                                        <option value="orange-beach">Orange Beach</option>
-                                        <option value="panama-city-beach">Panama City Beach</option>
-                                        <option value="pensacola-beach">Pensacola Beach</option>
-                                        <option value="perdido-key">Perdido Key</option>
-                                    </optgroup>
-                                    <optgroup label="Beach Community">
-                                        <option value="blue-mountain-beach">Blue Mountain Beach</option>
-                                        <option value="crystal-beach">Crystal Beach</option>
-                                        <option value="downtown-destin">Downtown Destin</option>
-                                        <option value="dune-allen-beach">Dune Allen Beach</option>
-                                        <option value="frangista-beach">Frangista Beach</option>
-                                        <option value="holiday-isle">Holiday Isle</option>
-                                        <option value="miramar-beach">Miramar Beach</option>
-                                        <option value="rosemary-beach">Rosemary Beach</option>
-                                        <option value="santa-rosa-beach">Santa Rosa Beach</option>
-                                        <option value="seacrest-beach">Seacrest Beach</option>
-                                        <option value="seagrove-beach">Seagrove Beach</option>
-                                        <option value="seaside">Seaside</option>
-                                        <option value="watersound">WaterSound</option>
-                                    </optgroup>
-                                    <optgroup label="Complex/Neighborhood">
-                                        <option value="abacos">Abacos</option>
-                                        <option value="adagio">Adagio</option>
-                                        <option value="aegean">Aegean</option>
-                                        <option value="alerio">Alerio</option>
-                                        <option value="amalfi-coast-resort">Amalfi Coast Resort</option>
-                                        <option value="aqua">Aqua</option>
-                                        <option value="aqua-villa">Aqua Villa</option>
-                                        <option value="ariel-dunes">Ariel Dunes</option>
-                                        <option value="ariel-dunes-ii">Ariel Dunes II</option>
-                                        <option value="azure">Azure</option>
-                                        <option value="back-bay">Back Bay</option>
-                                        <option value="banana-bay-townhomes">Banana Bay Townhomes</option>
-                                        <option value="baywatch">Baywatch</option>
-                                        <option value="beach-club">Beach Club</option>
-                                        <option value="beach-colony-resort">Beach Colony Resort</option>
-                                        <option value="beach-colony-resort-navarre-beach">Beach Colony Resort (Navarre Beach)</option>
-                                        <option value="beach-pointe">Beach Pointe</option>
-                                        <option value="beach-resort">Beach Resort</option>
-                                        <option value="beach-retreat">Beach Retreat</option>
-                                        <option value="beach-villas-at-destiny">Beach Villas at Destiny</option>
-                                        <option value="beachfront-ii">Beachfront II</option>
-                                        <option value="beachside-townhomes">Beachside Townhomes</option>
-                                        <option value="beachside-villas">Beachside Villas</option>
-                                        <option value="beachwalk-condominiums">Beachwalk Condominiums</option>
-                                        <option value="beachwood-villas">Beachwood Villas</option>
-                                        <option value="bel-sole">Bel Sole</option>
-                                        <option value="bella-luna">Bella Luna</option>
-                                        <option value="bella-riva">Bella Riva</option>
-                                        <option value="belle-mer">Belle Mer</option>
-                                        <option value="blue-dolphin">Blue Dolphin</option>
-                                        <option value="blue-mountain-villas">Blue Mountain Villas</option>
-                                    </optgroup>
-                                </select><br><!--END DLOCATIONS/COMPLEXES PART-->
-
-                                <!--SLEEPS PART-->
-                                <span class="sleeps-header"><strong>Sleeps</strong></span><br>
-                                <select name="sleeps" class="sleeps-input">
-                                    <option value=""></option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                    <option value="17">17</option>
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
-                                    <option value="21">21</option>
-                                    <option value="22">22</option>
-                                    <option value="23">23</option>
-                                    <option value="24">24</option>
-                                    <option value="25">25</option>
-                                    <option value="26">26</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                    <option value="30">30</option>
-                                    <option value="31">31</option>
-                                    <option value="32">32</option>
-                                </select><br><!--END SLEEPS PART-->
-
-                                <!--LODGING TYPES PART-->
-                                <span class="lodging-header"><strong>Lodging Types</strong></span><br>
-                                <select name="lodging" id="lodging" class="listing-lodging">
-                                    <option value="">No Preference</option>
-                                    <option value="1">Home</option>';
-                                    <option value="2">Condo</option>';
-                                </select><br><!--END LODGING TYPES PART-->
-
-                                <!--BED ROOMS PART-->
-                                <div id="bedRoomsPart">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <label for="bedRooms">Bed Rooms:</label>        
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <input class="bedRoomsCount" type="text" id="bedRooms" readonly>
-                                        </div>
-                                    </div>
-                                    <div id="bedRooms-slider-range"></div>
-                                </div><br><!--END BED ROOMS PART-->
-
-                                <!--PRICE RANGE PART-->
-                                <div id="priceRangePart">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <label for="amount">Price range:</label>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <input class="priceRangeCount" type="text" id="amount" readonly>
-                                        </div>
-                                    </div>
-                                    <div id="slider-range"></div>
-                                </div><br><!--END PRICE RANGE PART-->
-
-                                <!--AMENITIES PART-->
-                                <span class="search-amenities-header"><strong>Amenities</strong></span>
-                                <div class="listing-amenities">
-                                    <div class="checkbox checkbox-success">
-                                        <input id="checkbox31" type="checkbox">
-                                        <label class="checkboxLabel" for="checkbox31">
-                                            Boat Slip Available
-                                        </label>
-                                    </div>
-                                    <div class="checkbox checkbox-success">
-                                        <input id="checkbox32" type="checkbox">
-                                        <label class="checkboxLabel" for="checkbox32">
-                                            Gulf Front
-                                        </label>
-                                    </div>
-                                    <div class="checkbox checkbox-success">
-                                        <input id="checkbox33" type="checkbox">
-                                        <label class="checkboxLabel" for="checkbox33">
-                                            Pet Friendly For a Fee
-                                        </label>
-                                    </div>
-                                    <div class="checkbox checkbox-success">
-                                        <input id="checkbox34" type="checkbox">
-                                        <label class="checkboxLabel" for="checkbox34">
-                                            Pool - Community
-                                        </label>
-                                    </div>
-                                    <div class="checkbox checkbox-success">
-                                        <input id="checkbox35" type="checkbox">
-                                        <label class="checkboxLabel" for="checkbox35">
-                                            Pool - Private
-                                        </label>
-                                    </div>
-                                    <div class="checkbox checkbox-success">
-                                        <input id="checkbox36" type="checkbox">
-                                        <label class="checkboxLabel" for="checkbox36">
-                                            Pool - Private Heated for a Fee
-                                        </label>
-                                    </div>
-                                    <div class="checkbox checkbox-success">
-                                        <input id="checkbox37" type="checkbox">
-                                        <label class="checkboxLabel" for="checkbox37">
-                                            Snowbird Rentals Accepted
-                                        </label>
-                                    </div>
-                                    <div class="checkbox checkbox-success">
-                                        <input id="checkbox38" type="checkbox">
-                                        <label class="checkboxLabel" for="checkbox38">
-                                            Tennis Courts
-                                        </label>
-                                    </div>
-                                    <div class="checkbox checkbox-success">
-                                        <input id="checkbox39" type="checkbox">
-                                        <label class="checkboxLabel" for="checkbox39">
-                                            Wedding/Event Allowed
-                                        </label>
-                                    </div>
-                                </div><br><!--END AMENITIES PART-->
-
-                                <!--PROPERTIES SEARCH SUBMIT BUTTON-->
-                                <div class="btn-search  wow jello" id="propertiesSearchsubmit">
-                                    <button type="submit" class="searchsubmit"><i class="fa fa-search"></i><span class="button-text fWb"> S e a r c h L i s t i n g s</span></button>
-                                </div><!--END PROPERTIES SEARCH SUBMIT BUTTON-->
-                                <div class="clear"></div>
-                            </form>
-                        </div><!--END SEARCH-WIDGET PART-->
-                    </div><!--END TRACK-WIDGET PART-->
+        <!--HEADER SEARCH SUB MENU PART-->
+        <div id="searchContainer">
+            <div id="searchResults">
+                <div id="resultsHeader" class="resultsHeader">
+                    <div class="container-fluid">
+                        <div id="resultsTextContainer" class="searchText updating">
+                            <div class="searchLoadingText hidden">
+                                <span>Updating your search results</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-9 col-sm-12 col-xs-12">
-                    <!--PROPERTY SORTING PRICE PART-->
-                    <form class="form-horizontal  wow slideInUp">
-                        <div class="row propertySortingRow">
-                            <div class="col-sm-12">
-                                <div class="form-group propertySortingFormGroup">
-                                    <label for="sorting" class="control-label propertySortingText">Sort By : </label>
-                                    <select id="sorting" class="listing-lodging listingLodging">
-                                        <option value="name-asc">Property Name</option>
-                                        <option value="name-desc">Property Name Reversed</option>
-                                        <option value="price-asc">Price: Lowest to Highest</option>
-                                        <option value="price-desc">Price: Highest to Lowest</option>
-                                        <option value="beds-asc">Bedrooms: Lowest to Highest</option>
-                                        <option selected="" value="beds-desc">Bedrooms: Highest to Lowest</option>
-                                    </select>
+                <div id="endOfResults" class="clearfix container mrg-btm-35">
+                    <div id="noMoreResults" class="row-spc-30">
+                        <div id="searchInquireContainer" class="col-sm-12 col-md-6 hidden">
+                            <script id="inquireTemplate" type="handlebars">
+                                <div class="inquireModule">
+                                <form id="{{inquireForm}}" class="inquireBody" data-prefill>
+                                <div class="row-spc-16">
+                                <div class="col-sm-12 col-md-6 u-pull-right">
+                                <label>Tentative travel dates</label>
+                                <div class="row-spc-16 mrg-btm-15">
+                                <div class="col-sm-6">
+                                <div class="datepickerWrapper">
+                                <input type="text" id="{{inquireCheckIn}}" value="" placeholder="Check-In" readonly disabled="disabled" data-prefill="checkIn" />
+                                </div>
+                                </div>
+                                <div class="col-sm-6">
+                                <div class="datepickerWrapper checkoutWrapper">
+                                <input type="text" id="{{inquireCheckOut}}" value="" placeholder="Check-Out" readonly disabled="disabled" data-prefill="checkOut" />
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </form>
+                                </div>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <header id="filterButtonTopHeaderPrt">
+            <div class="menuPosition">
+                <div id="searchSubMenu" class="hidden row js-searchWrapper searchSubMenu">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11" style="padding-left: 53px;">
+                        <div class="float-left calendar">
+                            <div class="item">
+                                <div class="title">Dates</div>
+                                <div class="hidden statusLabel"></div>
+                            </div>
+                            <div class="hidden filter">
+                                <div class="flex wrapper">
+                                    <div class="calendar searchCheckInOutWrapper availability-choices-wrapper" data-prefill="checkIn checkOut"></div>
+                                </div>
+                                <div class="relative">
+                                    <button class="clear">Clear</button>
+                                    <button class="button buttonPrimary js-updateSearchButton">Apply</button>
                                 </div>
                             </div>
                         </div>
-                    </form><!--END PROPERTY SORTING PRICE PART-->
-
-                    <!--SORTING RESULT PART-->
-                    <div class="sortingResult sortingResultFirst wow slideInUp">
-                        <!--SORTING RESULT SINGLE PART-->
-                        <div class="sortingResultSinglePart">
-                            <div id="post-13915" class="listing entry listing-box first">
-                                <!--LISTING-WRAP PART-->
-                                <div class="listing-wrap">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <!--LISTING-WIDGET-THUMB PART-->
-                                            <div class="listing-widget-thumb">
-                                                <!--PROPERTY IMAGE PART-->
-                                                <a href="#" class="listing-image-link">
-                                                    <img class="img-responsive" src="img/item1.jpeg"> 
-                                                </a><!--END PROPERTY IMAGE PART-->
-                                                <!--LISTING-THUMB-META PART-->
-                                                <div class="listing-thumb-meta">
-                                                    <span class="listing-property-type">starting at</span>
-                                                    <span class="listing-price">$520/night</span>
-                                                </div><!--END LISTING-THUMB-META PART-->
-                                            </div><!--END LISTING-WIDGET-THUMB PART-->
+                        <div class="float-left price">
+                            <div class="item">
+                                <div class="title">Price</div>
+                                <div class="hidden statusLabel"></div>
+                            </div>
+                            <div class="hidden filter">
+                                <div class="title"></div>
+                                <input type="number" id="labelInput" class="hidden label" onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+                                <div class="flex wrapper sliderWrapper">
+                                    <div id="slider-range" class="slider-range"></div>
+                                </div>
+                                <div class="relative">
+                                    <button class="clear">Clear</button>
+                                    <button class="button buttonPrimary js-updateSearchButton">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-left guests">
+                            <div class="item">
+                                <div class="title">Guests</div>
+                                <div class="hidden statusLabel"></div>
+                            </div>
+                            <div class="hidden filter">
+                                <div class="title">Guests</div>
+                                <input type="number" id="labelInput" class="hidden label" onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+                                <div class="flex wrapper">
+                                    <div class="flex minus" id="wrapperMinus"><i class="fa fa-minus"></i></div>
+                                    <span id="label"></span>
+                                    <div class="flex plus" id="wrapperPlus"><i class="fa fa-plus"></i></div>
+                                </div>
+                                <div class="relative">
+                                    <button class="clear">Clear</button>
+                                    <button class="button buttonPrimary js-updateSearchButton">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-left moreFilters">
+                            <div class="item">
+                                <div class="title">More Filters</div>
+                                <div class="hidden statusLabel"></div>
+                            </div>
+                            <div class="hidden filter">
+                                <div class="flex wrapper">
+                                    <div id="searchFilters" class="searchFilters hidden">
+                                        <div class="region">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">REFINE YOUR SEARCH:</div>
+                                                    <div class="col-md-3 col-sm-4">
+                                                        <div id="region2" class="regionSelect dropdownWrapper" tabindex="1" data-trackingid="search_dd"></div>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-4">
+                                                        <div id="region3" class="regionSelect dropdownWrapper" tabindex="1"></div>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-4">
+                                                        <div id="region4" class="regionSelect dropdownWrapper" tabindex="1"></div>
+                                                    </div>
+                                                    <div id="closeFilters" class="col-md-1 closeFilters">X</div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <!--LISTING-WIDGET-DETAILS PART-->
-                                            <div class="listing-widget-details">
-                                                <h3 class="listing-title">
-                                                    <a href="#">Dhaka Palace</a>
-                                                </h3>
-                                                <span class="listing-information added-debug-test">Bedrooms: 2 | Baths: 2 Full, 1 Half | Sleeps: 34 <br><span> Destin, FL</span></span><br><br>
-                                                <span class="listing-overview">Spend your next family vacation in the luxurious Crystal Palace and enjoy breathtaking views of the Gulf of Mexico, a private saltwater pool and more. This grand home is located just across the street from the sterling white sandy beaches of Destin, Florida.</span>
-                                            </div><!--END LISTING-WIDGET-DETAILS PART-->
+                                        <div class="price hidden">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">PRICE PER NIGHT:</div>
+                                                    <div class="col-md-3 col-sm-12 col-md-offset-0">
+                                                        <div class="sliderWrapper">
+                                                            <div id="slider-range" class="slider-range"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collections">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">COLLECTIONS:</div>
+                                                    <div class="col-md-9 col-sm-12">
+                                                        <div class="amenitySelector" data-amenity="HasBeach" title="Beachfront">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage hasBeach"></div>
+                                                            <label>Beachfront</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="CityLife" title="City Breaks">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage CityLife"></div>
+                                                            <label>City Breaks</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="HasSki" title="Ski">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage hasSki"></div>
+                                                            <label>Ski Chalets</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="Honeymoon" title="Honeymoon (1-2 bdr)">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage Honeymoon"></div>
+                                                            <label>Honeymoon</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="LargeGroups" title="Large Groups (12+ ppl)">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage Groups"></div>
+                                                            <label>Large Groups</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collections bookingType">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">BOOKING TYPE:</div>
+                                                    <div class="col-md-9 col-sm-12">
+                                                        <div class="amenitySelector" data-amenity="IsUnderPromotion" title="Promotions">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage hasPromo"></div>
+                                                            <label>Promotion</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="InstantBook" title="Instabook Properties">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage instantBook"></div>
+                                                            <label>Instabook Properties</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="NewVillas" title="New Arrivals" style="display: none">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage Groups"></div>
+                                                            <label>"New Arrivals</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cta hidden">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">&nbsp;</div>
+                                                    <div class="col-md-3 col-sm-6 filterLabelOffset">
+                                                        <button id="updateSearchButton" class="button buttonPrimary small block js-updateSearchButton" type="button">UPDATE MY SEARCH</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tags hidden">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">ACTIVE FILTERS:</div>
+                                                    <div class="col-md-9 col-sm-12 col-md-offset-0">
+                                                        <ul class="tagCollection"></ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div><!--END LISTING-WRAP PART-->
+                                </div>
+                                <div class="relative">
+                                    <button class="clear">Clear</button>
+                                    <button class="button buttonPrimary js-updateSearchButton">Apply</button>
+                                </div>
                             </div>
-                        </div><!--SORTING RESULT SINGLE PART-->
-
-                        <!--SORTING RESULT SINGLE PART-->
-                        <div class="sortingResultSinglePart wow slideInUp">
-                            <div id="post-13915" class="listing entry listing-box first">
-                                <!--LISTING-WRAP PART-->
-                                <div class="listing-wrap">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <!--LISTING-WIDGET-THUMB PART-->
-                                            <div class="listing-widget-thumb">
-                                                <!--PROPERTY IMAGE PART-->
-                                                <a href="#" class="listing-image-link">
-                                                    <img class="img-responsive" src="img/item.jpeg"> 
-                                                </a><!--END PROPERTY IMAGE PART-->
-                                                <!--LISTING-THUMB-META PART-->
-                                                <div class="listing-thumb-meta">
-                                                    <span class="listing-property-type">starting at</span>
-                                                    <span class="listing-price">$520/night</span>
-                                                </div><!--END LISTING-THUMB-META PART-->
-                                            </div><!--END LISTING-WIDGET-THUMB PART-->
-                                        </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <!--LISTING-WIDGET-DETAILS PART-->
-                                            <div class="listing-widget-details">
-                                                <h3 class="listing-title">
-                                                    <a href="#">RANGPUR Palace</a>
-                                                </h3>
-                                                <span class="listing-information added-debug-test">Bedrooms: 2 | Baths: 2 Full, 1 Half | Sleeps: 34 <br><span> Destin, FL</span></span><br><br>
-                                                <span class="listing-overview">Spend your next family vacation in the luxurious Crystal Palace and enjoy breathtaking views of the Gulf of Mexico, a private saltwater pool and more. This grand home is located just across the street from the sterling white sandy beaches of Destin, Florida.</span>
-                                            </div><!--END LISTING-WIDGET-DETAILS PART-->
-                                        </div>
-                                    </div>
-                                </div><!--END LISTING-WRAP PART-->
-                            </div>
-                        </div><!--SORTING RESULT SINGLE PART-->
-
-                        <!--SORTING RESULT SINGLE PART-->
-                        <div class="sortingResultSinglePart wow slideInUp">
-                            <div id="post-13915" class="listing entry listing-box first">
-                                <!--LISTING-WRAP PART-->
-                                <div class="listing-wrap">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <!--LISTING-WIDGET-THUMB PART-->
-                                            <div class="listing-widget-thumb">
-                                                <!--PROPERTY IMAGE PART-->
-                                                <a href="#" class="listing-image-link">
-                                                    <img class="img-responsive" src="img/item2.jpg"> 
-                                                </a><!--END PROPERTY IMAGE PART-->
-                                                <!--LISTING-THUMB-META PART-->
-                                                <div class="listing-thumb-meta">
-                                                    <span class="listing-property-type">starting at</span>
-                                                    <span class="listing-price">$520/night</span>
-                                                </div><!--END LISTING-THUMB-META PART-->
-                                            </div><!--END LISTING-WIDGET-THUMB PART-->
-                                        </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <!--LISTING-WIDGET-DETAILS PART-->
-                                            <div class="listing-widget-details">
-                                                <h3 class="listing-title">
-                                                    <a href="#">Dinajpur Palace</a>
-                                                </h3>
-                                                <span class="listing-information added-debug-test">Bedrooms: 2 | Baths: 2 Full, 1 Half | Sleeps: 34 <br><span> Destin, FL</span></span><br><br>
-                                                <span class="listing-overview">Spend your next family vacation in the luxurious Crystal Palace and enjoy breathtaking views of the Gulf of Mexico, a private saltwater pool and more. This grand home is located just across the street from the sterling white sandy beaches of Destin, Florida.</span>
-                                            </div><!--END LISTING-WIDGET-DETAILS PART-->
-                                        </div>
-                                    </div>
-                                </div><!--END LISTING-WRAP PART-->
-                            </div>
-                        </div><!--SORTING RESULT SINGLE PART-->
-
-                        <!--SORTING RESULT SINGLE PART-->
-                        <div class="sortingResultSinglePart wow slideInUp">
-                            <div id="post-13915" class="listing entry listing-box first">
-                                <!--LISTING-WRAP PART-->
-                                <div class="listing-wrap">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <!--LISTING-WIDGET-THUMB PART-->
-                                            <div class="listing-widget-thumb">
-                                                <!--PROPERTY IMAGE PART-->
-                                                <a href="#" class="listing-image-link">
-                                                    <img class="img-responsive" src="img/item3.jpg"> 
-                                                </a><!--END PROPERTY IMAGE PART-->
-                                                <!--LISTING-THUMB-META PART-->
-                                                <div class="listing-thumb-meta">
-                                                    <span class="listing-property-type">starting at</span>
-                                                    <span class="listing-price">$520/night</span>
-                                                </div><!--END LISTING-THUMB-META PART-->
-                                            </div><!--END LISTING-WIDGET-THUMB PART-->
-                                        </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <!--LISTING-WIDGET-DETAILS PART-->
-                                            <div class="listing-widget-details">
-                                                <h3 class="listing-title">
-                                                    <a href="#">Hajipur Palace</a>
-                                                </h3>
-                                                <span class="listing-information added-debug-test">Bedrooms: 2 | Baths: 2 Full, 1 Half | Sleeps: 34 <br><span> Destin, FL</span></span><br><br>
-                                                <span class="listing-overview">Spend your next family vacation in the luxurious Crystal Palace and enjoy breathtaking views of the Gulf of Mexico, a private saltwater pool and more. This grand home is located just across the street from the sterling white sandy beaches of Destin, Florida.</span>
-                                            </div><!--END LISTING-WIDGET-DETAILS PART-->
-                                        </div>
-                                    </div>
-                                </div><!--END LISTING-WRAP PART-->
-                            </div>
-                        </div><!--SORTING RESULT SINGLE PART-->
-                    </div><!--END SORTING RESULT PART-->
+                        </div>
+                    </div>
+                    <div class="col-sm-12"></div>
                 </div>
             </div>
-        </section><!--END PROPERTIES PART-->
+        </header>
+
+        <div id="findVillaInquiry" class="hidden findVillaInquiry">
+            <div id="findVillaInquiryForm" class="findVillaInquiryForm">
+                <script id="findVillaInquiryTemplate" type="handlebars">
+                </script>
+            </div>
+        </div>
+        <div id="searchFilterOverlay" class="searchFilterOverlay hidden"></div>
+        <div id="mapContainer">
+            <div class="mapWrapper">
+                <div id="map" class="map"></div>
+                <div id="mapVillaInformation"></div>
+            </div>
+        </div>
+
+        <script>
+            var _prum = [['id', '53444d05abe53db7267b23c6'],
+                ['mark', 'firstbyte', (new Date()).getTime()]];
+            (function () {
+                var s = document.getElementsByTagName('script')[0]
+                        , p = document.createElement('script');
+                p.async = 'async';
+                p.src = '//rum-static.pingdom.net/prum.min.js';
+                s.parentNode.insertBefore(p, s);
+            })();
+            var PLATFORMID = '1';
+            var PLATFORMVERSION = '2.7.2.201702061130';
+
+
+
+
+
+
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-2ZLV');
+
+            var websiteVersion = '2.7.2.201702061130';
+            var sessionID = '41olzq2ydiqxooasjqomjolj';
+            var internalIPaddress = '216.113.47.12';
+            var mpExcludeInternalTraffic = true;
+
+
+
+
+            var IMAGE_PATH = '//mobilepics.luxuryretreats.com/mediastock';
+            var LRI_VILLA_URL = '/destinations/';
+
+            var CONNECTIONSTIRNGDESKTOP = '//www.luxuryretreats.com';
+            var SERVICECONNNECTION = '//ios2.luxuryretreats.com';
+            var BOOKINGENGINE = 'https://bookings.luxuryretreats.com';
+            var BOOKINGCONNECTION = 'https://bookings.luxuryretreats.com';
+            var AUTHCONNECTION = '://auth2.luxuryretreats.com/';
+            var authenticatedRequestsProtocol = 'https';
+            var MYTRIPS_BASEURL = '//mytrip.luxuryretreats.com/';
+            var AIRBNB_BASEURL = '//www.airbnb.com/';
+        </script>
+
+
+
+
+        <!--VACATION RENTALS SLIDER PART-->
+        <section id="vacationRentalsSliderPart" class="row">
+            <div class="hero-container container-fluid">
+                <!--VACATION RENTALS WRAPPER PART-->
+                <div class="vacationRentalsWrapper">
+                    <div class="title wow bounceInUp">DESTINIQUE Retreats</div>
+                    <div class="subTitle wow bounceInUp">DESTINIQUE Vacation Rentals, World-Class Service</div>
+                    <div class="button buttonPrimary wow swing">Get help finding your house <div id="numberUsaDot">2.554.54.684</div></div>
+                </div><!--END VACATION RENTALS WRAPPER PART-->
+
+                <!--CONFIDENCE MESSAGE PART-->
+                <div id="confidenceMessage" class="confidenceMessage">
+                    <div class="container">
+                        <div class="wow flipInX"><i class="fa fa-user"></i> <span>6589</span> guests are currently working with our team of experts. Get in touch today.</div>
+                    </div>
+                </div><!--END CONFIDENCE MESSAGE PART-->
+            </div>
+        </section><!--END VACATION RENTALS SLIDER PART-->
+
+
+        <!--HOME SEARCH PROPERTY AREA-->
+        <section class="searchProperty" id="searchProperty">
+            <div class="container-fluid"><br><br>
+                <div class="row" id="searchPropertyHeader">
+                    <div class="col-md-8 col-sm-12 searchPropertyHeaderText">
+                        <h1 class="wow bounce"> 722 luxury villas and vacation rentals for all destinations </h1>
+                    </div>
+                    <!--HOME SEARCH PROPERTY SELECT & VIEW AREA PART-->
+                    <div class="col-md-4 col-sm-12">
+                        <div class="searchDropdownnSelectPart wow bounce">
+                            <div class="row">
+                                <!--HOME SEARCH PROPERTY SELECT AREA PART-->
+                                <div class="col-xs-7">
+                                    <div class="searchDropdownnSelect">Sort &nbsp;&nbsp;
+                                        <div class="btn-group">
+                                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Featured <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Featured</a></li>
+                                                <li><a href="#">Bedrooms (Min - Max) </a></li>
+                                                <li><a href="#">Bedrooms (Max - Min) </a></li>
+                                                <li><a href="#">Price (Min - Max) </a></li>
+                                                <li><a href="#">Price (Max - Min) </a></li>
+                                                <li><a href="#">Most Reviewed </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!--END HOME SEARCH PROPERTY SELECT AREA PART-->
+
+                                <!--HOME SEARCH PROPERTY VIEW AREA PART-->
+                                <div class="col-xs-5">
+                                    <div class="row searchView">
+                                        <div class="col-xs-4">
+                                            View
+                                        </div>
+                                        <div class="col-xs-3 searchViewFaTh">
+                                            <a href="#"><span class="fa fa-th-large"></span></a>
+                                        </div>
+                                        <div class="col-xs-3 searchViewLocation">
+                                            <a href="#"><span class="fa fa-map-marker"></span></a>
+                                        </div>
+                                    </div>
+                                </div><!--END HOME SEARCH PROPERTY VIEW AREA PART-->
+                            </div>
+                        </div>
+                    </div><!--END HOME SEARCH PROPERTY SELECT & VIEW AREA PART-->
+                </div>
+                <div class="row">
+                    <!--SEARCH PROPERTY SINGLE PART-->
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="propertyDemo wow slideInUp">
+                            <!--SEARCH PROPERTY IMAGE PART-->
+                            <div class="propertyImageContainer">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="img/2.png" alt="Los Angeles" style="width:100%;">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="img-responsive" src="img/1.png" alt="Chicago" style="width:100%;">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="img-responsive" src="img/3.png" alt="New york" style="width:100%;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                        <span class="fa fa-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                        <span class="fa fa-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <a href="propertiesDetails.html" class="propertyImageContainerLink">
+                                    <div class="housePromo"><img src="img/promoIcon.png" class="img-responsive promoIconNewAddition">NEW ADDITION</div>
+                                    <div class="propertyName">Casa de la Playa</div>
+                                    <div class="propertyCountry">Terres Basses - Baie Longue, St. Martin</div>
+                                </a>
+                                <div class="houseFavourite"><img src="img/favourite_grey.png" class="img-responsive favouriteGreyIcon"></div>
+                            </div><!--END SEARCH PROPERTY IMAGE PART-->
+
+                            <!--SEARCH PROPERTY PROPERTY DESCRIPTION PART-->
+                            <a class="propertyDescription" href="#" target="blank">
+                                <div class="propertyDetailContainer">
+                                    <div class="guestIcon">
+                                        <i class="fa fa-group"></i>
+                                        <span>10</span>
+                                    </div>
+                                    <div class="bedroomIcon">
+                                        <i class="fa fa-bed"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="bathroomIcon">
+                                        <i class="fa fa-bath"></i>
+                                        <span>5</span>
+                                    </div>
+                                </div>
+                                <div class="row HousePriceBox">
+                                    <div class="priceContainer">FROM <sub>$</sub><span class="amountText">3,286</span> /NT</div>
+                                </div>
+                            </a><!--END SEARCH PROPERTY PROPERTY DESCRIPTION PART-->
+                        </div>
+                    </div><!--END SEARCH PROPERTY SINGLE PART-->
+
+                    <!--SEARCH PROPERTY SINGLE PART-->
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="propertyDemo wow slideInUp">
+                            <!--SEARCH PROPERTY IMAGE PART-->
+                            <div class="propertyImageContainer">
+                                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel1" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel1" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="img/1.png" alt="Los Angeles" style="width:100%;">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="img-responsive" src="img/2.png" alt="Chicago" style="width:100%;">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="img-responsive" src="img/3.png" alt="New york" style="width:100%;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+                                        <span class="fa fa-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+                                        <span class="fa fa-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <a href="propertiesDetails.html" class="propertyImageContainerLink">
+                                    <div class="housePromo"><img src="img/promoIcon.png" class="img-responsive promoIconNewAddition">NEW ADDITION</div>
+                                    <div class="propertyName">Casa de la Playa</div>
+                                    <div class="propertyCountry">Terres Basses - Baie Longue, St. Martin</div>
+                                </a>
+                                <div class="houseFavourite"><img src="img/favourite_grey.png" class="img-responsive favouriteGreyIcon"></div>
+                            </div><!--END SEARCH PROPERTY IMAGE PART-->
+
+                            <!--SEARCH PROPERTY PROPERTY DESCRIPTION PART-->
+                            <a class="propertyDescription" href="#" target="blank">
+                                <div class="propertyDetailContainer">
+                                    <div class="guestIcon">
+                                        <i class="fa fa-group"></i>
+                                        <span>10</span>
+                                    </div>
+                                    <div class="bedroomIcon">
+                                        <i class="fa fa-bed"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="bathroomIcon">
+                                        <i class="fa fa-bath"></i>
+                                        <span>5</span>
+                                    </div>
+                                </div>
+                                <div class="row HousePriceBox">
+                                    <div class="priceContainer">FROM <sub>$</sub><span class="amountText">3,286</span> /NT</div>
+                                </div>
+                            </a><!--END SEARCH PROPERTY PROPERTY DESCRIPTION PART-->
+                        </div>
+                    </div><!--END SEARCH PROPERTY SINGLE PART-->
+
+
+                    <!--SEARCH PROPERTY SINGLE PART-->
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="propertyDemo wow slideInUp">
+                            <!--SEARCH PROPERTY IMAGE PART-->
+                            <div class="propertyImageContainer">
+                                <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="img/3.png" alt="Los Angeles" style="width:100%;">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="img-responsive" src="img/2.png" alt="Chicago" style="width:100%;">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="img-responsive" src="img/1.png" alt="New york" style="width:100%;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                                        <span class="fa fa-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                                        <span class="fa fa-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <a href="propertiesDetails.html" class="propertyImageContainerLink">
+                                    <div class="housePromo"><img src="img/promoIcon.png" class="img-responsive promoIconNewAddition">NEW ADDITION</div>
+                                    <div class="propertyName">Casa de la Playa</div>
+                                    <div class="propertyCountry">Terres Basses - Baie Longue, St. Martin</div>
+                                </a>
+                                <div class="houseFavourite"><img src="img/favourite_grey.png" class="img-responsive favouriteGreyIcon"></div>
+                            </div><!--END SEARCH PROPERTY IMAGE PART-->
+
+                            <!--SEARCH PROPERTY PROPERTY DESCRIPTION PART-->
+                            <a class="propertyDescription" href="#" target="blank">
+                                <div class="propertyDetailContainer">
+                                    <div class="guestIcon">
+                                        <i class="fa fa-group"></i>
+                                        <span>10</span>
+                                    </div>
+                                    <div class="bedroomIcon">
+                                        <i class="fa fa-bed"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="bathroomIcon">
+                                        <i class="fa fa-bath"></i>
+                                        <span>5</span>
+                                    </div>
+                                </div>
+                                <div class="row HousePriceBox">
+                                    <div class="priceContainer">FROM <sub>$</sub><span class="amountText">3,286</span> /NT</div>
+                                </div>
+                            </a><!--END SEARCH PROPERTY PROPERTY DESCRIPTION PART-->
+                        </div>
+                    </div><!--END SEARCH PROPERTY SINGLE PART-->
+
+
+                    <!--SEARCH PROPERTY SINGLE PART-->
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="propertyDemo wow slideInUp">
+                            <!--SEARCH PROPERTY IMAGE PART-->
+                            <div class="propertyImageContainer">
+                                <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive" src="img/1.png" alt="Los Angeles" style="width:100%;">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="img-responsive" src="img/2.png" alt="Chicago" style="width:100%;">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="img-responsive" src="img/3.png" alt="New york" style="width:100%;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+                                        <span class="fa fa-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+                                        <span class="fa fa-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <a href="propertiesDetails.html" class="propertyImageContainerLink">
+                                    <div class="housePromo"><img src="img/promoIcon.png" class="img-responsive promoIconNewAddition">NEW ADDITION</div>
+                                    <div class="propertyName">Casa de la Playa</div>
+                                    <div class="propertyCountry">Terres Basses - Baie Longue, St. Martin</div>
+                                </a>
+                                <div class="houseFavourite"><img src="img/favourite_grey.png" class="img-responsive favouriteGreyIcon"></div>
+                            </div><!--END SEARCH PROPERTY IMAGE PART-->
+
+                            <!--SEARCH PROPERTY PROPERTY DESCRIPTION PART-->
+                            <a class="propertyDescription" href="#" target="blank">
+                                <div class="propertyDetailContainer">
+                                    <div class="guestIcon">
+                                        <i class="fa fa-group"></i>
+                                        <span>10</span>
+                                    </div>
+                                    <div class="bedroomIcon">
+                                        <i class="fa fa-bed"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="bathroomIcon">
+                                        <i class="fa fa-bath"></i>
+                                        <span>5</span>
+                                    </div>
+                                </div>
+                                <div class="row HousePriceBox">
+                                    <div class="priceContainer">FROM <sub>$</sub><span class="amountText">3,286</span> /NT</div>
+                                </div>
+                            </a><!--END SEARCH PROPERTY PROPERTY DESCRIPTION PART-->
+                        </div>
+                    </div><!--END SEARCH PROPERTY SINGLE PART-->
+                </div>
+            </div>
+        </section><!--END HOME SEARCH PROPERTY AREA-->
+
+
+        <!--NO RESULTS CONTAINER PART-->
+        <section class="container">
+            <div class="row">
+                <div id="noResultsContainer" class="col-sm-12 col-md-6">
+                    <!--RESULTS TEXT PART-->
+                    <div class="noResultsText">
+                        <div class="wow slideInRight">
+                            <div class="title">HAVEN'T FOUND YOUR PERFECT VILLA?</div>
+                            <div class="subTitle">There's more to explore!</div><hr>
+                        </div>
+                        <div id="resetFiltersFooter" class="wow bounce">
+                            <a href="#"><i class="fa fa-refresh" aria-hidden="true"></i> Reset your filters</a>
+                            <span> to see more villas<span id="resetFilterRegion"> in all destinations</span>, or explore these popular destinations.</span>
+                        </div>
+                    </div><!--END RESULTS TEXT PART-->
+
+                    <!--SEARCH REGION SUGGESTION PART-->
+                    <div id="searchRegionSuggestion" class="row">
+                        <!--ALTERNATE REGION SINGLE PART-->
+                        <div class="col-sm-4">
+                            <div class="alternateRegion wow zoomIn">
+                                <div class="alternateRegionImg"><img src="img/CostaRica_CentralAmerica_dSearchOther.jpg"></div>
+                                <h4>Central America</h4>
+                            </div>
+                        </div><!--END ALTERNATE REGION SINGLE PART-->
+
+                        <!--ALTERNATE REGION SINGLE PART-->
+                        <div class="col-sm-4">
+                            <div class="alternateRegion wow zoomIn">
+                                <div class="alternateRegionImg"><img src="img/UnitedStates_dSearchOther.jpg"></div>
+                                <h4>United States</h4>
+                            </div>
+                        </div><!--END ALTERNATE REGION SINGLE PART-->
+
+                        <!--ALTERNATE REGION SINGLE PART-->
+                        <div class="col-sm-4">
+                            <div class="alternateRegion wow zoomIn">
+                                <div class="alternateRegionImg"><img src="img/Tortola_dSearchOther.jpg"></div>
+                                <h4>Caribbean</h4>
+                            </div>
+                        </div><!--END ALTERNATE REGION SINGLE PART-->
+                    </div><!--END SEARCH REGION SUGGESTION PART-->
+                </div>
+            </div>
+        </section><!--END NO RESULTS CONTAINER PART-->
 
 
         <!--CONTACT PART-->
@@ -558,7 +850,6 @@
                             <div class="footerDestiniqueText wow rubberBand">DESTINIQUE © 2018</div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="footerText wow rubberBand"><a href="#">A MOPRO WEBSITE</a></div>
                         </div>
                     </div>
                 </div>
@@ -589,9 +880,11 @@
         <script type="text/javascript" src="js/theme.js"></script>
         <script type="text/javascript" src="js/jquery-ui.js"></script>
         <script type="text/javascript" type="text/javascript" src="js/imgSliderFirst.js"></script>
-        <script type="text/javascript" type="text/javascript" src="js/imgSliderSecondRequire.js"></script>
         <script type="text/javascript" type="text/javascript" src="js/imgSliderThirdApp.js"></script>
         <script type="text/javascript" src="js/imgSliderFourth.js"></script>
+        <script type="text/javascript" src="searchFilters/searchFiltersData.js"></script>
+        <script type="text/javascript" src="searchFilters/searchFiltersCommon.js"></script>
+        <script type="text/javascript" src="searchFilters/searchFiltersDestination.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/gallery/jquery.min.js"></script>
         <script type="text/javascript" src="js/gallery/drupal.js"></script>

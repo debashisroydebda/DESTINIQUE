@@ -1,7 +1,7 @@
 /*CSS PART
 ----------------------------------------------------------*/
-@font-face { font-family: "Brandon Grotesque"; src: url('Brandon_thin.otf');} 
-@font-face { font-family: "Brandon Grotesque"; src: url('Brandon_reg.otf');} 
+@font-face { font-family: "Brandon Grotesque"; src: url('Brandon_thin.otf');}
+@font-face { font-family: "Brandon Grotesque"; src: url('Brandon_reg.otf');}
 body {
     background-color: #fff;
     color: #545454;
@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     right: 0;
     transition: all 0.5s;
-    z-index: 997;
+    z-index: 1010;
     background-color: #000; //background: rgba(0, 0, 0, 0) linear-gradient(hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0.738) 19%, hsla(0, 0%, 0%, 0.541) 34%, hsla(0, 0%, 0%, 0.382) 47%, hsla(0, 0%, 0%, 0.278) 56.5%, hsla(0, 0%, 0%, 0.194) 65%, hsla(0, 0%, 0%, 0.126) 73%, hsla(0, 0%, 0%, 0.075) 80.2%, hsla(0, 0%, 0%, 0.042) 86.1%, hsla(0, 0%, 0%, 0.021) 91%, hsla(0, 0%, 0%, 0.008) 95.2%, hsla(0, 0%, 0%, 0.002) 98.2%, hsla(0, 0%, 0%, 0) 100%) repeat scroll 0 0;
 }
 #header #logo {
@@ -196,7 +196,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 0;
     height: 70px;
     transition: all 0.5s;
-    box-shadow: 0 10px 50px -2px rgba(0, 0, 0, 0.14);
+    //box-shadow: 0 10px 50px -2px rgba(0, 0, 0, 0.14);
+}
+#mainNavHeight {
+    height: 60px;
 }
 /* END HEADER CSS PART
 ----------------------------------------------------------*/
@@ -368,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 100%;
 }
 .nav-menu ul li {
-    min-width: 200px;
+    min-width: 250px;
 }
 /* Nav Menu Arrows */
 .sf-arrows .sf-with-ul {
@@ -437,6 +440,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 18px 0 0 0;
     border: 0px solid #000;
 }
+.nav-menu #problemIssue ul {
+    margin:0;
+    padding-top: 18px;
+}
+.nav-menu #problemIssue1 ul {
+    margin:0;
+    padding-top: 18px;
+}
 .nav-menu ul li {
     background: #000;
 }
@@ -452,6 +463,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: none;
     transition: all 0s ease-in-out 0s;
 }
+
 .nav-menu ul li a:hover {
     background: #21e0bd;
     color: #000;
@@ -465,7 +477,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 999;
+    z-index: 1111;
     border: 0;
     background: none;
     font-size: 24px;
@@ -1311,6 +1323,298 @@ figure.snip1100 a:hover figcaption .icons i {
 
 /* GALLERY CSS PART
 ----------------------------------------------------------*/
+
+.innCrystalGallerySliderPart .noBlurWrap {
+    background-image: url("../img/gallery/inn_crystal_beach/innCrystalBeach.jpeg");
+}
+.innCrystalGallerySliderPart  {
+    padding: 45px 0;
+}
+.innCrystalGallerySliderPartText {
+    margin-bottom: 30px;
+    margin-top: 250px;
+}
+.innCrystalGallerySliderPartText h1 {
+    color: #fff;
+}
+.seablissGallerySliderPart .noBlurWrap {
+    background-image: url("../img/gallery/seabliss/seabliss.jpg");
+}
+.seablissGallerySliderPart  {
+    padding: 45px 0;
+}
+.seablissGallerySliderPartText {
+    margin-bottom: 30px;
+    margin-top: 250px;
+}
+.seablissGallerySliderPartText h1 {
+    color: #fff;
+}
+.chesapeakeCottageGallerySliderPart .noBlurWrap {
+    background-image: url("../img/gallery/chesapeakeCottage/chesapeakeCottage.jpg");
+}
+.chesapeakeCottageGallerySliderPart  {
+    padding: 45px 0;
+}
+.chesapeakeCottageGallerySliderPartText {
+    margin-bottom: 30px;
+    margin-top: 250px;
+}
+.chesapeakeCottageGallerySliderPartText h1 {
+    color: #fff;
+}
+.hereComestheSunGallerySliderPart .noBlurWrap {
+    background-image: url("../img/gallery/hereComestheSun/hereComestheSun.jpg");
+}
+.hereComestheSunGallerySliderPart  {
+    padding: 45px 0;
+}
+.hereComestheSunGallerySliderPartText {
+    margin-bottom: 30px;
+    margin-top: 250px;
+}
+.hereComestheSunGallerySliderPartText h1 {
+    color: #fff;
+}
+.beautifulBeachfrontCondoGallerySliderPart .noBlurWrap {
+    background-image: url("../img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo.jpg");
+}
+.beautifulBeachfrontCondoGallerySliderPart  {
+    padding: 45px 0;
+}
+.beautifulBeachfrontCondoGallerySliderPartText {
+    margin-bottom: 30px;
+    margin-top: 250px;
+}
+.beautifulBeachfrontCondoGallerySliderPartText h1 {
+    color: #fff;
+}
+
+#departureDatePicker, #arrivalDatePicker, #offerCodeInputBox {
+    height: 45px;
+    font-size: 18px;
+}
+.offerCode, .offerCodeT.offerCode {
+    position: relative;
+}
+.offerCode:hover::before, .offerCodeT.offerCode:hover::before {
+    cursor: pointer;
+    color: #21e0bd;
+}
+
+.offerCodeT.offerCode::before {
+    content: "\f078";
+    color: #545454;
+    font-family: FontAwesome;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    position: absolute;
+    right: -20px;
+    text-decoration: inherit;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+}
+.offerCode::before {
+    content: "\f054";
+    color: #545454;
+    font-family: FontAwesome;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    position: absolute;
+    right: -20px;
+    text-decoration: inherit;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+}
+.offerCodePart .offerCode {
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+.offerCodePart .offerCode:hover {
+    cursor: pointer;
+    color: #21e0bd;
+    transition: all 0.4s ease-in-out;
+}
+#offerCodeInputBox {
+    margin-bottom: 15px;
+}
+#sendAmessage #datepicker, #sendAmessage #datepicker1, .modalFormControl {
+    font-size: 18px;
+}
+#searchform #sendAmessage {
+    font-size: 18px;
+}
+.sendAmessage {
+    background-color: #fff;
+    border: 2px solid #21e0bd;
+    border-radius: 0;
+    color: #333;
+    font-size: 16px;
+    padding: 6px;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.sendAmessage:hover, .sendAmessage:active, .sendAmessage:focus {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 0;
+    color: #21e0bd;
+    font-size: 16px;
+    padding: 6px;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+#sendAmessage .modal-content {
+    border-radius: 0;
+    padding: 30px;
+}
+#sendAmessage .modal-header .close {
+    font-size: 60px;
+    margin-right: -15px;
+    margin-top: -30px;
+}
+.stayArriveDepartTime {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.modalLabelText {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.minusNumberCountInput-group-btn, .plusNumberCountInput-group-btn {
+    width: 33.333%;
+}
+#totalAdultsGuestsNumber {
+    background-color: #fff;
+    border-left: 0 none;
+    font-weight: bold;
+    height: 45px;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+}
+#totalChildrenGuestsNumber {
+    background-color: #fff;
+    border-left: 0 none;
+    font-weight: bold;
+    height: 45px;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+}
+.minusNumberCount, .plusNumberCount {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    border-radius: 0;
+    background-color: #fff;
+}
+.minusNumberCount:hover, .plusNumberCount:hover, .minusNumberCount:active, .plusNumberCount:active, .minusNumberCount:focus, .plusNumberCount:focus { 
+    color: #21e0bd;
+    background-color: #fff;
+}
+.adultsGuestsCount, .childrenGuestsCount {
+    text-align: center;
+}
+#sendAmessage .modal-header {
+    border-bottom: 0px
+}
+#sendAmessage .modal-footer {
+    border-top: 0;
+}
+#sendAmessage .modal-header .modal-title{
+    text-align: center;
+    color: #585858;
+}
+#sendAmessage .modal-header .modal-sub-title{
+    text-align: center;
+    color: #999;
+}
+#sendAmessage .modal-dialog {
+    width: 900px;;
+}
+
+#checkRates {
+    width: 100%;
+}
+
+
+
+
+
+.custom-radios#customRadiosPart div {
+    display: inline-block;
+}
+.custom-radios#customRadiosPart input[type="radio"] {
+    display: none;
+}
+.custom-radios#customRadiosPart input[type="radio"] + label {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+#colorDestinique2Margin {
+    margin-left: 30px;
+}
+.custom-radios#customRadiosPart input[type="radio"] + label span {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 44px;
+}
+label:hover {
+    cursor: pointer;
+}
+.custom-radios#customRadiosPart input[type="radio"] + label span img {
+    opacity: 0;
+    transition: all .3s ease;
+}
+.custom-radios#customRadiosPart input[type="radio"]#colorDestinique1 + label span {
+    background-color: #21e0bd;
+}
+.custom-radios#customRadiosPart input[type="radio"]#colorDestinique2 + label span {
+    background-color: #21e0bd;
+}
+.custom-radios#customRadiosPart input[type="radio"]:checked + label span {
+    opacity: 1;
+    background: url('../img/check.png') center center no-repeat;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.offerCodePart {
+    margin-bottom: 15px;
+}
 .gal-container{
     padding: 12px;
 }
@@ -1731,6 +2035,163 @@ i.red{
 
 /* SEARCH PROPERTY AREA CSS PART
 ----------------------------------------------------------*/
+/* carousel fullscreen */
+
+.carousel-fullscreen .carousel-inner .item {
+    height: 100vh; 
+    min-height: 600px; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+/* carousel fullscreen - vertically centered caption*/
+
+.carousel-fullscreen .carousel-caption {
+    top: 50%;  
+    bottom: auto;
+    -webkit-transform: translate(0, -50%); 
+    transform: translate(0, -50%);
+}
+
+/* overlay for better readibility of the caption  */
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    transition: all 0.2s ease-out;
+}
+
+
+/* demo typography */
+
+h1,h2,h3,h4 {
+    font-weight: 700;
+}
+
+.super-heading {
+    font-size: 70px; 
+}
+
+
+.super-paragraph {
+    font-size: 30px; font-weight: 300;
+}
+
+.carousel-caption .super-paragraph a,
+.carousel-caption .super-paragraph a:hover
+{
+    color: #fff;
+}
+
+#carousel-example-generic {
+    margin: 40px 0;
+}
+
+/* carousel fade */
+/* original solution by https://codepen.io/Rowno/pen/Afykb */
+
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+#carousel-example-generic2 .carousel-control {
+    opacity: 0;
+}
+#carousel-example-generic2:hover .carousel-control {
+    opacity: .5;
+}
+#carousel-example-generic2 .carousel-control:hover {
+    opacity: .9;
+}
+#carousel-example-generic2 .carousel-control .fa-chevron-left, #carousel-example-generic2 .carousel-control .fa-chevron-right {
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 10px 13px;
+    top: 50%;
+}
+.demo-content {padding-top: 50px; padding-bottom: 50px; }
+/*----------------------------------------------end slider--------*/
+.propertyDetaisPlaceNamce {
+    font-size: 28px;
+    padding-left: 6px;
+    margin-bottom: 15px;
+}
+.propertiesDetailsSliderBottomPart.listing-meta {
+    background: #f5f5f5 none repeat scroll 0 0;
+    list-style-type: none;
+    margin: 0 0 30px;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.propertiesDetailsSliderBottomPart.listing-meta li.listing-price {
+    background: #21e0bd;
+    border-radius: 0;
+    color: #fff;
+    font-size: 16px;
+    left: 0;
+    padding-right: 25px;
+    position: relative;
+    top: 0;
+}
+.propertiesDetailsSliderBottomPart.listing-meta li {
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 35px;
+    margin: 0;
+    padding: 8px 0 8px 25px;
+}
+#propertyDetaisPlaceDescription {
+
+}
+#propertyDetaisPlaceDescription h2 {
+    margin-bottom: 1.1em;
+    margin-top: 0;
+}
+#propertyDetaisPlaceDescription p {
+    display: block;
+    margin: 1em 0;
+}
+.propertyChild hr {
+    border-color: #aaa;
+    border-width: 2px 0 0;
+}
+#carousel-example-generic2 .carousel-control {
+    background-image: none;
+}
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .fa-chevron-left, .carousel-control .fa-chevron-right {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+}
 .propertySortingRow {
     background-color: #dedede;
     margin: 10px 0 0;
@@ -1899,6 +2360,7 @@ i.red{
     text-overflow: ellipsis;
     top: 36px;
     white-space: nowrap;
+    z-index: 96;
 }
 .propertyImageContainerLink .propertyName {
     bottom: 36px;
@@ -1937,6 +2399,7 @@ i.red{
     top: 36px;
     white-space: nowrap;
     right: 0px;
+    z-index: 97;
 }
 /*
 .propertyImageContainer .houseFavourite {
@@ -2224,6 +2687,27 @@ h6.fp-el {
     font-size: 45px;
     text-shadow: none;
     margin-top: 12%;
+}
+.propertyImageContainer .carousel-control.left, .propertyImageContainer .carousel-control.right {
+    z-index: 96;
+}
+.propertyImageContainer .carousel-indicators {
+    position: absolute;
+    right: 60px;
+    text-align: right;
+    z-index: 100;
+}
+.propertyImageContainer .carousel-indicators li {
+    border: 2px solid #21e0bd;
+    height: 15px;
+    margin: 1px;
+    width: 15px;
+}
+.carousel-indicators .active {
+    background-color: #fff;
+    height: 16px;
+    margin: 0;
+    width: 16px;
 }
 /* Previous button  */
 #quote-carousel .carousel-control.left 
@@ -2835,9 +3319,16 @@ table {
     border-radius: 0 3px 3px 0;
 }
 #comment-input input, #tribe-bar-form input[type="text"], .avada-select .select2-container .select2-choice, .avada-select-parent select, .chzn-container .chzn-drop, .chzn-container-single .chzn-single, .fusion-login-box .fusion-login-form input[type="password"], .fusion-login-box .fusion-login-form input[type="text"], .input-text:not(textarea), .main-nav-search-form input, .post-password-form label input[type="password"], .search-page-search-form input, .searchform .search-table .search-field input, .tribe-bar-disabled #tribe-bar-form .tribe-bar-filters input[type="text"], .wpcf7-captchar, .wpcf7-form .wpcf7-date, .wpcf7-form .wpcf7-number, .wpcf7-form .wpcf7-quiz, .wpcf7-form .wpcf7-select, .wpcf7-form .wpcf7-text, input.s, input[type="email"], input[type="number"], input[type="password"], input[type="text"], select {
-    height: 36px;
+    height: 45px;
     padding-bottom: 0;
     padding-top: 0;
+    font-size: 18px;
+    border-radius: 0;
+}
+.searchformCallUsAt {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
 }
 #comment-input input, #comment-textarea textarea, #tribe-bar-form input[type="text"], #wrapper .search-table .search-field input, .avada-select .select2-container .select2-choice, .avada-select .select2-container .select2-choice .select2-arrow, .avada-select .select2-container .select2-choice2 .select2-arrow, .avada-select-parent .select-arrow, .avada-select-parent select, .chzn-container .chzn-drop, .chzn-container-single .chzn-single, .comment-form-comment textarea, .gravity-select-parent .select-arrow, .input-text, .main-nav-search-form input, .post-password-form label input[type="password"], .search-page-search-form input, .select-arrow, .tribe-bar-disabled #tribe-bar-form .tribe-bar-filters input[type="text"], .wpcf7-captchar, .wpcf7-form .wpcf7-date, .wpcf7-form .wpcf7-number, .wpcf7-form .wpcf7-quiz, .wpcf7-form .wpcf7-select, .wpcf7-form .wpcf7-text, .wpcf7-form textarea, .wpcf7-select-parent .select-arrow, input.s, input[type="email"], input[type="number"], input[type="password"], input[type="text"], select, textarea {
     border: 1px solid #ddd;
@@ -3879,6 +4370,9 @@ video.bgVideo, source{
     }
 }
 @media (max-width: 720px) {
+    .propertyImageContainer .carousel-indicators {
+        display: none;
+    }
     .mMT30 {
         margin-top: 30px;
     }

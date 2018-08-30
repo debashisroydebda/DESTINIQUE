@@ -1,0 +1,161 @@
+#filterButtonTopHeaderPrt .searchSubMenu {
+    padding: 0 20px
+}
+#filterButtonTopHeaderPrt.black .searchSubMenu,
+#filterButtonTopHeaderPrt.itemOpen .searchSubMenu {
+    background: rgba(255, 255, 255, .95);
+    box-shadow: 0 -7px 20px 0 black
+}
+
+
+
+#filterButtonTopHeaderPrt .searchSubMenu .item {
+    border: solid 1px transparent;
+    border-radius: 0px;
+    min-width: 124px;
+    background: #000;
+    text-align: center;
+    color: #21e0bd;
+    margin: 12px 8px 12px 0;
+    padding: 0;
+    font-size: 17px;
+    cursor: pointer
+}
+#filterButtonTopHeaderPrt .searchSubMenu .item .title {
+    padding: 10px 20px;
+}
+#filterButtonTopHeaderPrt .searchSubMenu .item .statusLabel{
+    padding: 10px 20px;
+}
+#filterButtonTopHeaderPrt .searchSubMenu .item:hover,
+#filterButtonTopHeaderPrt .searchSubMenu .item.active,
+#filterButtonTopHeaderPrt .searchSubMenu .item.selected {
+    border: solid 1px #21e0bd!important;
+    background: #21e0bd;
+    color: #fff
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .filter {
+    position: absolute;
+    background: #fff;
+    z-index: -1;
+    padding: 16px 30px 26px;
+    width: 318px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .2)
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .filter .title {
+    font-size: 20px
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .filter .wrapper {
+    padding: 40px 0
+}
+#filterButtonTopHeaderPrt .searchSubMenu .filter button {
+    border-radius: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: none;
+    line-height: 51px
+}
+#filterButtonTopHeaderPrt .searchSubMenu .filter button:active, #filterButtonTopHeaderPrt .searchSubMenu .filter button:focus {
+    border: 0;
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .filter .relative {
+    position: relative
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .filter .relative .clear {
+    text-align: left;
+    padding-left: 0;
+    font-size: 17px;
+    font-weight: 500
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .filter .relative .button {
+    right: 0;
+    position: absolute
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .calendar .filter {
+    width: auto
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .calendar .filter .wrapper {
+    padding: 0
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .calendar .filter .wrapper .datepicker {
+    position: static;
+    border: 0;
+    padding: 0;
+    z-index: auto
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .price .filter .slider-range {
+    width: 100%;
+    height: 4px;
+    border: none;
+    background: #879aa9;
+    margin-right: 30px
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .price .filter .slider-range span {
+    left: 0%;
+    background: #fff;
+    border: solid 1px #ccc;
+    outline: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .2);
+    margin-top: -13px
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .price .filter .slider-range span div,
+#filterButtonTopHeaderPrt .searchSubMenu .price .filter .slider-range .sliderPrice {
+    display: none
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .guests .filter .label {
+    display: none
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .guests .filter .wrapper div {
+    font-size: 36px;
+    cursor: pointer
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .guests .filter .wrapper div.disabled {
+    opacity: .4
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .guests .filter .wrapper span {
+    font-size: 26px;
+    width: 60px;
+    line-height: normal;
+    text-align: center
+}
+
+#filterButtonTopHeaderPrt .searchSubMenu .moreFilters .filter {
+    width: auto;
+    min-width: 1100px
+}
+
+@media(max-width:1516px) {
+    #filterButtonTopHeaderPrt .searchSubMenu .moreFilters .filter {
+        right: 0
+    }
+}
+#filterButtonTopHeaderPrt .searchSubMenu .moreFilters .filter .wrapper .searchFilters {
+    top: 129px;
+    border-top: none;
+    position: static;
+}
+#filterButtonTopHeaderPrt .searchSubMenu .moreFilters .filter .wrapper .searchFilters .container-fluid {
+    padding: 0;
+}

@@ -1,0 +1,1268 @@
+#ui-datepicker-div.ui-datepicker {
+    width: 17em;
+    padding: .2em .2em 0;
+    display: none
+}
+#filterButtonTopHeaderPrt .ui-slider {
+    position: relative;
+    text-align: left
+}
+#filterButtonTopHeaderPrt .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none
+}
+#filterButtonTopHeaderPrt .ui-slider-horizontal .ui-slider-handle {
+    top: -.3em;
+    margin-left: -.6em
+}
+#filterButtonTopHeaderPrt .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0
+}
+.searchFilters .dropdownWrapper {
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    line-height: 25px;
+    color: #444;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+.searchFilters .dropdownWrapper.active {
+    border-color: #2ec08c
+}
+.searchFilters .dropdownWrapper:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 10px;
+    top: 57%;
+    margin-top: -7px;
+    background-image: url("arrowDown_aqua.png");
+    background-size: 100%;
+    background-position: 90% 50%;
+    background-repeat: no-repeat
+}
+.searchFilters .dropdownWrapper .dropdown {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    right: 0;
+    max-height: 400px;
+    width: 250px;
+    margin: 1px 0 0 0;
+    padding: 0;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    font-weight: normal;
+    transition: all .15s ease-in;
+    list-style: none;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+    display: none;
+    overflow-y: auto;
+    pointer-events: none
+}
+.searchFilters .universalDropdownItem {
+    padding: 0 15px
+}
+.searchFilters .universalDropdownItem:hover {
+    color: #fff;
+    background-color: #2ec08c
+}
+.searchFilters .universalDropdownItem .propertyCount {
+    color: #ccc
+}
+.searchFilters .universalDropdownItem:hover .propertyCount {
+    color: #fff;
+    opacity: .66
+}
+.searchFilters .universalDropdownItem.groupTitle {
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: default
+}
+.searchFilters li.universalDropdownItem.itemChild {
+    padding-left: 40px
+}
+.searchFilters .dropdownWrapper .dropdown li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #444;
+    border-bottom: 1px solid #e6e8ea
+}
+.searchFilters .dropdownWrapper .dropdown li i {
+    float: right;
+    color: inherit
+}
+.searchFilters .dropdownWrapper .dropdown li:hover a {
+    background: #e6e6e6
+}
+.searchFilters .dropdownWrapper.active .dropdown {
+    display: block;
+    pointer-events: auto
+}
+.searchFilters .dropdownSelect {
+    top: 0;
+    position: absolute;
+    left: 0;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none
+}
+#filterButtonTopHeaderPrt .flex {
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important
+}
+
+#filterButtonTopHeaderPrt .button,
+#filterButtonTopHeaderPrt button,
+#filterButtonTopHeaderPrt input[type="submit"],
+#filterButtonTopHeaderPrt input[type="reset"],
+#filterButtonTopHeaderPrt input[type="button"] {
+    display: inline-block;
+    position: relative;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box
+}
+
+#filterButtonTopHeaderPrt .button.buttonPrimary,
+#filterButtonTopHeaderPrt button.buttonPrimary,
+#filterButtonTopHeaderPrt input[type="submit"].buttonPrimary,
+#filterButtonTopHeaderPrt input[type="reset"].buttonPrimary,
+#filterButtonTopHeaderPrt input[type="button"].buttonPrimary {
+    color: #fff;
+    background-color: #28c089;
+    border-color: #28c089
+}
+#filterButtonTopHeaderPrt .button.buttonPrimary:hover,
+#filterButtonTopHeaderPrt button.buttonPrimary:hover,
+#filterButtonTopHeaderPrt input[type="submit"].buttonPrimary:hover,
+#filterButtonTopHeaderPrt input[type="reset"].buttonPrimary:hover,
+#filterButtonTopHeaderPrt input[type="button"].buttonPrimary:hover,
+#filterButtonTopHeaderPrt .button.buttonPrimary:focus,
+#filterButtonTopHeaderPrt button.buttonPrimary:focus,
+#filterButtonTopHeaderPrt input[type="submit"].buttonPrimary:focus,
+#filterButtonTopHeaderPrt input[type="reset"].buttonPrimary:focus,
+#filterButtonTopHeaderPrt input[type="button"].buttonPrimary:focus {
+    color: #fff;
+    background-color: #3bd69e;
+    border-color: #3bd69e
+}
+#filterButtonTopHeaderPrt hr {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 1px solid #e1e1e1
+}
+.slider-range .ui-slider-range {
+    background: #28c089!important;
+    border: 1px solid #28c089!important
+}
+#filterButtonTopHeaderPrt {
+    z-index: 1000;
+}
+@media(min-width:1100px) {
+    #filterButtonTopHeaderPrt .noBrowserSupportBg {
+        display: none;
+        background: #fff9d7;
+        border: 1px solid #dac84a;
+        cursor: pointer
+    }
+    #filterButtonTopHeaderPrt .noBrowserSupportBg .noBrowserSupportWrapper {
+        width: 100%;
+        padding: 0 20px;
+        margin: auto;
+        line-height: 28px;
+        position: relative
+    }
+    #filterButtonTopHeaderPrt .noBrowserSupportBg .noBrowserSupportWrapper .iAlert {
+        background: url(iAlert.png) no-repeat 0 0;
+        width: 17px;
+        height: 16px;
+        position: absolute;
+        top: 6px
+    }
+    #filterButtonTopHeaderPrt .noBrowserSupportBg .noBrowserSupportWrapper .noBrowserSupportText,
+    #filterButtonTopHeaderPrt .noBrowserSupportBg .noBrowserSupportWrapper .noBrowserSupportText:link,
+    #filterButtonTopHeaderPrt .noBrowserSupportBg .noBrowserSupportWrapper .noBrowserSupportText:active,
+    #filterButtonTopHeaderPrt .noBrowserSupportBg .noBrowserSupportWrapper .noBrowserSupportText:visited {
+        width: 100%;
+        height: 30px;
+        z-index: 1;
+        color: #545454;
+        padding-left: 24px;
+        text-decoration: none
+    }
+    #filterButtonTopHeaderPrt .noBrowserSupportBg .noBrowserSupportWrapper .noBrowserSupportText:hover {
+        text-decoration: underline
+    }
+    #filterButtonTopHeaderPrt .noBrowserSupportBg .noBrowserSupportWrapper .closeNoBrowserSupport {
+        line-height: 30px;
+        z-index: 1;
+        float: right;
+        color: #000;
+        height: 28px
+    }
+    #filterButtonTopHeaderPrt .noBrowserSupportBg .noBrowserSupportWrapper .closeNoBrowserSupport:before {
+        content: "×";
+        font-size: 28px
+    }
+    #filterButtonTopHeaderPrt {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        font-size: 16px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    #filterButtonTopHeaderPrt .menu {
+        background: #000;
+        width: 100%;
+        height: 70px;
+        z-index: 6
+    }
+    .mapResults #filterButtonTopHeaderPrt .menu {
+        background: #000
+    }
+    header.itemOpen .menu,
+    header.black .menu {
+        background: #000
+    }
+    #filterButtonTopHeaderPrt .menu>div {
+        display: inline-block;
+        vertical-align: middle
+    }
+    #filterButtonTopHeaderPrt .menu .submenu>li {
+        display: inline-block;
+        position: relative
+    }
+    #filterButtonTopHeaderPrt .menu .submenu>li>a {
+        font-size: 13px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+        display: block;
+        padding: 17px 20px 18px
+    }
+    #filterButtonTopHeaderPrt .menu .leftSide .searchbar {
+        padding: 14px 20px 14px 0;
+        height: 70px
+    }
+    #filterButtonTopHeaderPrt .menu .rightSide {
+        position: absolute;
+        right: 20px;
+        top: 0
+    }
+    #filterButtonTopHeaderPrt .menu .rightSide .link a {
+        padding: 25px 11px 20px
+    }
+    @media(max-width:1150px) {
+        #filterButtonTopHeaderPrt .menu .rightSide .link a {
+            padding: 25px 5px 20px
+        }
+    }
+    #filterButtonTopHeaderPrt .menu .rightSide .link:hover,
+    #filterButtonTopHeaderPrt .menu .rightSide .link.open {
+        border-bottom: 5px solid #28bf88
+    }
+    #filterButtonTopHeaderPrt .menu .rightSide .link.noUnderline:hover,
+    #filterButtonTopHeaderPrt .menu .rightSide .link.noUnderline.open {
+        border-bottom: none
+    }
+    #filterButtonTopHeaderPrt .subMenuWrapper {
+        position: relative
+    }
+    #filterButtonTopHeaderPrt .favoriteToggle:not(.noCount) {
+        position: relative;
+        padding-right: 24px!important
+    }
+    #filterButtonTopHeaderPrt .favoriteToggle .cartCount {
+        background-color: #ea8a58;
+        border-radius: 50%;
+        width: 19px;
+        text-align: center;
+        color: #fff;
+        line-height: 19px;
+        position: absolute;
+        right: 0
+    }
+    #filterButtonTopHeaderPrt .myAccountDropDownWrapper {
+        position: absolute;
+        top: 83px;
+        right: 0;
+        display: none
+    }
+    #filterButtonTopHeaderPrt .myAccountDropDownWrapper .myAccountDropDownArrow {
+        right: 20px;
+        top: -42px;
+        position: absolute;
+        border: solid 30px transparent;
+        border-bottom: solid 30px #fafafa;
+        z-index: -1
+    }
+    #filterButtonTopHeaderPrt .myAccountDropDownWrapper .rounded {
+        background: #fafafa
+    }
+    #filterButtonTopHeaderPrt .myAccountDropDownWrapper .rounded ul {
+        margin: 0
+    }
+    #filterButtonTopHeaderPrt .myAccountDropDownWrapper .rounded li {
+        font-size: 1.3em;
+        line-height: 50px;
+        padding: 0 10px 10px
+    }
+    #filterButtonTopHeaderPrt .myAccountDropDownWrapper .rounded li a {
+        color: #343434;
+        display: block;
+        min-width: 150px;
+        line-height: 40px;
+        padding: 0 10px 0 40px;
+        background: url("iEmptyHeart.png") 0 0 no-repeat
+    }
+    #filterButtonTopHeaderPrt .myAccountDropDownWrapper .rounded .buildWishlist {
+        min-width: 220px;
+        color: #505050;
+        font-size: 14px;
+        line-height: 16px
+    }
+    #filterButtonTopHeaderPrt .myAccountDropDownWrapper .rounded .buildWishlist .strong {
+        font-weight: bold
+    }
+    #filterButtonTopHeaderPrt .favBubble {
+        z-index: 7;
+        position: absolute;
+        top: 50%;
+        right: 0
+    }
+    #filterButtonTopHeaderPrt .favBubble.trans {
+        transition: all 400ms linear
+    }
+    #filterButtonTopHeaderPrt .favBubble.favSmall {
+        transform: scale(.01)
+    }
+    #filterButtonTopHeaderPrt .favBubble .favBubbleRelative {
+        position: relative
+    }
+    #filterButtonTopHeaderPrt .favBubble .favBubbleRelative .favImgWrapper {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 56px;
+        height: 56px;
+        overflow: hidden;
+        border-radius: 50%
+    }
+    #filterButtonTopHeaderPrt .favBubble .favBubbleRelative .favImgWrapper .favBubbleImg {
+        width: 58px;
+        min-height: 58px;
+        max-width: none;
+        border-radius: 50%
+    }
+    #filterButtonTopHeaderPrt .favBubble .favBubbleRelative .favBubbleFrame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70px;
+        height: 70px;
+        background: url(favBubble.png) -5px -5px no-repeat
+    }
+    #filterButtonTopHeaderPrt .lists {
+        margin: 0;
+        margin-top: 5px;
+        top: 100%;
+        right: 0;
+        background: #000;
+        position: absolute;
+        letter-spacing: 1px;
+        width: 200px;
+        text-transform: uppercase;
+        font-size: 13px;
+        display: none
+    }
+    #filterButtonTopHeaderPrt .lists ul {
+        margin: 0
+    }
+    #filterButtonTopHeaderPrt .lists li {
+        cursor: pointer;
+        position: relative
+    }
+    #filterButtonTopHeaderPrt .lists li a {
+        padding: 25px 55px 25px 25px!important;
+        display: block;
+        color: #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+    #filterButtonTopHeaderPrt .lists .cartCount {
+        right: 22px;
+        background-color: #ea8a58;
+        border-radius: 50%;
+        width: 19px;
+        text-align: center;
+        color: #fff;
+        line-height: 19px;
+        position: absolute
+    }
+    #filterButtonTopHeaderPrt .lists .groupListToggle .groupListsDropDownContainer {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        overflow: hidden
+    }
+    #filterButtonTopHeaderPrt .lists .groupListToggle .groupListsDropDownContainer .groupListsDropDown {
+        display: none
+    }
+    #filterButtonTopHeaderPrt .lists .groupListToggle:hover .groupListsDropDownContainer .groupListsDropDown {
+        background: #000;
+        margin-right: -18px;
+        margin-bottom: -18px;
+        max-height: 72vh;
+        max-width: 300px;
+        display: block;
+        overflow: scroll
+    }
+    #filterButtonTopHeaderPrt .loginWrapper {
+        margin-left: 10px;
+        position: relative;
+        min-width: 85px
+    }
+    @media(max-width:1150px) {
+        #filterButtonTopHeaderPrt .loginWrapper {
+            margin-left: 0;
+            width: 75px
+        }
+    }
+    #filterButtonTopHeaderPrt .loginWrapper .headerLoginSpinner {
+        top: -15px
+    }
+    #filterButtonTopHeaderPrt .loginWrapper .buttonPrimary {
+        font-size: 13px;
+        line-height: 35px;
+        background: transparent;
+        border: solid 1px rgba(40, 192, 137, .6);
+        border-radius: 6px;
+        padding: 0 18px;
+        font-weight: 400
+    }
+    @media(max-width:1150px) {
+        #filterButtonTopHeaderPrt .loginWrapper .buttonPrimary {
+            padding: 0 14px
+        }
+    }
+    #filterButtonTopHeaderPrt .loginWrapper .buttonPrimary:hover {
+        background: #28c089
+    }
+    #filterButtonTopHeaderPrt .loginWrapper .profile {
+        background: url(header_sprite.png);
+        background-size: 21px;
+        background-position: right -60px;
+        background-repeat: no-repeat;
+        padding-right: 26px!important
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        border-bottom: 1px solid #d7d7d7;
+        -webkit-box-shadow: 0 0 20px #444;
+        -moz-box-shadow: 0 0 20px #444;
+        box-shadow: 0 0 20px #444;
+        z-index: 2
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container {
+        text-align: left;
+        padding: 50px 20px 40px
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaTitle {
+        font-size: 35px;
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 15px
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaSubtitle {
+        font-size: 20px;
+        color: #545454;
+        margin-bottom: 30px
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaRight {
+        padding-left: 38px;
+        border-left: 1px solid #d7d7d7
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaRight .ideaList a:link,
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaRight .ideaList a:active,
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaRight .ideaList a:visited,
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaRight .ideaList a:hover {
+        font-size: 18px;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 600
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaRight .ideaList a:hover {
+        color: #28c089
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaArea {
+        padding-right: 2.5%
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaArea .ideaImgLnk {
+        width: 100%;
+        position: relative;
+        height: 100%;
+        display: block
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaArea .ideaImgLnk .ideaImg {
+        width: 100%;
+        min-height: 135px
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaArea .ideaImgLnk .ideaOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: inherit;
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background: none;
+        background: rgba(0, 0, 0, .5)
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaArea:hover .ideaImgLnk .ideaOverlay {
+        display: none
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaArea .ideaImgLnk .ideaOverlay .ideaIconWrapper {
+        margin-top: 40px;
+        text-align: center
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .container .ideaArea .ideaImgLnk .ideaOverlay .ideaIconWrapper .ideaIcon {
+        margin: auto
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .headerCloser {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        font-size: 31px;
+        font-weight: bold;
+        display: inline-block;
+        line-height: 0
+    }
+    #filterButtonTopHeaderPrt .vacationIdeaWrapper .headerCloser:before {
+        content: "×"
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transform: translateZ(0);
+        background: #fff;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        border-bottom: 1px solid #d7d7d7;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-box-shadow: 0 0 20px #444;
+        -moz-box-shadow: 0 0 20px #444;
+        box-shadow: 0 0 20px #444
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container {
+        text-align: left;
+        padding: 50px 20px 40px
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerDdRight {
+        padding-left: 38px;
+        border-left: 1px solid #d7d7d7
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerDdLeft {
+        padding-right: 20px
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerDdTitle {
+        font-size: 35px;
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 15px
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerDdSubtitle {
+        font-size: 20px;
+        color: #545454;
+        margin-bottom: 15px
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper {
+        margin: auto;
+        text-align: center
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .headerContactReason {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        color: #cacaca;
+        line-height: 1.2em
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .headerContactReason:hover {
+        color: #28c089
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .headerContactReason .iSuitCase,
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .headerContactReason .iSlide {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        background: url('iHeaderContact.png') 0 0 no-repeat;
+        display: block
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .headerContactReason .iSlide {
+        background: url('iHeaderContact.png') 0 -100px no-repeat
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .headerContactReason:hover .iSuitCase,
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .headerContactReason .radioContactReason:checked+label .iSuitCase {
+        background: url('iHeaderContact.png') 0 -50px no-repeat
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .headerContactReason:hover .iSlide,
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .headerContactReason .radioContactReason:checked+label .iSlide {
+        background: url('iHeaderContact.png') 0 -150px no-repeat
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .radioContactReason {
+        cursor: pointer
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .radioContactReason+label {
+        display: block
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactReasonWrapper .radioContactReason:checked+label {
+        color: #28c089
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactBox {
+        background: #fafafa;
+        color: #545454;
+        font-size: 18px;
+        width: 100%;
+        padding: 20px 0 30px;
+        text-align: center;
+        margin-bottom: 15px
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactBox .iClock,
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactBox .iMap,
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactBox .iPhone {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        background: url('iHeaderContact.png') 0 0 no-repeat;
+        display: block
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactBox .iPhone {
+        background: url('iHeaderContact.png') 0 -300px no-repeat
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactBox .iClock {
+        background: url('iHeaderContact.png') 0 -350px no-repeat
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .container .headerContactBox .iMap {
+        background: url('iHeaderContact.png') 0 -400px no-repeat
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerCloser {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        font-size: 31px;
+        font-weight: bold;
+        display: inline-block;
+        line-height: 0
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerCloser:before {
+        content: "×"
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm label {
+        display: block;
+        float: none;
+        text-align: left;
+        line-height: 1.5em;
+        height: inherit;
+        margin: 0;
+        width: 100%
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm input {
+        width: 100%;
+        height: 35px;
+        color: #444;
+        font-size: 14px;
+        padding: 0 8px;
+        border: 1px solid #ccc
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm textarea {
+        font-size: 14px;
+        width: 100%;
+        height: 70px;
+        padding: 8px;
+        color: #444;
+        outline: none;
+        resize: vertical;
+        border: 1px solid #ccc
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm input::-webkit-input-placeholder,
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm textarea::-webkit-input-placeholder {
+        color: #999;
+        font-style: italic;
+        font-family: Georgia, serif
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm textarea:focus,
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm input:focus {
+        border-color: #28c089
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm input.parsley-error,
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm input.parsley-error:focus {
+        border: red 1px solid
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm input.parsley-success,
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm input.parsley-success:focus {
+        border: #9acd32 1px solid
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .parsley-errors-list {
+        list-style: none;
+        color: red;
+        padding: 0
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .parsley-errors-list li {
+        line-height: 28px;
+        font-size: 14px
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .headerTelContainer {
+        position: relative
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .headerTelContainer .flag-dropdown {
+        height: 35px!important
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .dropdownWrapper {
+        height: 35px;
+        margin: 0;
+        width: 100%;
+        line-height: 33px
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .dropdownWrapper .defaultValue {
+        color: #999;
+        font-style: italic;
+        font-family: Georgia, serif
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .dropdownWrapper.active .dropdown {
+        max-height: 200px
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .dropdownWrapper .dropdown {
+        width: inherit
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .dropdownWrapper .universalDropdownItem.groupTitle {
+        cursor: pointer
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .datepickerWrapper {
+        position: relative;
+        display: flex
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .datepickerWrapper #headerInquireCheckIn {
+        margin-right: 6px
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .datepickerWrapper #headerInquireCheckOut {
+        margin-left: 6px
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .datepickerWrapper button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .slider-range {
+        margin-top: 38px;
+        margin-right: 12px;
+        width: calc(100% - 24px);
+        float: right;
+        display: block;
+        height: 6px;
+        background-color: #666;
+        background-image: none;
+        border: none
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .slider-range .ui-slider-handle {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        top: -8px;
+        background-image: url('priceSliderHandle.png');
+        background-repeat: no-repeat
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .slider-range .ui-slider-handle .sliderPrice {
+        position: relative;
+        top: -18px;
+        left: -20%;
+        font-size: 12px;
+        text-align: right;
+        margin-left: -25px;
+        color: #444
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .slider-range .ui-slider-handle:last-child .sliderPrice {
+        position: relative;
+        top: -18px;
+        left: 50%;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 0
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .slider-range .fixed.sliderPrice.Max {
+        right: -10px;
+        position: absolute;
+        top: -26px;
+        font-size: 12px
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .slider-range .fixed.sliderPrice.Min {
+        left: -10px;
+        position: absolute;
+        top: -26px;
+        font-size: 12px;
+        text-align: left
+    }
+    .headerForm .slider-range .ui-slider-handle .sliderPrice.Min {}
+    .headerForm .marketing {
+        position: relative
+    }
+    .headerForm .marketing input {
+        display: none
+    }
+    .headerForm .marketing label {
+        cursor: pointer;
+        padding-left: 54px;
+        line-height: normal
+    }
+    .headerForm .marketing input[type="checkbox"]+label span {
+        width: 35px;
+        height: 35px;
+        background: url(loginSprites.png) 0 -550px no-repeat;
+        background-size: 100% auto;
+        cursor: pointer;
+        position: absolute;
+        left: 4px
+    }
+    .headerForm .marketing input[type="checkbox"]:checked+label span {
+        background: url(loginSprites.png) 0 -608px no-repeat;
+        background-size: 100% auto
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .headerSubmit {
+        display: block;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 12px;
+        font-size: 18px;
+        text-transform: uppercase
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .headerForm .headerInquireError {
+        display: none;
+        width: 100%;
+        color: red;
+        text-align: center
+    }
+    #filterButtonTopHeaderPrt .contactDropDownMenu .inquireThanksModal {
+        margin-top: 200px;
+        text-align: center
+    }
+}
+.clear {
+    clear: both
+}
+
+.float-left {
+    float: left
+}
+
+.float-right {
+    float: right
+}
+select,
+input {
+    outline: none
+}
+
+.searchFilterOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .9);
+    z-index: 100;
+}
+
+.searchFilters {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 4;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+@media(max-width:1099px) {
+    .searchFilters {
+        top: 70px
+    }
+}
+
+.searchFilters .label {
+    font-size: 14px;
+    line-height: 35px;
+    font-weight: normal;
+    color: #000;
+}
+.amenitySelector label {
+    font-weight: normal;
+    cursor: pointer;
+}
+.searchFilters .region {
+    padding: 25px 0;
+    border-bottom: solid 1px #e1e1e1
+}
+.searchFilters .region .regionSelect {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 17px;
+    background: #fff;
+    -webkit-appearance: none
+}
+.searchFilters .region .regionSelect.disabled {
+    background: #ebebeb;
+    color: #444
+}
+.searchFilters .region .regionSelect.disabled::after {
+    background-image: url('arrowDown_aqua.png');
+}
+.searchFilters .region .regionSelect span {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    padding-right: 18px
+}
+.searchFilters .region .closeFilters {
+    color: #cecece;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: -6px;
+    position: absolute;
+    right: 0;
+}
+
+@media(max-width:1099px) {
+    .searchFilters .region .closeFilters {
+        top: -22px;
+        padding: 0 20px
+    }
+}
+
+.searchFilters .price {
+    padding: 25px 0
+}
+
+.searchFilters .price .sliderWrapper {
+    margin: 22px 0
+}
+
+@media(max-width:1099px) {
+    .searchFilters .price .sliderWrapper {
+        margin: 40px 71px 40px 24px
+    }
+}
+
+.searchFilters .price .sliderWrapper .slider-range {
+    float: right;
+    height: 6px;
+    width: 100%;
+    background-color: #879aa9;
+    border: none
+}
+
+.searchFilters .price .sliderWrapper .slider-range .ui-slider-handle {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    top: -8px;
+    background-image: url('priceSliderHandle.png');
+    background-repeat: no-repeat
+}
+
+.searchFilters .price .sliderWrapper .slider-range .ui-slider-handle .sliderPrice {
+    position: relative;
+    left: -20%;
+    margin-left: -25px;
+    color: #444;
+    text-align: right;
+    top: -20px;
+    font-size: 14px
+}
+
+.searchFilters .price .sliderWrapper .slider-range .ui-slider-handle:last-child .sliderPrice {
+    left: 50%;
+    margin-left: 0
+}
+
+.searchFilters .price .sliderWrapper .slider-range .fixed.sliderPrice.Max {
+    right: -10px;
+    position: absolute;
+    top: -28px;
+    font-size: 14px
+}
+
+.searchFilters .price .sliderWrapper .slider-range .fixed.sliderPrice.Min {
+    left: -10px;
+    position: absolute;
+    top: -28px;
+    font-size: 14px;
+    text-align: left
+}
+
+@media(max-width:1099px) {
+    .searchFilters .price .sliderWrapper .slider-range .ui-slider-handle .sliderPrice {
+        top: -28px
+    }
+    .searchFilters .price .sliderWrapper .slider-range .ui-slider-handle:last-child .sliderPrice {
+        top: -28px
+    }
+}
+
+.searchFilterOverlay .collections {
+    padding-bottom: 5px
+}
+
+.searchFilters .collections {
+    padding-top: 25px
+}
+
+.searchFilters .collections .amenitySelector {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 5px 0 5px 50px;
+    margin-right: 8px;
+    min-width: 16%
+}
+
+@media(max-width:1099px) {
+    .searchFilters .collections .amenitySelector {
+        padding: 30px 0 0 0
+    }
+}
+
+.searchFilters .collections .amenitySelector input {
+    position: absolute;
+    top: 6px;
+    left: 0
+}
+
+.searchFilters .collections .amenitySelector .amenityImage {
+    position: absolute;
+    top: 6px;
+    left: 30px;
+    width: 18px;
+    height: 18px;
+    margin: 0 6px 0 -9px;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.searchFilters .collections .amenitySelector .amenityImage.hasBeach {
+    background-image: url('hasBeach_grey.png')
+}
+
+.searchFilters .collections .amenitySelector .amenityImage.CityLife {
+    background-image: url('cityLife.png');
+    background-size: 18px auto;
+    background-position: 0 -19px;
+    background-repeat: no-repeat
+}
+
+.searchFilters .collections .amenitySelector.active .amenityImage.CityLife {
+    background-image: url('cityLife.png');
+    background-size: 18px auto;
+    background-position: 0 0;
+    background-repeat: no-repeat
+}
+
+@media(min-width:1025px) {
+    .searchFilters .collections .amenitySelector:hover .amenityImage.CityLife {
+        background-image: url('cityLife.png');
+        background-size: 18px auto;
+        background-position: 0 0;
+        background-repeat: no-repeat
+    }
+}
+
+.searchFilters .collections .amenitySelector .amenityImage.instantBook {
+    background-image: url('lightning-bolt.png');
+    background-size: auto 19px;
+    background-repeat: no-repeat;
+    margin-left: -4px
+}
+
+.searchFilters .collections .amenitySelector.active .amenityImage.instantBook {
+    background-image: url('lightning-bolt.png');
+    background-size: auto 19px;
+    background-repeat: no-repeat;
+    margin-left: -4px
+}
+
+@media(min-width:1025px) {
+    .searchFilters .collections .amenitySelector:hover .amenityImage.instantBook {
+        background-image: url('lightning-bolt.png');
+        background-size: auto 19px;
+        background-repeat: no-repeat;
+        margin-left: -4px
+    }
+}
+
+.searchFilters .collections .amenitySelector .amenityImage.Groups {
+    background-image: url('hasGroups.png');
+    background-size: 18px auto;
+    background-position: 0 -19px;
+    background-repeat: no-repeat
+}
+
+.searchFilters .collections .amenitySelector.active .amenityImage.Groups {
+    background-image: url('hasGroups.png');
+    background-size: 18px auto;
+    background-position: 0 1px;
+    background-repeat: no-repeat
+}
+
+@media(min-width:1025px) {
+    .searchFilters .collections .amenitySelector:hover .amenityImage.Groups {
+        background-image: url('hasGroups.png');
+        background-size: 18px auto;
+        background-position: 0 1px;
+        background-repeat: no-repeat
+    }
+}
+
+.searchFilters .collections .amenitySelector .amenityImage.hasSki {
+    background-image: url('hasSki.png');
+    background-size: 18px auto;
+    background-position: 0 -18px;
+    background-repeat: no-repeat
+}
+
+.searchFilters .collections .amenitySelector.active .amenityImage.hasSki {
+    background-image: url('hasSki.png');
+    background-size: 18px auto;
+    background-position: 0 1px;
+    background-repeat: no-repeat
+}
+
+@media(min-width:1025px) {
+    .searchFilters .collections .amenitySelector:hover .amenityImage.hasSki {
+        background-image: url('hasSki.png');
+        background-size: 18px auto;
+        background-position: 0 1px;
+        background-repeat: no-repeat
+    }
+}
+
+.searchFilters .collections .amenitySelector .amenityImage.Honeymoon {
+    background-image: url('honeymoon.png');
+    background-size: 22px auto;
+    background-position: 0 -21px;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    top: 3px
+}
+
+.searchFilters .collections .amenitySelector.active .amenityImage.Honeymoon {
+    background-image: url('honeymoon.png');
+    background-size: 22px auto;
+    background-position: 0 3px;
+    background-repeat: no-repeat
+}
+
+@media(min-width:1025px) {
+    .searchFilters .collections .amenitySelector:hover .amenityImage.Honeymoon {
+        background-image: url('honeymoon.png');
+        background-size: 22px auto;
+        background-position: 0 3px;
+        background-repeat: no-repeat
+    }
+}
+
+.searchFilters .collections .amenitySelector .amenityImage.hasGolf {
+    background-image: url('hasGolf_grey.png');
+    background-repeat: no-repeat
+}
+
+.searchFilters .collections .amenitySelector.active .amenityImage.hasGolf {
+    background-image: url('hasGolf_aqua.png')
+}
+
+@media(min-width:1025px) {
+    .searchFilters .collections .amenitySelector:hover .amenityImage.hasGolf {
+        background-image: url('hasGolf_aqua.png')
+    }
+}
+.searchFilters .collections .amenitySelector .amenityImage.hasPromo {
+    background-image: url('hasPromo_grey.png');
+    background-repeat: no-repeat
+}
+.searchFilters .collections .amenitySelector.active .amenityImage.hasPromo {
+    background-image: url('hasPromo_aqua.png')
+}
+@media(min-width:1025px) {
+    .searchFilters .collections .amenitySelector:hover .amenityImage.hasPromo {
+        background-image: url('hasPromo_aqua.png')
+    }
+}

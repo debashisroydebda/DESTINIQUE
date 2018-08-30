@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
     /* HEADER FIXED AND BACK TO TOP BUTTON JS PART
-    ----------------------------------------------------------*/
+     ----------------------------------------------------------*/
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
@@ -24,16 +24,16 @@ jQuery(document).ready(function ($) {
         return false;
     });
     /* INITIATE THE WOWJS PART
-    ----------------------------------------------------------*/
+     ----------------------------------------------------------*/
     new WOW().init();
     /* INITIATE SUPERFISH ON NAV MENU PART
-    ----------------------------------------------------------*/
+     ----------------------------------------------------------*/
     $('.nav-menu').superfish({
         animation: {opacity: 'show'},
         speed: 400
     });
     /* MOBILE NAVIGATION JS PART
-    ----------------------------------------------------------*/
+     ----------------------------------------------------------*/
     if ($('#nav-menu-container').length) {
         var $mobile_nav = $('#nav-menu-container').clone().prop({id: 'mobile-nav'});
         $mobile_nav.find('> ul').attr({'class': '', 'id': ''});
@@ -65,7 +65,7 @@ jQuery(document).ready(function ($) {
         $("#mobile-nav, #mobile-nav-toggle").hide();
     }
     /* SMOTH SCROLL ON PAGE HASH LINKS JS PART
-    ----------------------------------------------------------*/
+     ----------------------------------------------------------*/
     /*$('a[href*="#"]:not([href="#"])').on('click', function () {
      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
      var target = $(this.hash);
@@ -94,7 +94,7 @@ jQuery(document).ready(function ($) {
      }
      });*/
     /* PORFOLIO FILTER JS PART
-    ----------------------------------------------------------*/
+     ----------------------------------------------------------*/
     $("#portfolio-flters li").click(function () {
         $("#portfolio-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
@@ -112,7 +112,7 @@ jQuery(document).ready(function ($) {
      time: 1000
      });*/
     /* GOOGLE MAP JS PART
-    ----------------------------------------------------------*/
+     ----------------------------------------------------------*/
     var get_latitude = $('#google-map').data('latitude');
     var get_longitude = $('#google-map').data('longitude');
     function initialize_google_map() {
@@ -150,7 +150,7 @@ $('.dark-scrollup').on("click", function () {
 });
 
 /* SLIDER-RANGE JS PART
-----------------------------------------------------------*/
+ ----------------------------------------------------------*/
 $(function () {
     $("#slider-range").slider({
         range: true,
@@ -165,7 +165,7 @@ $(function () {
             " - $" + $("#slider-range").slider("values", 1));
 });
 /* BEDROOMS-SLIDER-RANGE JS PART
-----------------------------------------------------------*/
+ ----------------------------------------------------------*/
 $(function () {
     $("#bedRooms-slider-range").slider({
         range: true,
@@ -179,12 +179,12 @@ $(function () {
     $("#bedRooms").val($("#bedRooms-slider-range").slider("values", 0) + " - " + $("#bedRooms-slider-range").slider("values", 1));
 });
 /* DATEPICKER JS PART
-----------------------------------------------------------*/
+ ----------------------------------------------------------*/
 $(function () {
     $("#datepicker,#datepicker1").datepicker();
 });
 /* QUOTE-CAROUSEL JS PART
-----------------------------------------------------------*/
+ ----------------------------------------------------------*/
 $(document).ready(function () {
     $('#quote-carousel').carousel({
         pause: true,
@@ -192,7 +192,7 @@ $(document).ready(function () {
     });
 });
 /* ARRIVAL DATE PICKER JS PART
-----------------------------------------------------------*/
+ ----------------------------------------------------------*/
 $(function () {
     $("#arrivalDatePicker").datepicker({
         changeMonth: true,
@@ -206,7 +206,8 @@ $(function () {
     });
 });
 /* TABS JS PART
-----------------------------------------------------------*/
+ ----------------------------------------------------------*/
 $(function () {
     $("#tabs").tabs();
 });
+

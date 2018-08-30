@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="">
+    <head>
+        <meta charset="utf-8" />
+        <title>Villas & Vacation Rentals | Luxury Retreats</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="searchFiltersCommon.css" rel="stylesheet">
+        <link href="searchFiltersSearch.css" rel="stylesheet">
+        <link href="searchFiltersBase.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA02PRWdVRGo8LENLaWxSAkwR9Zwh-A2GU"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="searchContainer">
+            <div id="searchResults">
+                <div id="resultsHeader" class="resultsHeader">
+                    <div class="container-fluid">
+                        <div id="resultsTextContainer" class="searchText updating">
+                            <div class="searchLoadingText hidden">
+                                <span>Updating your search results</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="endOfResults" class="clearfix container mrg-btm-35">
+                    <div id="noMoreResults" class="row-spc-30">
+                        <div id="searchInquireContainer" class="col-sm-12 col-md-6 hidden">
+                            <script id="inquireTemplate" type="handlebars">
+                                <div class="inquireModule">
+                                <form id="{{inquireForm}}" class="inquireBody" data-prefill>
+                                <div class="row-spc-16">
+                                <div class="col-sm-12 col-md-6 u-pull-right">
+                                <label>Tentative travel dates</label>
+                                <div class="row-spc-16 mrg-btm-15">
+                                <div class="col-sm-6">
+                                <div class="datepickerWrapper">
+                                <input type="text" id="{{inquireCheckIn}}" value="" placeholder="Check-In" readonly disabled="disabled" data-prefill="checkIn" />
+                                </div>
+                                </div>
+                                <div class="col-sm-6">
+                                <div class="datepickerWrapper checkoutWrapper">
+                                <input type="text" id="{{inquireCheckOut}}" value="" placeholder="Check-Out" readonly disabled="disabled" data-prefill="checkOut" />
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </form>
+                                </div>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <header id="filterButtonTopHeaderPrt">
+            <div class="menuPosition">
+                <div id="searchSubMenu" class="hidden row js-searchWrapper searchSubMenu">
+                    <div class="col-sm-12">
+                        <div class="float-left calendar">
+                            <div class="item">
+                                <div class="title">Dates</div>
+                                <div class="hidden statusLabel"></div>
+                            </div>
+                            <div class="hidden filter">
+                                <div class="flex wrapper">
+                                    <div class="calendar searchCheckInOutWrapper availability-choices-wrapper" data-prefill="checkIn checkOut"></div>
+                                </div>
+                                <div class="relative">
+                                    <button class="clear">Clear</button>
+                                    <button class="button buttonPrimary js-updateSearchButton">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-left price">
+                            <div class="item">
+                                <div class="title">Price</div>
+                                <div class="hidden statusLabel"></div>
+                            </div>
+                            <div class="hidden filter">
+                                <div class="title"></div>
+                                <input type="number" id="labelInput" class="hidden label" onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+                                <div class="flex wrapper sliderWrapper">
+                                    <div id="slider-range" class="slider-range"></div>
+                                </div>
+                                <div class="relative">
+                                    <button class="clear">Clear</button>
+                                    <button class="button buttonPrimary js-updateSearchButton">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-left guests">
+                            <div class="item">
+                                <div class="title">Guests</div>
+                                <div class="hidden statusLabel"></div>
+                            </div>
+                            <div class="hidden filter">
+                                <div class="title">Guests</div>
+                                <input type="number" id="labelInput" class="hidden label" onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+                                <div class="flex wrapper">
+                                    <div class="flex minus" id="wrapperMinus"><i class="fa fa-minus"></i></div>
+                                    <span id="label"></span>
+                                    <div class="flex plus" id="wrapperPlus"><i class="fa fa-plus"></i></div>
+                                </div>
+                                <div class="relative">
+                                    <button class="clear">Clear</button>
+                                    <button class="button buttonPrimary js-updateSearchButton">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-left moreFilters">
+                            <div class="item">
+                                <div class="title">More Filters</div>
+                                <div class="hidden statusLabel"></div>
+                            </div>
+                            <div class="hidden filter">
+                                <div class="flex wrapper">
+                                    <div id="searchFilters" class="searchFilters hidden">
+                                        <div class="region">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">REFINE YOUR SEARCH:</div>
+                                                    <div class="col-md-3 col-sm-4">
+                                                        <div id="region2" class="regionSelect dropdownWrapper" tabindex="1" data-trackingid="search_dd"></div>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-4">
+                                                        <div id="region3" class="regionSelect dropdownWrapper" tabindex="1"></div>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-4">
+                                                        <div id="region4" class="regionSelect dropdownWrapper" tabindex="1"></div>
+                                                    </div>
+                                                    <div id="closeFilters" class="col-md-1 closeFilters">X</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price hidden">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">PRICE PER NIGHT:</div>
+                                                    <div class="col-md-3 col-sm-12 col-md-offset-0">
+                                                        <div class="sliderWrapper">
+                                                            <div id="slider-range" class="slider-range"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collections">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">COLLECTIONS:</div>
+                                                    <div class="col-md-9 col-sm-12">
+                                                        <div class="amenitySelector" data-amenity="HasBeach" title="Beachfront">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage hasBeach"></div>
+                                                            <label>Beachfront</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="CityLife" title="City Breaks">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage CityLife"></div>
+                                                            <label>City Breaks</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="HasSki" title="Ski">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage hasSki"></div>
+                                                            <label>Ski Chalets</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="Honeymoon" title="Honeymoon (1-2 bdr)">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage Honeymoon"></div>
+                                                            <label>Honeymoon</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="LargeGroups" title="Large Groups (12+ ppl)">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage Groups"></div>
+                                                            <label>Large Groups</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collections bookingType">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">BOOKING TYPE:</div>
+                                                    <div class="col-md-9 col-sm-12">
+                                                        <div class="amenitySelector" data-amenity="IsUnderPromotion" title="Promotions">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage hasPromo"></div>
+                                                            <label>Promotion</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="InstantBook" title="Instabook Properties">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage instantBook"></div>
+                                                            <label>Instabook Properties</label>
+                                                        </div>
+                                                        <div class="amenitySelector" data-amenity="NewVillas" title="New Arrivals" style="display: none">
+                                                            <input type="checkbox" />
+                                                            <div class="amenityImage Groups"></div>
+                                                            <label>"New Arrivals</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cta hidden">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">&nbsp;</div>
+                                                    <div class="col-md-3 col-sm-6 filterLabelOffset">
+                                                        <button id="updateSearchButton" class="button buttonPrimary small block js-updateSearchButton" type="button">UPDATE MY SEARCH</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tags hidden">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-12 label">ACTIVE FILTERS:</div>
+                                                    <div class="col-md-9 col-sm-12 col-md-offset-0">
+                                                        <ul class="tagCollection"></ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative">
+                                    <button class="clear">Clear</button>
+                                    <button class="button buttonPrimary js-updateSearchButton">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12"></div>
+                </div>
+            </div>
+        </header>
+
+        <div id="findVillaInquiry" class="hidden findVillaInquiry">
+            <div id="findVillaInquiryForm" class="findVillaInquiryForm">
+                <script id="findVillaInquiryTemplate" type="handlebars">
+                </script>
+            </div>
+        </div>
+        <div id="searchFilterOverlay" class="searchFilterOverlay hidden"></div>
+        <div id="mapContainer">
+            <div class="mapWrapper">
+                <div id="map" class="map"></div>
+                <div id="mapVillaInformation"></div>
+            </div>
+        </div>
+
+        <script>
+            var _prum = [['id', '53444d05abe53db7267b23c6'],
+                ['mark', 'firstbyte', (new Date()).getTime()]];
+            (function () {
+                var s = document.getElementsByTagName('script')[0]
+                        , p = document.createElement('script');
+                p.async = 'async';
+                p.src = '//rum-static.pingdom.net/prum.min.js';
+                s.parentNode.insertBefore(p, s);
+            })();
+            var PLATFORMID = '1';
+            var PLATFORMVERSION = '2.7.2.201702061130';
+
+
+
+
+
+
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-2ZLV');
+
+            var websiteVersion = '2.7.2.201702061130';
+            var sessionID = '41olzq2ydiqxooasjqomjolj';
+            var internalIPaddress = '216.113.47.12';
+            var mpExcludeInternalTraffic = true;
+
+
+
+
+            var IMAGE_PATH = '//mobilepics.luxuryretreats.com/mediastock';
+            var LRI_VILLA_URL = '/destinations/';
+
+            var CONNECTIONSTIRNGDESKTOP = '//www.luxuryretreats.com';
+            var SERVICECONNNECTION = '//ios2.luxuryretreats.com';
+            var BOOKINGENGINE = 'https://bookings.luxuryretreats.com';
+            var BOOKINGCONNECTION = 'https://bookings.luxuryretreats.com';
+            var AUTHCONNECTION = '://auth2.luxuryretreats.com/';
+            var authenticatedRequestsProtocol = 'https';
+            var MYTRIPS_BASEURL = '//mytrip.luxuryretreats.com/';
+            var AIRBNB_BASEURL = '//www.airbnb.com/';
+        </script>
+        <script src="searchFiltersData.js"></script>
+        <script src="searchFiltersCommon.js"></script>
+        <script src="searchFiltersDestination.js"></script>
+    </body>
+</html>
