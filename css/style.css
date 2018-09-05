@@ -1555,7 +1555,6 @@ figure.snip1100 a:hover figcaption .icons i {
 }
 .custom-radios#customRadiosPart input[type="radio"] + label {
     color: #333;
-    font-family: Arial, sans-serif;
     font-size: 14px;
 }
 #colorDestinique2Margin {
@@ -2994,6 +2993,319 @@ textarea.form-control {
 ----------------------------------------------------------*/
 
 
+
+
+/* SOCIAL CSS PART
+----------------------------------------------------------*/
+
+.nav-tabs.nav > li > a {
+    border: 2px solid #21e0bd;
+    float: left;
+    margin-left: 6px;
+    position: relative;
+    border-radius: 0;
+    transition: all 0.4s ease 0s;
+}
+.nav-tabs.nav > li > a:active,
+.nav-tabs.nav > li > a:hover,
+.nav-tabs.nav > li > a:focus {
+    //background-color: transparent;
+    color: #000;
+    background-color: #fff;
+    transition: all 0.4s ease 0s;
+    border-radius: 0;
+    border: 2px solid #000;
+}
+.navTabPart .nav-tabs.nav .active a {
+    //background-color: transparent;
+    color: #000;
+    background-color: #fff;
+    transition: all 0.4s ease 0s;
+    border-radius: 0;
+    border: 2px solid #000;
+}
+.navTabPart .nav-tabs {
+    border-bottom: 0px;
+}
+.tab-pane .tab-inner {
+    padding: 15px;
+}
+.navTabPart ul {
+    text-align: initial;
+    display: inline-flex
+}
+
+
+
+
+
+.socialSliderPart {
+    overflow: hidden;
+    padding: 70px 0 20px;
+    position: relative;
+    width: 100%;
+}
+.socialSliderPart .noBlurWrap {
+    background-image: url("../img/map_Cover.jpeg");
+}
+.socialSliderPartText {
+    margin-bottom: 30px;
+    margin-top: 220px;
+}
+.socialSliderPart .tintWrap {
+    background: rgba(5, 5, 5, 0.5) none repeat scroll 0 0;
+}
+.socialSliderPartText {
+    margin-bottom: 30px;
+    margin-top: 250px;
+}
+.socialSliderPartText h1 {
+    color: #fff;
+}
+
+.socialSinglePart .item-image {
+    background: #000;
+    position: relative;
+    transition: all 0.5s ease-in-out 0s;
+}
+.socialSinglePart .item-image img {
+    transition: all 0.5s ease-in-out 0s;
+    margin: 0 auto;
+}
+.socialHeaderText {
+    font-size: 20px;
+}
+.socialSinglePart .hover-overlay {
+    width: 100%;
+    height: 100%;
+    //background: rgba(255, 255, 255, 0.88);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.socialSinglePart:hover .hover-overlay {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.socialSinglePart:hover .item-image img  {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    transition: all 0.5s ease-in-out;
+    opacity: .6;
+    filter: "alpha(opacity=60)";
+    -ms-filter: "alpha(opacity=60)";
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    transition: all 0.5s ease-in-out;
+}
+.socialSinglePart .hover-overlay ul {
+    display: inline-block;
+    transition: all 0.5s ease-in-out 0s;
+}
+.socialSinglePart .hover-overlay ul a {
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+.socialSinglePart {
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0);
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 30px;
+    border: 1px solid #666;
+}
+.socialSinglePart .hover-overlay ul a.facebook {
+    padding: 12px 16px;
+}
+.socialSinglePart .hover-overlay ul a.twitter {
+    padding: 12px 12px;
+}
+.socialSinglePart .hover-overlay ul a.linkedin {
+    padding: 12px 13px;
+}
+.socialSinglePart .hover-overlay ul a {
+    transition: all 0.5s ease-in-out;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    //background: #F73859;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.socialSinglePart .hover-overlay ul a:hover {
+    background: #2b90d9;
+    transition: all 0.5s ease-in-out 0s;
+}
+.hover-overlay-shaire {
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+}
+.hover-overlay-shaire center {
+    margin-top: -60px;
+}
+.hover-overlay-View-Post {
+    bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+}
+
+@-moz-document url-prefix() {
+    .hover-overlay-shaire {
+        position: fixed;
+        //margin-top: -60px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hover-overlay-View-Post {
+        bottom: 60px;
+        color: #fff;
+        font-weight: bold;
+        margin: 0 auto;
+        position: fixed;
+        text-align: center;
+    }
+}
+.socialSinglePart .hover-overlay ul a i {
+    display: inline-block;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    transition: all 0.5s ease-in-out;
+}
+.facebookSocialContent {
+    background-color: #3b5998;
+    color: #fff;
+    height: 40px;
+    padding: 10px;
+}
+.facebookSocialContentThumbs {
+    padding-left: 15px;
+}
+.facebookSocialContentFacebook {
+    padding-right: 15px;
+    text-align: right;
+}
+.facebookSocialContent a {
+    color: #fff;
+}
+
+
+.pinterestSocialContent {
+    background-color: #fff;
+    color: #c8232c;
+    height: 40px;
+    padding: 10px;
+}
+.pinterestSocialContentHeart {
+    padding-left: 15px;
+}
+.pinterestSocialContentPinterest {
+    padding-right: 15px;
+    text-align: right;
+}
+.pinterestSocialContent a {
+    color: #c8232c;
+}
+
+
+.twitterSocialContent {
+    background-color: #00acee;
+    color: #fff;
+    height: 40px;
+    padding: 10px;
+}
+.twitterSocialContentStar {
+    padding-left: 15px;
+}
+.twitterSocialContentTwitter {
+    padding-right: 15px;
+    text-align: right;
+}
+.twitterSocialContent a {
+    color: #fff;
+}
+
+
+
+.dateMonthYear {
+    text-align: center;
+}
+.dateMonthYear .dateMonthYearCount {
+
+}
+.dateMonthYear .dateMonthYearLetter {
+
+}
+.dateMonthYear .dateMonthYearAgo {
+
+}
+.postWrapperContent {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    bottom: 40px;
+    left: 0;
+    margin: auto;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    transition: all 0.5s ease-in-out 0s;
+}
+.socialSinglePart:hover .postWrapperContent {
+    display: none;
+    transition: all 0.5s ease-in-out 0s;
+}
+.postWrapperContent .postWrapperTitle {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-align: left;
+    text-shadow: none;
+    text-transform: none;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+
+
+
+
+
+
+
+.allSocialContentPart {
+    margin-top: 60px;
+}
+/* END SOCIAL CSS PART
+----------------------------------------------------------*/
+
+
+
+
+
 /* MAIN CONTACT PAGE CSS PART
 ----------------------------------------------------------*/
 textarea {
@@ -3281,6 +3593,25 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
 }
 * {
     box-sizing: border-box;
+}
+#searchform .alert-danger {
+    border-radius: 0;
+}
+.totalRentalAmountPrice {
+    font-size: 24px;
+    text-align: center;
+}
+.bookingDepositAmountPart {
+    font-size: 16px;
+    text-align: center;
+}
+.contentHide {
+    display: none;
+}
+.includesTaxesPart {
+    font-size: 14px;
+    text-align: center;
+    color: #bf0708;
 }
 #track-widget .textwidget, .textwidget #track-widget {
     background: #21e0bd;
@@ -4090,15 +4421,19 @@ input[type="tel"] {
     color: white;
 }
 .twitter {
-    background: #55ACEE;
+    background: #1DA1F2;
     color: white;
 }
 .pinterest {
-    background: #d22735;
+    background: #BD081C;
+    color: white;
+}
+.linkedin {
+    background: #0e76a8;
     color: white;
 }
 .instagram {
-    background: #125688;
+    background: #3f729b;
     color: white;
 }
 /* END SOCIAL ICON BAR CSS PART
@@ -4148,6 +4483,13 @@ input[type="tel"] {
 .travelBlogSliderPart .noBlurWrap {
     background-image: url("../img/travel_blog.jpg");
 }
+.travelBlogSliderPartText {
+    margin-bottom: 30px;
+    margin-top: 220px;
+}
+.travelBlogSliderPart .tintWrap {
+    background: rgba(5, 5, 5, 0.5) none repeat scroll 0 0;
+}
 .flex-fixed .flex-fixed-inner {
     clip: rect(auto, auto, auto, auto);
     height: 100%;
@@ -4172,9 +4514,7 @@ input[type="tel"] {
     transform: translateZ(0px);
     z-index: -1;
 }
-.travelBlogSliderPart .tintWrap {
-    background: rgba(5, 5, 5, 0.5) none repeat scroll 0 0;
-}
+
 .tintWrap {
     height: 100%;
     left: 0;
@@ -4184,10 +4524,7 @@ input[type="tel"] {
     width: 100%;
     z-index: -1;
 }
-.travelBlogSliderPartText {
-    margin-bottom: 30px;
-    margin-top: 220px;
-}
+
 .testimonialsTextPart .testimonialsTopicTitle {
     text-align: center;
     font-weight: bold;
