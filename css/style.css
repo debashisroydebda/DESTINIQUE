@@ -36,6 +36,9 @@ a {
 .mZero{
     margin: 0;
 }
+.pZero {
+    padding: 0px;
+}
 .row.mZero {
     margin: 0;
 }
@@ -166,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
     padding: 0;
     margin: 0;
+    width: 200px;
 }
 #navPhoneNumber {
     background-color: #21e0bd;
@@ -239,6 +243,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
     word-wrap:break-word;
     white-space:initial;
+    margin-top: 60px;
 }
 .plusMinus {
     padding-top: 6px;
@@ -948,6 +953,86 @@ input {
     padding-bottom: 40px;
     color: #999;
 }
+.homeSearchBottomText {
+    color: #eee;
+    font-size: 24px;
+    margin: 0px auto;
+    text-align: center;
+    width: 90%;
+}
+#subscribeModal .modal-dialog {
+    margin: 70px auto;
+    width: 830px;
+}
+#subscribeModal .modal-backdrop.in {
+    opacity: 0.7;
+}
+#subscribeModal .modal-content {
+    border-radius: 0px;
+}
+#subscribeModal  .modal-body {
+    padding: 0;
+}
+#subscribeModal .close {
+    color: #000;
+    float: right;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1;
+    margin-right: 15px;
+    opacity: 0.2;
+    text-shadow: 0 1px 0 #fff;
+}
+.subscribeModalContent {
+    padding: 30px;
+}
+#subscribeModalTitle {
+    color: #2577c2;
+    font-size: 2.194em;
+    font-weight: 300;
+    line-height: 42px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+#subscribeModalBody {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    color: #585858;
+}
+#subscribeModalBodyM {
+    display: none;
+}
+#subscribeModalForm {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#email-popup-no-thanks {
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: 300;
+    height: 54px;
+    line-height: 1.697em;
+    margin-top: -20px;
+    text-align: center;
+    text-transform: none;
+    width: 100%;
+}
+#subscribeModalLegal {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+.subscribeModalImage img {
+    height: 100%;
+    position: fixed;
+    width: inherit;
+}
 /* END SECTIONS HEADER CSS PART
 ----------------------------------------------------------*/
 
@@ -1619,7 +1704,7 @@ label:hover {
 }
 .gal-item{
     overflow: hidden;
-    padding: 3px;
+    padding: 0px;
 }
 .gal-item .box{
     height: 350px;
@@ -2929,7 +3014,7 @@ input[type="text"] {
     padding: 3px 3px 3px 12px;
     line-height: 30px;
 }
-.contactForm .contactSumit {
+.contactForm .contactSumit, .subscribeSumit {
     font-size: 16px;
     color: #000;
     border-radius: 0px;
@@ -2940,10 +3025,13 @@ input[type="text"] {
     background: rgb(33, 224, 189) none repeat scroll 0 0;
     border-color: #21e0bd;
 }
-.contactForm .contactSumit:hover {
+.contactForm .contactSumit:hover, .subscribeSumit:hover {
     background: #000;
     border-color: #000;
     color: #21e0bd;
+}
+.subscribeSumit {
+    width: 100%;
 }
 .textAreaPart {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -3161,23 +3249,23 @@ textarea.form-control {
 .hover-overlay-shaire {
     color: #fff;
     font-weight: bold;
-    position: absolute;
+    //position: absolute;
 }
 .hover-overlay-shaire center {
-    margin-top: -60px;
+    //margin-top: -30px;
 }
 .hover-overlay-View-Post {
     bottom: 30px;
     color: #fff;
     font-weight: bold;
-    margin: 0 auto;
-    position: absolute;
+    //margin: 0 auto;
+    //position: absolute;
     text-align: center;
 }
 
 @-moz-document url-prefix() {
     .hover-overlay-shaire {
-        position: fixed;
+        //position: fixed;
         //margin-top: -60px;
         color: #fff;
         font-weight: bold;
@@ -3185,8 +3273,10 @@ textarea.form-control {
     .hover-overlay-View-Post {
         bottom: 60px;
         color: #fff;
+        float: right;
         font-weight: bold;
-        margin: 0 auto;
+        margin-bottom: 0;
+        margin-left: 40px;
         position: fixed;
         text-align: center;
     }
@@ -3459,7 +3549,7 @@ textarea:focus {
     border-radius: 3px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);//0 1px 1px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
     position: relative;
     width: 100%;
 }
@@ -3992,7 +4082,7 @@ table {
     background-repeat: no-repeat;        
     position: relative;        
     //width: 85%;            
-    height: 510px;       
+    height: 750px;       
     margin-left: auto;      
     margin-right: auto;
     background-position: center center;
@@ -4021,7 +4111,7 @@ table {
     padding: 0 22px 58px;
     text-align: center;
     vertical-align: middle;
-    margin-top: 150px;
+    margin-top: 190px;
 }
 .vacationRentalsWrapper .title {
     font-size: 5vw;
@@ -4191,9 +4281,9 @@ table {
 }
 .location-locator-search-map {
     background: #fff none repeat scroll 0 0;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.3);
     padding: 40px 20px 30px 20px;
-    position: absolute;
+    //position: absolute;
     right: 60px;
     top: 40px;
     width: 300px;
@@ -4226,10 +4316,13 @@ table {
 }
 #mainLocationLocatorMap {
     background-color: #fff;
-    padding-top: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+    //padding-top: 40px;
+    border-top: 2px solid #eee;
 }
+#mainLocationLocatorMap .col-sm-12{
+    padding: 0px;
+}
+
 .mod-location-locator-map h6.fp-el {
     font-size: 20px;
     font-weight: 500;
@@ -4302,7 +4395,7 @@ input[type="tel"] {
 }
 #mapLocation {
     color: #000;
-    margin-top: -36px;
+    //margin-top: -36px;
 }
 #mapLocation .carousel-control {
     width: 70px;
@@ -4558,6 +4651,190 @@ input[type="tel"] {
 ----------------------------------------------------------*/
 
 
+/* QUOTE DETAILS CSS PART
+----------------------------------------------------------*/
+#quoteDetailsPart {
+    margin-top: 100px;
+}
+.propertyNameHeader {
+    line-height: 1.5;
+}
+.propertyDemo .propertyDescription {
+    background: #fff none repeat scroll 0 0;
+    color: #9b9b9b;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 16px;
+    padding: 19px 20px;
+    position: relative;
+}
+.propertyDescription .propertyDetailContainer {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 17px;
+    font-weight: normal;
+}
+.propertyDetailContainer .guestIcon {
+    padding-right: 15px;
+}
+.propertyDetailContainer i {
+    color: #9b9b9b;
+    display: inline-block;
+    font-size: 18px;
+    padding-right: 2px;
+    vertical-align: middle;
+}
+.propertyDetailContainer .bedroomIcon, #galleryPart .bathroomIcon {
+    padding-right: 15px;
+}
+.propertyDetailContainer .bathroomReviewContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+.propertyDetailContainer .bathroomReviewContainer i {
+    font-size: 18px;
+}
+.bathroomReviewContainer .bathroomIcon {
+    padding-right: 15px;
+}
+.bathroomReviewContainer .bathroomIcon {
+    color: #9b9b9b;
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 2px;
+    vertical-align: middle;
+}
+.propertyDescription .HousePriceBox {
+    color: #292929;
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+    top: 4px;
+}
+#galleryPart {
+    margin: 0;
+    box-shadow: none;
+}
+#galleryPart:hover {
+    margin: 0;
+    box-shadow: none;
+}
+#galleryBody .tab-content p {
+    font-size: 17px;
+}
+#galleryBody .tab-content a:hover {
+    color: #000;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 0px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 0px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 0px;
+}
+.ui-widget-header {
+    border: 0px solid #dddddd;
+}
+#tabs .galleryNavTab .ui-state-default {
+    background-color: #21e0bd;
+    text-align: center;
+}
+.ui-widget.ui-widget-content {
+    border: 1px solid #e5e5e5;
+}
+#bedRooms-slider-range .ui-state-default, #priceRangePart .ui-state-default {
+    background-color: #21e0bd;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+    padding: 6px;
+}
+#tabs.overviewProducts {
+    font-size: 17px;
+}
+#tabs .galleryNavTab .ui-state-default a {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+}
+.ui-tabs .ui-tabs-nav li {
+    margin: 0;
+    padding: 0;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin: 0;
+    padding: 0;
+}
+.overviewProducts .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 0px;
+}
+.overviewProducts .galleryNavTab li {
+    text-align: center;
+    width: 33.3333%;
+}
+.ui-tabs {
+    padding: 0;
+}
+.ui-tabs .ui-tabs-nav {
+    padding: 0;
+}
+.ui-widget-content {
+    background: #ffffff url("images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50%;
+    border: 1px solid #aaaaaa;
+    color: #545454;
+}
+.ui-widget {
+    font-size: 16px;
+}
+.ui-slider-horizontal {
+    height: 0.8em;
+}
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+#searchform > div.listing-amenities {
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    padding: 10px;
+}
+.listing-amenities {
+    max-height:200px;
+    overflow: hidden;
+    overflow-y: scroll
+}
+.rateInfo {
+    background: #333 none repeat scroll 0 0;
+    border-color: #21e0bd;
+    border-radius: 0;
+    box-shadow: 0 2px 6px 1px rgba(20, 20, 20, 0.12);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    padding: 8px;
+    margin-top: 94px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.rateInfoRateType, .rateInfoRate {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-left: 30px;
+}
+/* END QUOTE DETAILS CSS PART
+----------------------------------------------------------*/
+
+
+
 /* TESTIMONIALS CSS PART
 ----------------------------------------------------------*/
 .testimonialsContent {
@@ -4635,6 +4912,10 @@ video.bgVideo, source{
 
 }
 @media (max-width: 768px) {
+    #subscribeModal .modal-dialog {
+        margin: 70px auto;
+        width: 730px;
+    }
     .vacationDisplayModeMap {
         position: relative;
     }
@@ -4707,6 +4988,30 @@ video.bgVideo, source{
     }
 }
 @media (max-width: 720px) {
+    .subscribeModalImage {
+        display: none
+    }
+    #subscribeModalTitle {
+        font-size: 22px;
+    }
+    #subscribeModal .modal-dialog {
+        margin: 70px auto;
+        width: 320px;
+    }
+    #subscribeModalBody {
+        display: none;
+    }
+    #subscribeModalBodyM {
+        display: block;
+        text-align: center;
+    }
+    #subscribeModalTitle {
+        margin-bottom: 0px;
+    }
+    #subscribeModalForm {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .propertyImageContainer .carousel-indicators {
         display: none;
     }

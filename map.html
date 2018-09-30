@@ -45,12 +45,14 @@
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li><a href="index.html">Home</a></li>
-                        <li class="menu-has-children"><a href="properties.html">Properties</a>
+                        <li class="menu-has-children"><a href="vacation_rentals_three_colmn.html">Properties</a>
                             <!--NAV SUB MENU PART-->
                             <ul>
-                                <li><a href="properties.html">Properties</a></li>
+                                <li><a href="vacation_rentals_three_colmn.html">Properties</a></li>
+                                <li><a href="promotions.html">Promotions</a></li>
+                                <!--<li><a href="properties.html">Properties</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="vacation_rentals_three_colmn.html">All Destinations </a></li>
+                                <li><a href="vacation_rentals_three_colmn.html">All Destinations </a></li>-->
                                 <li><a href="vacation_display_mode.html">Featured Properties</a></li>
                             </ul><!--END NAV SUB MENU PART-->
                         </li>
@@ -68,7 +70,7 @@
                             </ul><!--END NAV SUB MENU PART-->
                         </li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a class="wow rubberBand" href="callto:+888-235-5603" id="navPhoneNumber"> <i class=" fa fa-phone"></i> 888-235-5603</a></li>
+                        <li><a class="wow fadeInRight" href="callto:+888-235-5603" id="navPhoneNumber"> <i class=" fa fa-phone"></i> 888-235-5603</a></li>
                     </ul>
                 </nav><!--END NAV MENU PART-->
             </div>
@@ -78,22 +80,75 @@
         <!--MAP SLIDER PART-->
         <section id="mapSliderPart" class="row">
             <div class="hero-container container-fluid mapSliderPart">
-                <div class="wow swing"><span class="mapSliderPartText">Property Locations</span></div>
+                <div class="wow fadeInUp"><span class="mapSliderPartText">Property Locations</span></div>
             </div>
         </section><!--END MAP SLIDER PART-->
 
-
         <!--MAP PART-->
-        <section class="container" id="mainLocationLocatorMap">
+        <section id="mainLocationLocatorMap">
             <div class="row mZero">
                 <div class="col-sm-12 mod-location-locator-map">
                     <!--GOOGLE MAP PART-->
                     <span>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d24832693.555231966!2d-100.0944385!3d40.5562863!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1533338047078" style="width: 100%;border: 0;min-height: 428px;" allowfullscreen></iframe>
                     </span><!--END GOOGLE MAP PART-->
+                </div>
+            </div>
+        </section><!--END MAP PART-->
 
+
+        <!--MAP LOCATION SUCCESS STORIES PART-->
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-8 mapLocation successStories" id="mapLocation">
+                    <div id="successStoriesBackground"></div>
+                    <div class="carousel slide wow fadeInUp" data-ride="carousel" id="quote-carousel">
+                        <!--CAROUSEL SLIDES / QUOTES PART-->
+                        <div class="carousel-inner">
+                            <!--QUOTE 1 PART-->
+                            <div class="item active">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <p class="fp-el"><img class="img-responsive" src="img/map2.png"> Destinique</p>
+                                            <span>2996 Scenic Hwy 98 E</span><br>
+                                            <span>Destin, FL 32541</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 mMT30">
+                                            <p class="fp-el"><img class="img-responsive" src="img/map3.png"> Destinique</p>
+                                            <span>1816 Scenic Highway 98</span><br>
+                                            <span>Destin, FL 32541</span>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div><!--END QUOTE 1 PART-->
+
+                            <!--QUOTE 2 PART-->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <p class="fp-el"><img class="img-responsive" src="img/map3.png"> Destinique</p>
+                                            <span>2996 Scenic Hwy 98 E</span><br>
+                                            <span>Destin, FL 32541</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 mMT30">
+                                            <p class="fp-el"><img class="img-responsive" src="img/map2.png"> Destinique</p>
+                                            <span>1816 Scenic Highway 98</span><br>
+                                            <span>Destin, FL 32541</span>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div><!--END  QUOTE 2 PART-->
+                        </div><!--END CAROUSEL SLIDES / QUOTES PART-->
+                        <!--CAROUSEL BUTTONS NEXT/PREV BUTTON PART-->
+                        <a data-slide="prev" data-target="#quote-carousel" class="left carousel-control"><i class="fa fa-angle-left"></i></a>
+                        <a data-slide="next" data-target="#quote-carousel" class="right carousel-control"><i class="fa fa-angle-right"></i></a><!--END CAROUSEL BUTTONS NEXT/PREV BUTTON PART-->
+                    </div>             
+                </div>
+                <div class="col-sm-4">
                     <!--LOCATION-LOCATOR-SEARCH-MAP PART-->
-                    <div class="location-locator-search-map wow rollIn">
+                    <div class="location-locator-search-map wow fadeInUp">
                         <!--SINGLE OR MULTIPLE LOCATION PART-->
                         <div class="legend">
                             <p class="icon-single-point fp-el">Single Location</p>
@@ -116,61 +171,8 @@
                     </div><!--END LOCATION-LOCATOR-SEARCH-MAP PART-->
                 </div>
             </div>
-        </section><!--END MAP PART-->
-
-
-        <!--MAP LOCATION SUCCESS STORIES PART-->
-        <section class="container">
-            <div class="row">
-                <div class="col-sm-12 mapLocation successStories" id="mapLocation">
-                    <div id="successStoriesBackground"></div>
-                    <div class="carousel slide wow fadeInUp" data-ride="carousel" id="quote-carousel">
-                        <!--CAROUSEL SLIDES / QUOTES PART-->
-                        <div class="carousel-inner">
-                            <!--QUOTE 1 PART-->
-                            <div class="item active">
-                                <blockquote>
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-6">
-                                            <p class="fp-el"><img class="img-responsive" src="img/map2.png"> Destinique</p>
-                                            <span>2996 Scenic Hwy 98 E</span><br>
-                                            <span>Destin, FL 32541</span>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 mMT30">
-                                            <p class="fp-el"><img class="img-responsive" src="img/map3.png"> Destinique</p>
-                                            <span>1816 Scenic Highway 98</span><br>
-                                            <span>Destin, FL 32541</span>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div><!--END QUOTE 1 PART-->
-                            
-                            <!--QUOTE 2 PART-->
-                            <div class="item">
-                                <blockquote>
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-6">
-                                            <p class="fp-el"><img class="img-responsive" src="img/map3.png"> Destinique</p>
-                                            <span>2996 Scenic Hwy 98 E</span><br>
-                                            <span>Destin, FL 32541</span>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 mMT30">
-                                            <p class="fp-el"><img class="img-responsive" src="img/map2.png"> Destinique</p>
-                                            <span>1816 Scenic Highway 98</span><br>
-                                            <span>Destin, FL 32541</span>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div><!--END  QUOTE 2 PART-->
-                        </div><!--END CAROUSEL SLIDES / QUOTES PART-->
-                        <!--CAROUSEL BUTTONS NEXT/PREV BUTTON PART-->
-                        <a data-slide="prev" data-target="#quote-carousel" class="left carousel-control"><i class="fa fa-angle-left"></i></a>
-                        <a data-slide="next"data-target="#quote-carousel" class="right carousel-control"><i class="fa fa-angle-right"></i></a><!--END CAROUSEL BUTTONS NEXT/PREV BUTTON PART-->
-                    </div>             
-                </div>
-            </div>
         </section><br><!--END MAP LOCATION SUCCESS STORIES PART-->
-        
+
 
         <!--CONTACT PART-->
         <section class="contactPage wow fadeInUp">
@@ -229,7 +231,7 @@
                             <!--SUMIT BUTTON PART-->
                             <div class="form-group">        
                                 <div class="col-sm-10">
-                                    <button type="submit" class="btn btn-default contactSumit wow jello">Send Message </button>
+                                    <button type="submit" class="btn btn-default contactSumit">Send Message </button>
                                 </div>
                             </div><!--END SUMIT BUTTON PART-->
                         </form><!--END CONTACT FORM PART-->
@@ -245,7 +247,7 @@
                 <div class="row">
                     <div class="container">
                         <div class="col-sm-9">
-                            <div class="footerDestiniqueText wow rubberBand">DESTINIQUE © 2018</div>
+                            <div class="footerDestiniqueText wow fadeInUp">DESTINIQUE © 2018</div>
                         </div>
                         <div class="col-sm-3">
                         </div>
@@ -264,7 +266,7 @@
         </div><!--END SOCIAL ICON BAR-->
 
         <!--SCROLL BAR-->
-        <div class="dark-scrollup wow rollIn">
+        <div class="dark-scrollup wow zoomIn">
             <span class="fa fa-chevron-up"></span>
         </div><!--END SCROLL BAR-->
 
@@ -277,9 +279,9 @@
         <script type="text/javascript" src="js/slider.js"></script>
         <script type="text/javascript" src="js/theme.js"></script>
         <script type="text/javascript" src="js/jquery-ui.js"></script>
-        <script type="text/javascript" type="text/javascript" src="js/imgSliderFirst.js"></script>
-        <script type="text/javascript" type="text/javascript" src="js/imgSliderSecondRequire.js"></script>
-        <script type="text/javascript" type="text/javascript" src="js/imgSliderThirdApp.js"></script>
+        <script type="text/javascript" src="js/imgSliderFirst.js"></script>
+        <script type="text/javascript" src="js/imgSliderSecondRequire.js"></script>
+        <script type="text/javascript" src="js/imgSliderThirdApp.js"></script>
         <script type="text/javascript" src="js/imgSliderFourth.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/gallery/jquery.min.js"></script>

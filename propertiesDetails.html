@@ -26,11 +26,11 @@
         <!--SLIDER CSS FILE-->
         <link rel="stylesheet" type="text/css" href="css/slider.css">
         <!--JQUERY-UI CSS FILE-->
-        <link href="css/jquery-ui.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
         <!--MAIN CSS FILE-->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <!--GALLERY CSS FILE-->
-        <link rel="stylesheet" href="css/gallery/wvr_slider.css">
+        <link rel="stylesheet" type="text/css" href="css/flexslider.css">
     </head>
     <body>
 
@@ -45,12 +45,14 @@
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li><a href="index.html">Home</a></li>
-                        <li class="menu-has-children"><a href="properties.html">Properties</a>
+                        <li class="menu-has-children menu-active"><a href="vacation_rentals_three_colmn.html">Properties</a>
                             <!--NAV SUB MENU PART-->
                             <ul>
-                                <li><a href="properties.html">Properties</a></li>
+                                <li><a href="vacation_rentals_three_colmn.html">Properties</a></li>
+                                <li><a href="promotions.html">Promotions</a></li>
+                                <!--<li><a href="properties.html">Properties</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="vacation_rentals_three_colmn.html">All Destinations </a></li>
+                                <li><a href="vacation_rentals_three_colmn.html">All Destinations </a></li>-->
                                 <li><a href="vacation_display_mode.html">Featured Properties</a></li>
                             </ul><!--END NAV SUB MENU PART-->
                         </li>
@@ -68,363 +70,171 @@
                             </ul><!--END NAV SUB MENU PART-->
                         </li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a class="wow rubberBand" href="callto:+888-235-5603" id="navPhoneNumber"> <i class=" fa fa-phone"></i> 888-235-5603</a></li>
+                        <li><a class="wow fadeInRight" href="callto:+888-235-5603" id="navPhoneNumber"> <i class=" fa fa-phone"></i> 888-235-5603</a></li>
                     </ul>
                 </nav><!--END NAV MENU PART-->
             </div>
         </header><!--END HEADER PART-->
 
 
-        <!--GALLERY PART-->
-        <section id="propertiesPart" class="container">
-            <div class="hero-container propertiesPart" id="galleryBody">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="wvr_slider_main_wrapper wow fadeInUp" id="wvr_slider_main_wrapper">
-                            <!--GALLERY MAIN SLIDER WRAPPER PART-->
-                            <div class="main_slider_wrapper" role="region" tabindex="0" aria-label="Image Carousel">
-                                <!--MAIN SCREEN CAROUSEL SLIDER PART-->
-                                <div class="main screen carousel-inner slide">
-                                </div><!--END MAIN SCREEN CAROUSEL SLIDER PART-->
-
-                                <!--PREVIOUS-ARROW SLIDER PART-->
-                                <div class="left-arrow" role="button" aria-selected="false" tabindex="0" aria-label="Click for the previous slide">
-                                    <div class="action-arrow"> <span class="fa fa-angle-left" aria-hidden="true"></span></div>
-                                    <div class="left-slide">
-                                        <div class="mini screen carousel-inner slide"></div>
-                                    </div>
-                                </div><!--END ENDPREVIOUS-ARROW SLIDER PART-->
-
-                                <!--NEXT-ARROW SLIDER PART-->
-                                <div class="right-arrow" role="button" aria-selected="false" tabindex="0" aria-label="Click for the next slide">
-                                    <div class="action-arrow"> <span class="fa  fa-angle-right" aria-hidden="true"></span></div>
-                                    <div class="right-slide">
-                                        <div class="mini screen carousel-inner slide"></div>
-                                    </div>
-                                </div><!--END NEXT-ARROW SLIDER PART-->
-                                <div tabindex="0" class="gallery wow rollIn">View Gallery</div>
-                            </div><!--END GALLERY MAIN SLIDER WRAPPER PART-->
-
-                            <!--GALLERY OVERLAY SLIDER WRAPPER PART-->
-                            <div class="overlay_slider_wrapper " tabindex="0">
-                                <div class="close_icon tab-stop" tabindex="0" aria-label="Close overlay slider">&times;</div>
-                                <div class="header" id="sliderOverlayHeader"></div>
-                                <!--MAIN SCREEN CAROUSEL SLIDER PART-->
-                                <div class="main screen carousel-inner slide">
-                                </div><!--MAIN SCREEN CAROUSEL SLIDER PART-->
-
-                                <!--MINI SLIDER PART-->
-                                <div class="mini slider">
-                                    <div class="movie"></div>
-                                </div><!--END MINI SLIDER PART-->
-
-                                <!--PREVIOUS-ARROW SLIDER PART-->
-                                <div class="left-arrow tab-stop" role="button" aria-selected="false" tabindex="0" aria-label="Click for the previous slide"> 
-                                    <span class="fa fa-angle-left" aria-hidden="true"></span>
-                                </div><!--END PREVIOUS-ARROW SLIDER PART-->
-
-                                <!--NEXT-ARROW SLIDER PART-->
-                                <div class="right-arrow tab-stop" role="button" aria-selected="false" tabindex="0" aria-label="Click for the next slide"> 
-                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
-                                </div><!--END NEXT-ARROW SLIDER PART-->
-                            </div><!--GALLERY OVERLAY SLIDER WRAPPER PART-->
-
-                            <!--GALLERY IMAGE PART-->
-                            <div class="item-list">
-                                <ul data-title="The Pointe – 2 Bedroom" data-image="https://www.wyndhamvacationrentals.com/sites/all/themes/wvr/assets/images/virtual_tour_small_image.png" data-unit-images-label="Images">
-                                    <li data-type="unit-images" data-image-alt="" data-image-title="" data-image="https://wvr-d7-files-prod.s3.amazonaws.com/units/2017/03/02/08/1.jpg" class="first"></li>
-                                    <li data-type="unit-images" data-image-alt="" data-image-title="" data-image="https://wvr-d7-files-prod.s3.amazonaws.com/units/2017/03/02/11/2_0.jpg"></li>
-                                    <li data-type="unit-images" data-image-alt="" data-image-title="" data-image="https://wvr-d7-files-prod.s3.amazonaws.com/units/2017/03/02/47/3_0.jpg"></li>
-                                    <li data-type="unit-images" data-image-alt="" data-image-title="" data-image="https://wvr-d7-files-prod.s3.amazonaws.com/units/2017/03/02/00/4.jpg"></li>
-                                    <li data-type="unit-images" data-image-alt="" data-image-title="" data-image="https://wvr-d7-files-prod.s3.amazonaws.com/units/2017/03/02/36/5_0.jpg"></li>
-                                    <li data-type="unit-images" data-image-alt="" data-image-title="" data-image="https://wvr-d7-files-prod.s3.amazonaws.com/units/2017/03/02/04/6_0.jpg"></li>
-                                    <li data-type="unit-images" data-image-alt="" data-image-title="" data-image="https://wvr-d7-files-prod.s3.amazonaws.com/units/2017/03/02/02/7.jpg"></li>
-                                    <li data-type="unit-images" data-image-alt="" data-image-title="" data-image="https://wvr-d7-files-prod.s3.amazonaws.com/units/2017/03/02/57/8.jpg"></li>
-                                    <li data-type="unit-images" data-image-alt="" data-image-title="" data-image="https://wvr-d7-files-prod.s3.amazonaws.com/units/2017/03/02/08/9.jpg"></li>
-                                    <li data-type="unit-images" data-image-alt="" data-image-title="" data-image="https://wvr-d7-files-prod.s3.amazonaws.com/units/2017/10/20/15/The%20Pointe%205.jpg" class="last"></li>
-                                </ul>
-                            </div><!--END GALLERY IMAGE PART-->
+         <!--GALLERY PART-->
+        <section id="quoteDetailsPart" class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="slider wow fadeInUp">
+                        <div id="slider" class="flexslider">
+                            <ul class="slides">
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo1.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo2.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo3.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo4.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo5.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo6.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo7.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo8.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo9.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo10.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo11.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo12.jpg"></li>
+                            </ul>
                         </div>
-
-
+                        <div id="carousel" class="flexslider">
+                            <ul class="slides">
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo1.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo2.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo3.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo4.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo5.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo6.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo7.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo8.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo9.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo10.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo11.jpg"></li>
+                                <li><img src="img/gallery/beautifulBeachfrontCondo/beautifulBeachfrontCondo12.jpg"></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col-md-8 col-sm-7 col-xs-12">
-                        <!--PROPERTY DESCRIPTION PART-->
-                        <div class="propertyDemo" id="galleryPart">
-                            <!--PROPERTY DETAILS ICON PART-->
-                            <span class="propertyDescription wow pulse">
-                                <div class="propertyDetailContainer">
-                                    <div class="guestIcon">
-                                        <i class="fa fa-home"></i>
-                                        <span>Condominium</span>
+            <div class="row">
+                <div class="col-md-8 col-sm-7 col-xs-12">
+                    <!--PROPERTY DESCRIPTION PART-->
+                    <div class="propertyDemo wow fadeInUp" id="galleryPart">
+                        <!--PROPERTY DETAILS ICON PART-->
+                        <span class="propertyDescription">
+                            <div class="propertyDetailContainer">
+                                <div class="guestIcon">
+                                    <i class="fa fa-home"></i>
+                                    <span>Condominium</span>
+                                </div>
+                                <div class="guestIcon">
+                                    <i class="fa fa-group"></i>
+                                    <span> Sleeps 4</span>
+                                </div>
+                                <div class="bedroomIcon">
+                                    <i class="fa fa-bed"></i>
+                                    <span> 2 Bedrooms</span>
+                                </div>
+                                <div class="bathroomIcon">
+                                    <i class="fa fa-bath"></i>
+                                    <span> 2 Baths </span>
+                                </div>
+                                <div class="guestIcon">
+                                    <i class="fa fa-binoculars"></i>
+                                    <span> Pool View</span>
+                                </div>
+                            </div>
+                        </span><!--END PROPERTY DETAILS ICON PART-->
+
+                        <!--PROPERTY DETAILS PART-->
+                        <div class="propertyName"><br>
+                            <h3 class="propertyNameHeader">
+                                <!--Property ID: <span class="propertyIDNumber"> RealJoy_GulfWalk606</span>
+                                <br/>
+                                Quote ID: <span class="quoteIDNumber"> 114</span>-->
+                                Property# <span class="quoteIDNumber"> 172</span>
+                            </h3>
+                            <div class="propertyNamepart">Property: <span></span> The Pointe</div><br>
+                            <span class="propertyLocation">Inlet Beach, FL</span>
+                        </div><br><!--END PROPERTY DETAILS PART-->
+
+                        <!--PROPERTY DESCRIPTION TAB PART-->
+                        <div id="tabs" class="overviewProducts">
+                            <ul class="galleryNavTab">
+                                <li><a href="#tabs-1">Overview</a></li>
+                                <li><a href="#tabs-2">Amenities</a></li>
+                                <li><a href="#tabs-3">Need to know</a></li>
+                            </ul>
+                            <div id="tabs-1">
+                                <p>Designed for the modern thinker who appreciates comfort in style, the 2-bedroom condominium at The Pointe provides 1200+ square feet of space to relax in true luxury.    Greeted with hardwood floors, chic yet beachy art, and sleek design, the 2-bedroom condominium leads you through an open floor plan where you and your guests can enjoy your company in the living room, while preparing delicious food in the high-end stainless steel kitchen.<br><br>  Both the living room and kitchen provide the Emerald Coast sunshine with doors leading to the balcony or patio. The master bedroom comes with an office nook if you are inclined to do some work while visiting The Pointe, and if you’d rather relax, this bedroom is equipped with a flat screen television, bathroom with bathtub and separate shower, and private entrance onto the balcony or patio.</p>
+                            </div>
+                            <div id="tabs-2">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h4>Views</h4>
+                                        <ul>
+                                            <li><a href="#">Courtyard View</a></li>
+                                            <li><a href="#">Pool View </a></li>
+                                        </ul>
                                     </div>
-                                    <div class="guestIcon">
-                                        <i class="fa fa-group"></i>
-                                        <span> Sleeps 4</span>
+                                    <div class="col-sm-3">
+                                        <h4>Proximity</h4>
+                                        <ul>
+                                            <li><a href="#">Bike to Beach</a></li>
+                                            <li><a href="#">Main Retail Area</a></li>
+                                            <li><a href="#">Near the Beach </a></li>
+                                        </ul>
                                     </div>
-                                    <div class="bedroomIcon">
-                                        <i class="fa fa-bed"></i>
-                                        <span> 2 Bedrooms</span>
+                                    <div class="col-sm-3">
+                                        <h4>Pool/Sauna</h4>
+                                        <ul>
+                                            <li><a href="#">Community Hot Tub</a></li>
+                                            <li><a href="#">Community Outdoor Pool</a></li>
+                                            <li><a href="#">Pool Towels (Free) </a></li>
+                                        </ul>
                                     </div>
-                                    <div class="bathroomIcon">
-                                        <i class="fa fa-bath"></i>
-                                        <span> 2 Baths </span>
-                                    </div>
-                                    <div class="guestIcon">
-                                        <i class="fa fa-binoculars"></i>
-                                        <span> Pool View</span>
+                                    <div class="col-sm-3">
+                                        <h4>Bedding information</h4>
+                                        <ul>
+                                            <li><a href="#">King (1)</a></li>
+                                            <li><a href="#">Queen (1) </a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </span><!--END PROPERTY DETAILS ICON PART-->
-
-                            <!--PROPERTY DETAILS PART-->
-                            <div class="propertyName wow pulse"><br>
-                                <h2 class="propertyNameHeader"> The Pointe – 2 Bedroom</h2>
-                                <a href="#" class="propertyNamepart">Property: <span></span> The Pointe</a><br>
-                                <span class="propertyLocation">Inlet Beach, FL</span>
-                            </div><br><!--END PROPERTY DETAILS PART-->
-
-                            <!--PROPERTY DESCRIPTION TAB PART-->
-                            <div id="tabs" class="overviewProducts wow fadeInUp">
-                                <ul class="galleryNavTab">
-                                    <li><a href="#tabs-1">Overview</a></li>
-                                    <li><a href="#tabs-2">Amenities</a></li>
-                                    <li><a href="#tabs-3">Check-in info</a></li>
-                                    <li><a href="#tabs-4">Need to know</a></li>
+                            </div>
+                            <div id="tabs-3">
+                                <p>The Pointe is a non-smoking resort - no smoking on property. This includes no smoking in units, on balconies, or in any common area.  Smoking permitted off the property or in the parking lot as long as the guest is at least 50 feet away from the building. </p>
+                                <h3>Tips on things to pack to make you feel at home</h3>
+                                <ul>
+                                    <li><i class="fa fa-circle-o"></i> Hat;</li>
+                                    <li><i class="fa fa-circle-o"></i> Lip Balm;</li>
+                                    <li><i class="fa fa-circle-o"></i> Sunglasses;</li>
+                                    <li><i class="fa fa-circle-o"></i> Beach Towels;</li>
+                                    <li><i class="fa fa-circle-o"></i> Favorite foods and spices;</li>
+                                    <li><i class="fa fa-circle-o"></i> Sunblock and aloe, just in case!</li>
+                                    <li><i class="fa fa-circle-o"></i> Beach Cooler, pack a lunch and head for the beach!</li>
+                                    <li><i class="fa fa-circle-o"></i> Your favorite board games for evenings with the family.</li>
+                                    <li><i class="fa fa-circle-o"></i> Coffee Filters, don’t forget your favorite brew and creamer, too!</li>
+                                    <li><i class="fa fa-circle-o"></i> Tinfoil for grilling and to wrap up extra food. Leftovers taste great, even on vacation!</li>
                                 </ul>
-                                <div id="tabs-1">
-                                    <p>Designed for the modern thinker who appreciates comfort in style, the 2-bedroom condominium at The Pointe provides 1200+ square feet of space to relax in true luxury.    Greeted with hardwood floors, chic yet beachy art, and sleek design, the 2-bedroom condominium leads you through an open floor plan where you and your guests can enjoy your company in the living room, while preparing delicious food in the high-end stainless steel kitchen.<br><br>  Both the living room and kitchen provide the Emerald Coast sunshine with doors leading to the balcony or patio. The master bedroom comes with an office nook if you are inclined to do some work while visiting The Pointe, and if you’d rather relax, this bedroom is equipped with a flat screen television, bathroom with bathtub and separate shower, and private entrance onto the balcony or patio.</p>
-                                </div>
-                                <div id="tabs-2">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <h4>Views</h4>
-                                            <ul>
-                                                <li><a href="#">Courtyard View</a></li>
-                                                <li><a href="#">Pool View </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h4>Proximity</h4>
-                                            <ul>
-                                                <li><a href="#">Bike to Beach</a></li>
-                                                <li><a href="#">Main Retail Area</a></li>
-                                                <li><a href="#">Near the Beach </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h4>Pool/Sauna</h4>
-                                            <ul>
-                                                <li><a href="#">Community Hot Tub</a></li>
-                                                <li><a href="#">Community Outdoor Pool</a></li>
-                                                <li><a href="#">Pool Towels (Free) </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h4>Bedding information</h4>
-                                            <ul>
-                                                <li><a href="#">King (1)</a></li>
-                                                <li><a href="#">Queen (1) </a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="tabs-3">
-                                    <h3>Check-in Office Name: The Pointe</h3>
-                                    <p>
-                                        10711 E Co Hwy 30A<br>
-                                        Inlet Beach<br>
-                                        FL, 32461<br><br>
+                            </div>
+                        </div><br><br><!--END PROPERTY DESCRIPTION TAB PART-->
+                    </div><!--END PROPERTY DESCRIPTION PART-->
+                </div>
 
-                                        Check In Time: 04:00 PM<br>
-                                        Check Out Time: 10:00 AM<br><br>
-
-                                        Navigate to Check In Office<br>
-                                        Navigate to Home</p>
-                                </div>
-                                <div id="tabs-4">
-                                    <p>The Pointe is a non-smoking resort - no smoking on property. This includes no smoking in units, on balconies, or in any common area.  Smoking permitted off the property or in the parking lot as long as the guest is at least 50 feet away from the building. </p>
-                                    <h3>Tips on things to pack to make you feel at home</h3>
-                                    <ul>
-                                        <li><i class="fa fa-circle-o"></i> Hat;</li>
-                                        <li><i class="fa fa-circle-o"></i> Lip Balm;</li>
-                                        <li><i class="fa fa-circle-o"></i> Sunglasses;</li>
-                                        <li><i class="fa fa-circle-o"></i> Beach Towels;</li>
-                                        <li><i class="fa fa-circle-o"></i> Favorite foods and spices;</li>
-                                        <li><i class="fa fa-circle-o"></i> Sunblock and aloe, just in case!</li>
-                                        <li><i class="fa fa-circle-o"></i> Beach Cooler, pack a lunch and head for the beach!</li>
-                                        <li><i class="fa fa-circle-o"></i> Your favorite board games for evenings with the family.</li>
-                                        <li><i class="fa fa-circle-o"></i> Coffee Filters, don’t forget your favorite brew and creamer, too!</li>
-                                        <li><i class="fa fa-circle-o"></i> Tinfoil for grilling and to wrap up extra food. Leftovers taste great, even on vacation!</li>
-                                    </ul>
-                                </div>
-                            </div><br><br><!--END PROPERTY DESCRIPTION TAB PART-->
-                        </div><!--END PROPERTY DESCRIPTION PART-->
-                    </div>
-                    <div class="col-md-4 col-sm-5 col-xs-12"><br><br><br><br>
-                        <form role="search" method="post" id="searchform" action="#" class="wow slideInUp">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <!--ARRIVAL DATE PART-->
-                                    <input class="input-sm form-control" type="text" placeholder="Arrive Date" id="arrivalDatePicker"><!--END ARRIVAL DATE PART-->
-                                </div>
-                                <div class="col-xs-6">
-                                    <!--DEPARTURE DATE PART-->
-                                    <input class="input-sm form-control" type="text" placeholder="Depart Date" id="departureDatePicker"><!--END DEPARTURE DATE PART-->
-                                </div>
-                            </div>
-                            <div class="offerCodePart">
-                                <span class=" offerCode" data-toggle="collapse" data-target="#offerCode">Enter Offer Code</span>
-                            </div>
-
-                            <div class="collapse" id="offerCode">
-                                <input class="form-text form-control" type="text"  placeholder="Promotion" id="offerCodeInputBox">
-                            </div>
-                            <div>
-                                <button class="btn-centered-cls btn" id="checkRates" type="submit">Check Rates</button><br><br>
-                                <div class="totalRentalAmountPart"><!--contentHide-->
-                                    <div class="totalRentalAmountPrice">
-                                        <span class="totalRentalAmountPriceValue">$1,699.30</span><span>*</span>
-                                    </div>
-                                    <div class="bookingDepositAmountPart">
-                                        <span class="bookingDepositAmountText">Booking Deposit Amount: </span><span class="bookingDepositAmountValue">$339.85</span>
-                                    </div>
-                                    <div class="includesTaxesPart">
-                                        <span class="includesTaxesText">*Includes Taxes. Additional Fees May Apply.</span>
-                                    </div>
-                                </div><br>
-                                <div class="alert alert-danger alert-dismissible"><!--contentHide-->
-                                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                                    <strong><i class="fa fa-warning"></i> Alert</strong><br> You must select Arrive and Departure dates
-                                </div>
-                            </div>
-                            <div>
-                                <button type="button" class="btn btn-default sendAmessage wow jello"  data-toggle="modal" data-target="#sendAmessage">Send a Message</button><br><br>
-                            </div>
-                            <div class="searchformCallUsAt">
-                                Or<br> call us at (011) 000-1111
-                            </div>
-                        </form>
-                        <!-- MODAL -->
-                        <div id="sendAmessage" class="modal fade" role="dialog">
-                            <div class="modal-dialog">
-                                <!-- MODAL CONTENT-->
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button><br><br>
-                                        <h2 class="modal-title">Have a question about Sundestin Beach Resort 0011 ?</h2>
-                                        <h4 class="modal-sub-title"> Send us a message and let one of our reservation specialist help you out! </h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="">
-                                            <div class="row">
-                                                <div class="stayArriveDepartTime">When would you like to stay ?</div>
-                                                <div class="col-xs-6">
-                                                    <!--ARRIVAL DATE PART-->
-                                                    <input  class="input-sm form-control" type="text" placeholder="Arrive Date" id="datepicker" required="required"><!--END ARRIVAL DATE PART-->
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <!--DEPARTURE DATE PART-->
-                                                    <input class="input-sm form-control" type="text" placeholder="Depart Date" id="datepicker1" required="required"><!--END DEPARTURE DATE PART-->
-                                                </div>
-                                            </div><br>
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="modalLabelText">How many guests ?</div>
-                                                    <div class="row">
-                                                        <div class="col-xs-6">
-                                                            <div class="input-group">
-                                                                <span class="input-group-btn minusNumberCountInput-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number minusNumberCount" disabled="disabled" data-type="minus" data-field="quant[1]">
-                                                                        <span class="fa fa-minus"></span>
-                                                                    </button>
-                                                                </span>
-                                                                <input type="text" name="quant[1]" class="form-control input-number" id="totalAdultsGuestsNumber" readonly="readonly" value="1" min="1" max="100">
-                                                                <span class="input-group-btn plusNumberCountInput-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number plusNumberCount" data-type="plus" data-field="quant[1]">
-                                                                        <span class="fa fa-plus"></span>
-                                                                    </button>
-                                                                </span>
-                                                            </div>
-                                                            <div class="adultsGuestsCount">Adults</div>
-                                                        </div>
-                                                        <div class="col-xs-6">
-                                                            <div class="input-group">
-                                                                <span class="input-group-btn minusNumberCountInput-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number minusNumberCount" disabled="disabled" data-type="minus" data-field="quant[2]">
-                                                                        <span class="fa fa-minus"></span>
-                                                                    </button>
-                                                                </span>
-                                                                <input type="text" name="quant[2]" class="form-control input-number" id="totalChildrenGuestsNumber" readonly="readonly" value="1" min="1" max="100">
-                                                                <span class="input-group-btn plusNumberCountInput-group-btn">
-                                                                    <button type="button" class="btn btn-default btn-number plusNumberCount" data-type="plus" data-field="quant[2]">
-                                                                        <span class="fa fa-plus"></span>
-                                                                    </button>
-                                                                </span>
-                                                            </div>
-                                                            <div class="childrenGuestsCount">Children</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <div class="modalLabelText">Preferred Method for Contact *</div>
-                                                    <div class="custom-radios" id="customRadiosPart">
-                                                        <div>
-                                                            <input type="radio" id="colorDestinique1" name="color" value="colorDestinique1" required="required">
-                                                            <label for="colorDestinique1">
-                                                                <span>
-                                                                </span> Email
-                                                            </label>
-                                                        </div>
-                                                        <div id="colorDestinique2Margin">
-                                                            <input type="radio" id="colorDestinique2" name="color" value="colorDestinique2" required="required">
-                                                            <label for="colorDestinique2">
-                                                                <span>
-                                                                </span> Call
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div><br>
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="modalLabelText">First Name*</div>
-                                                    <input class="form-control" type="text" placeholder="First Name" required="required">
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <div class="modalLabelText modalFormControl">Last Name*</div>
-                                                    <input class="form-control modalFormControl" type="text" placeholder="Last Name" required="required">
-                                                </div>
-                                            </div><br>
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="modalLabelText">E-mail*</div>
-                                                    <input class="form-control" type="email" placeholder="E-mail" required="required">
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <div class="modalLabelText modalFormControl">Phone*</div>
-                                                    <input class="form-control modalFormControl" type="number" placeholder="Phone" required="required">
-                                                </div>
-                                            </div><br>
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <div class="modalLabelText">Send us a message</div>
-                                                    <textarea class="form-control textAreaPart" rows="5" placeholder="Message" required="required"></textarea>
-                                                </div>
-                                            </div>
-                                            <button type="submit" class="btn btn-default btn-centered-cls">SUBMIT</button>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default btn-centered-cls" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
+                <div class="col-md-4 col-sm-5 col-xs-12">
+                    <!--RATE INFO PART-->
+                    <form role="search" method="post" id="searchform" action="#">
+                        <div class="row wow fadeInUp">
+                            <div class="col-xs-12">
+                                <div class="rateInfo">Rate info</div>
+                                <div class="rateInfoRate">Rate: $3,442</div>
+                                <div class="rateInfoRateType">Rate Type: WEEKLY-BASE</div>
                             </div>
                         </div>
-                    </div>
+                    </form><!--END RATE INFO PART-->
                 </div>
             </div>
         </section><!--END GALLERY PART-->
@@ -487,7 +297,7 @@
                             <!--SUMIT BUTTON PART-->
                             <div class="form-group">        
                                 <div class="col-sm-10">
-                                    <button type="submit" class="btn btn-default contactSumit wow jello">Send Message </button>
+                                    <button type="submit" class="btn btn-default contactSumit">Send Message </button>
                                 </div>
                             </div><!--END SUMIT BUTTON PART-->
                         </form><!--END CONTACT FORM PART-->
@@ -503,7 +313,7 @@
                 <div class="row">
                     <div class="container">
                         <div class="col-sm-9">
-                            <div class="footerDestiniqueText wow rubberBand">DESTINIQUE © 2018</div>
+                            <div class="footerDestiniqueText wow fadeInUp">DESTINIQUE © 2018</div>
                         </div>
                         <div class="col-sm-3">
                         </div>
@@ -522,12 +332,13 @@
         </div><!--END SOCIAL ICON BAR-->
 
         <!--SCROLL BAR-->
-        <div class="dark-scrollup wow rollIn">
+        <div class="dark-scrollup wow zoomIn">
             <span class="fa fa-chevron-up"></span>
         </div><!--END SCROLL BAR-->
 
         <!--JAVASCRIPT LIBRARIES-->
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+        <script src="js/jquery-migrate-3.0.1.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/popper.min.js"></script>
         <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/wow.js"></script>
@@ -535,96 +346,39 @@
         <script type="text/javascript" src="js/slider.js"></script>
         <script type="text/javascript" src="js/theme.js"></script>
         <script type="text/javascript" src="js/jquery-ui.js"></script>
-        <script type="text/javascript" type="text/javascript" src="js/imgSliderFirst.js"></script>
-        <script type="text/javascript" type="text/javascript" src="js/imgSliderSecondRequire.js"></script>
-        <script type="text/javascript" type="text/javascript" src="js/imgSliderThirdApp.js"></script>
+        <script type="text/javascript" src="js/imgSliderFirst.js"></script>
+        <script type="text/javascript" src="js/imgSliderSecondRequire.js"></script>
+        <script type="text/javascript" src="js/imgSliderThirdApp.js"></script>
         <script type="text/javascript" src="js/imgSliderFourth.js"></script>
+        <script type="text/javascript" src="js/jquery.flexslider.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/gallery/jquery.min.js"></script>
-        <script type="text/javascript" src="js/gallery/drupal.js"></script>
-        <script type="text/javascript" src="js/gallery/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/gallery/slider.js"></script><!--END JAVASCRIPT LIBRARIES-->
-        <script>
-            $('.btn-number').click(function (e) {
-                e.preventDefault();
+        
+        <script type="text/javascript">
+            $(function () {
+                $("#tabs").tabs();
+            });
 
-                fieldName = $(this).attr('data-field');
-                type = $(this).attr('data-type');
-                var input = $("input[name='" + fieldName + "']");
-                var currentVal = parseInt(input.val());
-                if (!isNaN(currentVal)) {
-                    if (type == 'minus') {
+            $(window).load(function () {
+                $('#carousel').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: false,
+                    itemWidth: 140,
+                    itemMargin: 5,
+                    asNavFor: '#slider'
+                });
 
-                        if (currentVal > input.attr('min')) {
-                            input.val(currentVal - 1).change();
-                        }
-                        if (parseInt(input.val()) == input.attr('min')) {
-                            $(this).attr('disabled', true);
-                        }
-
-                    } else if (type == 'plus') {
-
-                        if (currentVal < input.attr('max')) {
-                            input.val(currentVal + 1).change();
-                        }
-                        if (parseInt(input.val()) == input.attr('max')) {
-                            $(this).attr('disabled', true);
-                        }
-
+                $('#slider').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: false,
+                    sync: "#carousel",
+                    start: function (slider) {
+                        $('body').removeClass('loading');
                     }
-                } else {
-                    input.val(0);
-                }
-            });
-            $('.input-number').focusin(function () {
-                $(this).data('oldValue', $(this).val());
-            });
-            $('.input-number').change(function () {
-
-                minValue = parseInt($(this).attr('min'));
-                maxValue = parseInt($(this).attr('max'));
-                valueCurrent = parseInt($(this).val());
-
-                name = $(this).attr('name');
-                if (valueCurrent >= minValue) {
-                    $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
-                } else {
-                    alert('Sorry, the minimum value was reached');
-                    $(this).val($(this).data('oldValue'));
-                }
-                if (valueCurrent <= maxValue) {
-                    $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
-                } else {
-                    alert('Sorry, the maximum value was reached');
-                    $(this).val($(this).data('oldValue'));
-                }
-
-
-            });
-            $(".input-number").keydown(function (e) {
-                // Allow: backspace, delete, tab, escape, enter and .
-                if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
-                        // Allow: Ctrl+A
-                                (e.keyCode == 65 && e.ctrlKey === true) ||
-                                // Allow: home, end, left, right
-                                        (e.keyCode >= 35 && e.keyCode <= 39)) {
-                            // let it happen, don't do anything
-                            return;
-                        }
-                        // Ensure that it is a number and stop the keypress
-                        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
-                            e.preventDefault();
-                        }
-                    });
-        </script>
-        <script>
-            $('.offerCode').click(function () {
-                if ($(this).hasClass('offerCodeT')) {
-                    $(this).removeClass('offerCodeT');
-                } else {
-                    $('.offerCode.offerCodeT').removeClass('offerCodeT');
-                    $(this).addClass('offerCodeT');
-                }
+                });
             });
         </script>
     </body>

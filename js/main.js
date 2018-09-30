@@ -211,3 +211,9 @@ $(function () {
     $("#tabs").tabs();
 });
 
+
+/* SUBSCRIBE MODAL JS PART
+ ----------------------------------------------------------*/
+$(window).load(function () {
+    $('#subscribeModal').modal('show');
+}); 
