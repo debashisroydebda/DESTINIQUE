@@ -4912,6 +4912,18 @@ video.bgVideo, source{
 
 }
 @media (max-width: 768px) {
+    #hero .hero-container .sliderHeaderDestinique {
+        margin-top: 200px;
+    }
+    #hero {
+        height: 60vh;
+    }
+    .vacationRentalsWrapper {
+        margin-top: 60px;
+    }
+    #filterButtonTopHeaderPrt {
+        margin-top: 100px;
+    }
     #subscribeModal .modal-dialog {
         margin: 70px auto;
         width: 730px;
