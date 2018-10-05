@@ -494,11 +494,7 @@ h1, h2, h3, h4, h5, h6 {
 #mobile-nav-toggle i {
     color: #fff;
 }
-@media (max-width: 769px) {
-    #mobile-nav-toggle {
-        display: inline;
-    }
-}
+
 /* Mobile Nav Styling */
 #mobile-nav {
     position: fixed;
@@ -996,7 +992,7 @@ input {
     text-align: center;
 }
 #subscribeModalBody {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 20px;
     text-align: center;
@@ -2606,7 +2602,7 @@ h1,h2,h3,h4 {
     width: 100%;
 }
 .aLittleAboutUsC .mainContainer {
-    max-width: 1170px;
+    //max-width: 1170px;
 }
 .flexContainer .mainContainer {
     position: relative;
@@ -2615,7 +2611,7 @@ h1,h2,h3,h4 {
 .mainContainer {
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    //width: 1170px;
 }
 .mod-padding {
     margin-bottom: 0;
@@ -3553,6 +3549,15 @@ textarea:focus {
     position: relative;
     width: 100%;
 }
+#contactContent {
+    background: rgb(23, 184, 236) none repeat scroll 0 0;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);//0 1px 1px rgba(0, 0, 0, 0.1);
+    //margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
 .box-header::after, .box-body::after, .box-footer::after {
     clear: both;
 }
@@ -4431,7 +4436,7 @@ input[type="tel"] {
     font-size: 16px;
 }
 #mapLocation #quote-carousel .carousel-control {
-    background: #21e0bd;
+    background: rgb(23, 184, 236) none repeat scroll 0 0;
     color: #fff;
     margin-top: 0;
     font-size: 45px;
@@ -4910,6 +4915,28 @@ video.bgVideo, source{
 ----------------------------------------------------------*/
 @media (max-width: 1024px) {
 
+}
+@media (max-width: 800px) {
+    #mobile-nav-toggle {
+        display: inline;
+    }
+    #nav-menu-container {
+        display: none;
+    }
+    #hero {
+        height: 60vh;
+    }
+    .informationSearchBox {
+        width: 100%;
+    }
+    #subscribeModal .modal-dialog {
+        width: 760px;
+    }
+}
+@media (max-width: 769px) {
+    #mobile-nav-toggle {
+        display: inline;
+    }
 }
 @media (max-width: 768px) {
     #hero .hero-container .sliderHeaderDestinique {
